@@ -1,0 +1,57 @@
+\protect \begpagestyle 
+ \protect \centerline {\protect \bf Figure \hfill Title \hfill Page}
+\protect \addvspace {10\p@ }
+\protect \addvspace {10\p@ }
+\protect \contentsline {figure}{\protect \numberline {2.1}{\ignorespaces Critical intensities to induce Rydberg state mixing.}}{9}
+\protect \contentsline {figure}{\protect \numberline {2.2}{\ignorespaces Model of $\ell $-mixing interaction.}}{12}
+\protect \contentsline {figure}{\protect \numberline {2.3}{\ignorespaces Amplitudes of the parabolic basis states.}}{17}
+\protect \contentsline {figure}{\protect \numberline {2.4}{\ignorespaces Amplitudes of the spherical basis states.}}{18}
+\protect \contentsline {figure}{\protect \numberline {2.5}{\ignorespaces Amplitudes of the spherical basis states at various times.}}{20}
+\protect \contentsline {figure}{\protect \numberline {2.6}{\ignorespaces Angular distributions.}}{22}
+\protect \contentsline {figure}{\protect \numberline {2.7}{\ignorespaces Population versus $\beta $ (fixed ground coupling).}}{24}
+\protect \contentsline {figure}{\protect \numberline {2.8}{\ignorespaces Population versus $\beta $.}}{24}
+\protect \contentsline {figure}{\protect \numberline {2.9}{\ignorespaces Rydberg manifold absorption lineshape.}}{26}
+\protect \contentsline {figure}{\protect \numberline {2.10}{\ignorespaces Atomic dipole moment spectrum.}}{29}
+\protect \contentsline {figure}{\protect \numberline {2.11}{\ignorespaces Landau-Zener model of $\ell $-mixing.}}{31}
+\protect \contentsline {figure}{\protect \numberline {2.12}{\ignorespaces Two Landau-Zener population transfer routes.}}{32}
+\protect \contentsline {figure}{\protect \numberline {2.13}{\ignorespaces Landau-Zener predictions of parabolic state populations}}{36}
+\protect \addvspace {10\p@ }
+\protect \contentsline {figure}{\protect \numberline {3.1}{\ignorespaces Experimental setup for Rydberg interaction.}}{40}
+\protect \contentsline {figure}{\protect \numberline {3.2}{\ignorespaces Picosecond dye laser.}}{41}
+\protect \contentsline {figure}{\protect \numberline {3.3}{\ignorespaces Potassium energy levels.}}{42}
+\protect \contentsline {figure}{\protect \numberline {3.4}{\ignorespaces Critical intensity for $\ell $-mixing in potassium.}}{43}
+\protect \contentsline {figure}{\protect \numberline {3.5}{\ignorespaces Three-photon ionization signal as a function of two-photon detuning from threshold for weak field.}}{44}
+\protect \contentsline {figure}{\protect \numberline {3.6}{\ignorespaces Three-photon ionization signal as a function of two-photon detuning from threshold for strong field.}}{46}
+\protect \contentsline {figure}{\protect \numberline {3.7}{\ignorespaces Calculated three-photon ionization signal as a function of two-photon detuning from threshold using the multiphoton model.}}{50}
+\protect \contentsline {figure}{\protect \numberline {3.8}{\ignorespaces Calculated three-photon ionization signal as a function of two-photon detuning from threshold using the mixing model.}}{54}
+\protect \addvspace {10\p@ }
+\protect \contentsline {figure}{\protect \numberline {4.1}{\ignorespaces Level scheme for the three-level interaction.}}{57}
+\protect \contentsline {figure}{\protect \numberline {4.2}{\ignorespaces Time-dependent dressed state energies.}}{60}
+\protect \contentsline {figure}{\protect \numberline {4.3}{\ignorespaces Comparison of instantaneous to time-integrated population in the absence of decay.}}{64}
+\protect \contentsline {figure}{\protect \numberline {4.4}{\ignorespaces Comparison of instantaneous to time-integrated population in the presence of decay.}}{65}
+\protect \contentsline {figure}{\protect \numberline {4.5}{\ignorespaces Comparison of time-integrated population for odd and even pulses areas.}}{67}
+\protect \contentsline {figure}{\protect \numberline {4.6}{\ignorespaces Doppler averaged time-integrated population signal as a function of delay between pulses.}}{70}
+\protect \contentsline {figure}{\protect \numberline {4.7}{\ignorespaces Time-integrated fluorescence signal as a function of the velocity of the atom.}}{71}
+\protect \contentsline {figure}{\protect \numberline {4.8}{\ignorespaces Time-integrated fluorescence signal averaged over Gaussian spatial beam.}}{74}
+\protect \contentsline {figure}{\protect \numberline {4.9}{\ignorespaces Time-integrated fluorescence signal averaged over amplitude fluctuations.}}{75}
+\protect \contentsline {figure}{\protect \numberline {4.10}{\ignorespaces Fluctuations of fluorescence signal in the presence of laser amplitude fluctuations.}}{76}
+\protect \contentsline {figure}{\protect \numberline {4.11}{\ignorespaces Influence of optical mixing of angular momentum on counterintuitive population transfer technique.}}{78}
+\protect \addvspace {10\p@ }
+\protect \contentsline {figure}{\protect \numberline {5.1}{\ignorespaces Spontaneous emission decay channels of sodium cascade system.}}{80}
+\protect \contentsline {figure}{\protect \numberline {5.2}{\ignorespaces Magnetic sub-levels of sodium cascade system.}}{81}
+\protect \contentsline {figure}{\protect \numberline {5.3}{\ignorespaces Schematic layout of the dye oscillator and amplifier system.}}{85}
+\protect \contentsline {figure}{\protect \numberline {5.4}{\ignorespaces Temporal profile of the Nd:YAG pump laser.}}{86}
+\protect \contentsline {figure}{\protect \numberline {5.5}{\ignorespaces Optogalvanic signal as a function of temperature of the dye fluid.}}{89}
+\protect \contentsline {figure}{\protect \numberline {5.6}{\ignorespaces Spatial profile of nanosecond dye laser.}}{90}
+\protect \contentsline {figure}{\protect \numberline {5.7}{\ignorespaces Spatial profiles of pump and dye lasers showing impact of gain-guiding.}}{91}
+\protect \contentsline {figure}{\protect \numberline {5.8}{\ignorespaces Spatial profile of the dye beam in a quasi-single-longitudinal-mode dye laser.}}{92}
+\protect \contentsline {figure}{\protect \numberline {5.9}{\ignorespaces Temporal profile of a single-longitudinal-mode dye laser (solid line) when pumped by a multi-longitudinal mode Nd:YAG laser.}}{93}
+\protect \contentsline {figure}{\protect \numberline {5.10}{\ignorespaces Temporal profile of a single-longitudinal-mode dye laser when pumped by a single-mode (smooth) pump laser.}}{94}
+\protect \contentsline {figure}{\protect \numberline {5.11}{\ignorespaces Experimental layout for counterintuitive pulse experiment.}}{95}
+\protect \contentsline {figure}{\protect \numberline {5.12}{\ignorespaces Integrated fluorescence signal obtained under weak field excitation conditions.}}{98}
+\protect \contentsline {figure}{\protect \numberline {5.13}{\ignorespaces Normalized amplitude fluctuations under weak field excitation conditions.}}{99}
+\protect \contentsline {figure}{\protect \numberline {5.14}{\ignorespaces Integrated fluorescence signal obtained under strong field excitation conditions.}}{100}
+\protect \contentsline {figure}{\protect \numberline {5.15}{\ignorespaces Normalized amplitude fluctuations under strong field excitation conditions.}}{101}
+\protect \contentsline {figure}{\protect \numberline {5.16}{\ignorespaces Dye laser pulse with sharp rising edge.}}{102}
+\protect \contentsline {figure}{\protect \numberline {5.17}{\ignorespaces Integrated fluorescence signal obtained under strong field excitation conditions with dye laser pulse with sharp rising edge.}}{103}
+\protect \addvspace {10\p@ }

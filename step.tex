@@ -1,0 +1,672 @@
+\begin{singlespace}
+
+\chapter{Direct Excitation: Experiment}
+\label{step}
+\begpagestyle
+%\pagenumbering{arabic}
+
+\end{singlespace}
+
+
+In this chapter, we shall discuss the results of our experimental
+investigation of the optical mixing of Rydberg angular momenta.  The
+experiment consisted of tuning a picosecond dye laser through two-photon
+resonance with the Rydberg series in potassium.  A third photon from this
+laser ionizes these Rydberg states.  We investigate the ionization signal
+for varying laser intensities, thus controlling the amount of angular momentum
+mixing of the Rydberg states.  We compare these experimental results with two
+theoretical calculations.  The first models many of the subtleties of the
+potassium atom using a traditional approach from multiphoton physics
+\cite{Lambropoulos:92}, but neglects the Rydberg-Rydberg coupling.  The second
+approach ignores the details of the potassium atom, but models the
+Rydberg-Rydberg mixing with the theory presented in \rChapter{direct}.  We
+find that the main features observed in the experiment are reproduced only
+when Rydberg-Rydberg mixing is included.
+
+
+\section{Experimental System}
+\hspace{\parindent}
+The laser and atomic beam system used in the experiments described below
+are based on the designs of Yeazell \cite{Yeazell_thesis} and were used by Noel
+\cite{Noel_thesis}.  A schematic diagram of the set-up is shown in
+\Fig{gensetup}. The experiment utilized a synchronously-pumped modelocked
+dye laser \cite{Wisoff:85}.  This laser was pumped by the frequency doubled
+output of a mode-locked and Q-switched Nd:YAG laser \cite{Dawson:84}
+manufactured by Quantronix, Model 416.  The laser produced a Q-switched burst
+of mode-locked pulses.  Approximately 25 mode-locked pulses were contained
+within each Q-switch envelope.  The pulses have duration $\approx 130$~ps and
+were separated by the cavity round trip time of 13~ns.  The Q-switch
+repetition rate was 500 Hz and the average frequency doubled power was
+630~mW.
+
+\Figure{ps_laser} shows the cavity design of the mode-locked dye laser.  The
+main cavity is formed by a flat high-reflector, M1, and a grating, G.  The
+cavity used has the ``Z'' configuration, utilizing folding mirrors M2 and
+M3.  By varying the separation between the folding mirrors, the size of the
+beam near the gain medium could be adjusted.  This affects the minimum
+pulse length attainable with this laser \cite{Wisoff:85}.  The grating was
+mounted on a rotation stage that was driven by a stepper motor so that
+rotating the grating with the stepper motor changed the laser wavelength.  The
+laser dye was a flowing solution of $4 \times 10^{-4}$~M Rhodamine 6G in
+methanol.  The dye laser's wavelength range was 560-580~nm with a peak near the
+two-photon ionization limit of potassium at 571.2~nm.  The prism pair (P1 and
+P2) enabled the size of the dye beam at the grating to be adjusted so that
+sufficient dispersion could be added to the cavity to obtain near
+transform-limited performance.  Note that too much dispersion, caused by
+over-filling the grating, leads to a reduction in the laser bandwidth and a
+subsequent increase in the laser pulse duration.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/step/gensetup.eps}
+\bigskip
+\wcap{Experimental setup for Rydberg interaction.}
+{Experimental setup for Rydberg interaction.  The synchronously-pumped
+picosecond dye laser was pumped by the frequency-doubled output of a modelocked
+and Q-switched (MLQS) Nd:YAG laser.  The dye laser interacted with an atomic
+beam and propagated to a spectrometer.
+\label{gensetup}}
+\end{figure}
+
+The dye laser produces a burst of mode-locked pulses much like the pump
+beam.  The dye laser does not reach threshold, however, until
+after approximately 10 pump pulses.  Consequently, the dye laser output consists
+of a train of about 15 modelocked pulses.  To select a single pulse for the
+experiment, we utilized a cavity-dumper consisting of a Pockels cell and a
+polarizing beam splitter.  When a certain optical threshold is reached within
+the dye cavity, a high voltage pulse is sent to the Pockels cell which produces a
+$\lambda/4$ retardation for the oscillating dye beam.  The double-pass
+polarization rotation causes the pulse to be rejected out of the cavity after
+reflecting off the polarizing beam splitter.  By matching the high voltage
+pulse duration to the cavity round-trip time, a single
+optical pulse can be switched out of the cavity.  This technique also
+efficiently extracts the energy circulating in the cavity so that the brightest
+pulse can be obtained from this system.  The dye pulse output has an energy of
+$\approx 30~\mu$J and a pulse duration of 25~ps, producing a peak power of
+$\approx 1$~MW.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/step/pslaser.eps}
+\bigskip
+\ncap{Picosecond dye laser.}
+{Picosecond dye laser.  The cavity is formed by mirror M1 and grating G.  The
+spot size at the dye cell DC could be adjusted by changing the separation
+between the 10~cm folding mirrors M2 and M3.  The pump beam was focused onto
+the dye cell with a 40~cm lens (L).  A single pulse could be cavity dumped from
+the laser with a Pockels cell (PC) and polarizing beam splitter (BS). The
+grating was mounted on a rotation stage which was controlled by a stepper motor
+(SM).
+\label{ps_laser}}
+\end{figure}
+
+The laser beam was focussed with a $f=250$~mm lens into a vacuum chamber that
+contained a potassium atomic beam.  The vacuum chamber was pumped by an
+Alcatel Model 5400 turbomolecular pump with a Welch DuoSeal Model 1402
+two-stage rotary forepump.  Potassium metal, contained in a stainless steel
+oven, was heated to $\sim 300^{\circ}$C.  The potassium vapor effused out
+of the oven and into a heated nozzle, placed near the interaction region.  This
+essentially produced a ``fire hose'' of potassium atoms instead of a well
+collimated atomic beam.  The advantage of this design is that the density of
+potassium atoms could be made larger than for the collimated beam.  The laser
+pulses used have a bandwidth of 40~GHz, so Doppler broadening is not
+important in this interaction and a high degree of collimation is not required. 
+The reason a vapor cell was not used is that the electron multiplier tube (EMT)
+used to count photoions requires a clean vacuum environment, so the vapor must
+be confined within the chamber.
+
+The intersection of the laser and atomic beams was contained between two
+grounded metal plates.  Following the laser-atom interaction, a negative
+voltage was applied to the top metal plate.  This accelerated any photoions
+generated by the laser pulse to the EMT mounted above the interaction
+region.  In addition to accelerating any photoions, the electric field could
+also dc-field ionize bound Rydberg states provided their binding energy was
+below a certain level.  We used an accelerating field of 2.1~V/cm, which was
+sufficient to ionize Rydberg states of potassium with $n^* > 110$.
+
+The signal from the EMT was amplified and sent to a Stanford Research
+Systems SR400 Gated Photon Counter, which in turn was connected to a personal
+computer via a Hewlett-Packard HPIB (IEEE-488 compatible) interface bus.  This
+computer, through Data Translation DT2801A digital I/O ports, also controlled
+the stepper motor which was mounted to the diffraction grating in the dye
+laser.  A single step of the stepper motor gave a wavelength change of
+0.1~\AA.  This way, the photoion signal could be measured as the dye laser's
+wavelength was tuned through the Rydberg series.  The dye laser light propagated
+out of the vacuum chamber and into a Jarrell-Ash one-meter Czerny-Turner
+spectrometer \cite{Sawyer_book}.  This device was calibrated with a sodium lamp
+to an absolute frequency accuracy of approximately 3~cm$^{-1}$, and has a
+resolution of 0.4~cm$^{-1}$.
+
+\section{Experimental Results}
+\hspace{\parindent}  The relevant energy structure of potassium is shown in
+\Fig{K_levels}.  The ground state is brought into two-photon resonance with the
+$n^*S$ and $n^*D$ Rydberg series with an applied laser field of
+wavelength $\lambda \approx$ 571~nm.  The energy from a single photon
+falls between the $\ket{4P}$ and $\ket{5P}$ states, with detunings that are a
+large fraction of the photon energy.  Consequently, these intermediate $P$
+states receive very little population.  The population in the Rydberg states is
+photoionized by the applied laser field into the $\varepsilon P$ and
+$\varepsilon F$ continua.  While we have only shown two intermediate $P$
+states, other $P$ states contribute to the multiphoton couplings.  However, in
+evaluating the multiphoton parameters, it can be shown that accurate results
+are obtained despite only including these low-lying $P$ states \cite{Allen:82}.
+This being the case, the states shown in \Fig{K_levels} represent the basis of
+essential states that typically are included in a model of this
+interaction
+\cite{Fedorov:89a,Gratl:89,Yeazell:90,Raczynski:93,MIvanov:94,Wojcik:95}.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/step/K_levels.eps}
+\bigskip
+\ncap{Potassium energy levels.}
+{Potassium energy levels coupled by picosecond dye laser.
+\label{K_levels}}
+\end{figure}
+
+We showed in \rChapter{direct}, however, that the coupling between degenerate
+Rydberg states can give rise to mixing of the angular momentum $\ell$.  The
+laser intensity for which the $nS \rightarrow nP$ Rabi frequency is equal to
+the ground $\rightarrow nP$ transition frequency was termed the
+critical intensity in \rChapter{direct}.  This critical intensity for our
+two-photon interaction in potassium is shown in \Fig{inten_K} as a function of
+the principal quantum number.  For this plot, the Rydberg-Rydberg dipole moments
+of potassium were calculated using the Coulomb approximation method of Bates and
+Damgaard \cite{Bates:49} which was applied to Rydberg transitions by
+Zimmerman \etal \cite{Zimmerman:79}.  We see in this figure that field strengths
+$> 10^9$ W/cm$^2$ are sufficient to mix the angular momentum states of potassium with
+$n^* > 40$.  These intensities are easily achieved with our focused picosecond
+dye laser.  So we may expect that the standard essential states shown in
+\Fig{K_levels} are not complete, and that the degenerate coupling of Rydberg
+states should also be included.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/step/inten_K.eps}
+\bigskip
+\ncap{Critical intensity for $\ell$-mixing in potassium.}
+{Critical intensity for $\ell$-mixing in potassium.
+\label{inten_K}}
+\end{figure}
+
+We therefore sought to examine the ways in which this Rydberg-Rydberg coupling
+could manifest itself in the three-photon ionization signal.  Of course, there
+are some added complications intrinsic to modeling the experiment in
+potassium that were not present in the theory for hydrogen.  Most
+importantly, the two-photon coupling gives rise to an ac Stark shift of the
+ground state, due to its off-resonant coupling with the low-lying $P$ states. 
+This is an aspect not considered in the previous chapter.  However, it should be
+stressed that the Rabi frequency coupling the Rydberg states exceeds the optical
+frequency, and so we expect it to be a very important parameter in the
+interaction of these Rydberg states with the applied optical field.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/step/weak.eps}
+\bigskip
+\ncap{Three-photon ionization signal as a function of two-photon detuning from
+threshold for weak field.} {Three-photon ionization signal as a function of
+two-photon detuning from threshold for weak field.
+\label{weak}}
+\end{figure}
+
+The signal obtained under weak field excitation conditions is shown in
+\Fig{weak}.  The abscissa is the two-photon detuning from the ionization
+threshold, $\delta(\omega_L) = 2\omega_L -I_P$, where the ionization potential
+is given by $I_P = 35009.78$~cm$^{-1}$ \cite{Moore:71}.  The corresponding
+effective principal quantum number, $n^*$, can be obtained with the equation
+\begin{equation}
+\delta(\omega_L) = -\frac{R_K}{(n^*)^2}
+\end{equation}
+where $R_K = 109735.774$~cm$^{-1}$ is the Rydberg constant for potassium
+\cite{Gallagher_book}.  The signal was obtained by averaging 8000 laser shots
+(at the 500 Hz repetition rate) for each of 255 laser frequencies.  The general
+shape of the curve is consistent with other weak field studies of two-photon
+absorption in potassium \cite{Harper:77,Sharma:90}.  For frequencies far enough
+below threshold, individual Rydberg states give rise to $2+1$ resonantly
+enhanced photoionization.  The heights of successive peaks decrease with
+increasing laser frequency,  because the two-photon ground to
+Rydberg coupling scales as $(n^*)^{-3/2}$ as does the Rydberg photoionization
+dipole moment.  This $n^*$-dependence is due to the scaling of the Rydberg
+wavefunctions near the core.  The ground-to-Rydberg interaction couples a state
+localized near the core to a spatially extended Rydberg state and hence the
+coupling is determined by the scaling of the Rydberg state for small radius,
+which is $(n^*)^{-3/2}$ \cite{Gallagher_book}.  The photoionization process also
+predominantly takes place near the nucleus \cite{Alber:88} and therefore has
+the same scaling.  The amount of population transferred in each step varies as
+the square of these couplings for weak fields, and hence the resonances show
+decreasing amplitudes that fall as $(n^*)^{-6}$ \cite{Gratl:89}.
+
+As the laser frequency is tuned closer to threshold, the contrast between
+neighboring Rydberg states is decreased as the coherent bandwidth of the 25~ps
+laser pulse is large enough to overlap several Rydberg levels.  In this region,
+a flat ionization signal is observed.  This can be understood by generalizing
+the previous arguments to a density of final states.  When the levels can't be
+resolved, the Rydberg excitation step, scaling as $(n^*)^{-3}$, gets multiplied
+by the density of states, given by $(n^*)^{3}$, which is one over the frequency
+separation.  The photoionization step is treated similarly and hence no
+dependence on $n^*$ is expected, and to the level of the noise an essentially
+flat signal is observed between -80~cm$^{-1}$ and -40~cm$^{-1}$.  A slight
+negative slope is seen for frequencies greater than -40 cm$^{-1}$.
+
+As the laser frequency closely approaches the two-photon threshold, the signal
+is seen to rise rapidly off the scale chosen for the graph.  This is because in
+this region, even though we are still below the ionization threshold, the
+populated Rydberg states are dc-field ionized by the accelerating voltage.  For
+the 2.1 V/cm field used, frequencies above -9 cm$^{-1}$ can be field ionized. 
+This dc-field ionized signal rises by a factor of 150 relative to the
+photoionized signal to approximately 4.5 counts/shot.  This shows that the
+photoionization step is perturbative, ionizing approximately 1/150 $\approx$
+0.7\% of the Rydberg population.  This weak coupling is consistent with the
+$(n^*)^{-3}$ scaling.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/step/mix_expt.eps}
+\bigskip
+\wcap{Three-photon ionization signal as a function of two-photon detuning from
+threshold for strong field.}
+{Three-photon ionization signal as a function of two-photon detuning from
+threshold for strong field.  In (a) the peak intensity is 2~GW/cm$^2$ and in
+(b) 25~GW/cm$^{2}$.
+\label{mix_expt}}
+\end{figure}
+
+This experiment was performed with a peak laser intensity of $\approx
+0.25$~GW/cm$^2$.  The first resonance peak shown at -138~cm$^{-1}$ is located at
+$n^* \approx$ 28.  By looking at \Fig{inten_K} we see that this intensity will
+not mix Rydberg states until $n^* \approx 55$, which corresponds to a
+-36~cm$^{-1}$ two-photon detuning.  This is where the slope  of the signal is
+seen to become negative.  Therefore, even for this weak field case, we see some
+evidence that the Rydberg mixing may be affecting the three-photon ionization.
+
+\Figure{mix_expt} shows the three-photon ionization signal for larger
+intensities.  \Fig{mix_expt}(a) is for a peak intensity of 2~GW/cm$^2$.  At
+this intensity, Rydberg angular momentum mixing should occur for $n^* > 32$, or
+frequencies above -107~cm$^{-1}$.  In this case we see that in the region where
+Rydberg states are not resolved, the shape of the curve is not flat.  Rather,
+a dramatic step-like fall-off is seen in the signal between -80~cm$^{-1}$ and
+-40~cm$^{-1}$. Finally, when the field becomes very large, as in
+\Fig{mix_expt}(b), where the peak intensity is 25~GW/cm$^2$, the ionization
+signal shows a smooth decrease for increasing frequency.  This curve has a
+completely different shape to the weak field result.  So the general tendency
+we observe for increasing intensity is a flat signal with a slight negative
+slope which turns into a step-like drop for larger intensity, which finally
+turns into a large negative slope for the largest intensities.
+
+\section{Theoretical Modeling}
+\hspace{\parindent}  In this section we will argue that the
+intensity-dependent shape changes of the three-photon ionization signal are
+signatures of angular momentum mixing of Rydberg states.  We do so by comparing
+our ionization signal to the predicted results from two theoretical models.  The
+first, referred to as the multiphoton model, is
+based on the traditional approach from multiphoton physics that ignores the
+Rydberg-Rydberg coupling
+\cite{Fedorov:89a,Gratl:89,Yeazell:90,Raczynski:93,MIvanov:94,Wojcik:95}.  It 
+models the atom with the essential states shown in
+\Fig{K_levels} and consists in solving the Schr\"{o}dinger equation for the
+coupled state amplitudes in the presence of a laser pulse with parameters
+determined by the experiment.  A standard approximation in this approach is to
+adiabatically eliminate the low-lying $P$ states because of their rather large
+detuning \cite{Allen:87}.  This has the effect of producing two-photon coupling
+terms between the ground state and the Rydberg states and introducing the ac
+Stark shift, a time-dependent shift of the ground state energy.
+
+The multiphoton parameters needed for this model can be calculated using
+tabulated experimental values of energy levels \cite{Moore:71} and transition
+strengths \cite{Wiese:69}.  To calculate these parameters, we can limit
+ourselves to the two intermediate $P$ states shown in \Fig{K_levels}, since the
+contribution from higher $P$ states can be shown to be small \cite{Allen:82}. 
+The Stark shift of the ground state is
+\begin{eqnarray}
+\Delta_s & = & - \sum_{j}|d_{4S \rightarrow j}|^2
+\left(\frac{1}{\omega_{j}-\omega_L} + \frac{1}{\omega_{j}+ \omega_L}\right)
+E_0^2  \label{stark_shift} \\ & \approx & - \sum_{j=4P,5P}|d_{4S
+\rightarrow j}|^2
+\left(\frac{1}{\omega_{j}-\omega_L} + \frac{1}{\omega_{j}+ \omega_L}\right)
+E_0^2 \\ & = & 356 E_0^2 \ {\rm (a.u.)}.
+\end{eqnarray}
+In this expression, $\omega_{j}$ is the energy of the intermediate states.  For
+$\lambda = 571$~nm, $\omega_L = 0.079$~a.u., and the dipole moments are
+$d_{4S \rightarrow 4P} = 2.93$~a.u.\ and $d_{4S \rightarrow 5P} = 0.201$~a.u. 
+For an intensity of 2~GW/cm$^2$, $\Delta_s/2\pi = 133$~GHz $= 4.4$~cm$^{-1}$.
+
+The Rydberg states also experience a Stark shift which is due primarily to the
+interaction between a given Rydberg state and nearby Rydberg states
+\cite{Fedorov:89b}.  Consequently, in this treatment of the problem, the effect
+of neighboring Rydberg levels is to produce an ac Stark shift of the Rydberg
+energies.  The Stark shift of the $n^*S$ or $n^*D$ can be calculated
+using \Eq{stark_shift} with $4S$ replaced by $n^*S$ or $n^*D$ respectively. 
+This expression is derived using second order perturbation theory. 
+Consequently, this treatment implicitly assumes that the Rydberg states weakly
+interact with each other.  It has been shown \cite{Avan:76} that the Stark
+shift of \Eq{stark_shift} for Rydberg states has a value closely approximated by
+the ponderomotive energy of a free electron.  This ponderomotive shift of
+Rydberg states has also been experimentally verified
+\cite{Liberman:83,Obrian:94}. The expression for this ponderomotive shift (in
+atomic units) is 
+\begin{equation}
+\Delta_p = \frac{E_0^2}{\omega_L^2}
+\end{equation}
+for a laser field of the form $E(t) = 2 E_0 \cos(\omega_L t)$.  For our field,
+with $\omega_L =0.079$~a.u., this shift is $160E_0^2$, which for an
+intensity of 2~GW/cm$^2$ is 60~GHz (or 2.0~cm$^{-1}$).
+Rather than describing Stark shifts for both the ground state and Rydberg
+state, we can combine both effects into an effective Stark shift for
+the ground state only.  The effective ground state Stark shift will then be
+given by the difference of the two shifts,
+\begin{equation}
+\overline{\Delta}_s = \Delta_s -\Delta_p = 196 E_0^2.
+\end{equation}
+
+The two-photon Rabi frequencies from the ground state are similarly calculated
+according to the expression
+\begin{eqnarray}
+\Omega_{n^*D}^{(2)}& =
+&-\sum_{j}\frac{d_{4S \rightarrow j}d_{j \rightarrow n^*D}}{\omega_j -
+\omega_L}E_0^2 \\
+& \approx & -\sum_{j=4P,5P}\frac{d_{4S \rightarrow j}d_{j
+\rightarrow n^*D}}{\omega_j -
+\omega_L}E_0^2 \\
+& = & \frac{307}{(n^*)^{3/2}}E_0^2.
+\end{eqnarray}
+To arrive at this final expression, we have used the experimental values of the
+dipole moments for the largest $n^*$ tabulated, and then assumed the
+semiclassical dipole moment scaling of $(n^*)^{-3/2}$ for larger values
+of $n^*$ \cite{Gallagher_book}.  The corresponding two-photon Rabi frequency
+from the ground state to the $n^*S$ Rydberg series is
+\begin{eqnarray}
+\Omega_{n^*S}^{(2)}& =
+&-\sum_{j}\frac{d_{4S \rightarrow j}d_{j \rightarrow n^*S}}{\omega_j -
+\omega_L}E_0^2 \\
+& \approx & -\sum_{j=4P,5P}\frac{d_{4S \rightarrow j}d_{j
+\rightarrow n^*S}}{\omega_j -
+\omega_L}E_0^2 \\
+& = & \frac{296}{(n^*)^{3/2}}E_0^2.
+\end{eqnarray}
+
+The ionization cross-sections for the Rydberg series are derived from the work
+of Aymar \etal \cite{Aymar:76}.  The $n^*S$ cross-section was shown in this
+work to be $\approx 36$ times smaller in potassium than in hydrogen.  The $n^*D$
+cross-section was shown to be determined predominantly by the $D \rightarrow F$
+component, and to be approximately hydrogenic.  We calculate the hydrogenic
+values using the exact expression for bound-bound dipole moments
+\cite{Bethe_Salpeter}, and then extend these to bound-free dipole
+moments by letting the principal quantum number $n \rightarrow -i/k$.  The
+energy then changes as $(-1/2n^2) \rightarrow (k^2/2)$, which is the
+positive energy of a free state.  This transformation gives us the correct
+dipole moment because when the change $n \rightarrow -i/k$ is made to the bound
+state wavefunction, the new wavefunction corresponds to a free state
+wavefunction with energy $k^2/2$.  If the free state wavefunction is to be
+normalized on the energy scale, however, the result of the $n \rightarrow
+-i/k$ transformation to the wavefunction must be multiplied by an energy
+dependent constant.  That is, if $B_{n\ell}$ is the bound state radial
+wavefuntion, then the free state wavefunction, $F_{E\ell}$, with energy $E =
+k^2/2$, is given by
+\cite{Bethe_Salpeter}
+\begin{equation}
+F_{E\ell} = \frac{B_{(-i/k)\ell}}{(-1)^{\ell}(ik)^{3/2}\sqrt{1 -\exp(-2\pi/k)}}.
+\end{equation}
+Given the bound-bound dipole moments $d_{n\ell,n^{'}\ell^{'}}$, which can be
+expressed in terms of hypergeometric functions
+\cite{Bethe_Salpeter}, the bound-free dipole moment then is given by
+\begin{equation}
+d_{n\ell\rightarrow k\ell^{'}} = \frac{1}{(-1)^{\ell^{'}}(ik)^{3/2}\sqrt{1
+-\exp(-2\pi/k)}} d_{n\ell \rightarrow \left(\frac{-i}{k}\right)\ell^{'}}
+\end{equation}
+for a final state with an energy of $k^2/2$ (a.u.) normalized on the energy
+scale.  The Fermi decay rate is \cite{Gottfried_book}
+\begin{equation}
+\Gamma_{n\ell} = \pi \left(d_{n\ell \rightarrow
+k\ell^{'}}\right)^2 E_0^2
+\label{H_ion}
+\end{equation}
+and we calculate for potassium (in atomic units)
+\begin{eqnarray}
+\Gamma_{n^*S} &=& \frac{46.9}{(n^*)^3} E_0^2 \\
+\Gamma_{n^*D} &=& \frac{729}{(n^*)^3}  E_0^2
+\end{eqnarray}
+where we have taken the final state energy to be equal to $ \omega_L
+-1/2(n^*)^2$, which is the energy of the $n^*$ Rydberg state plus one $\omega_L
+= 0.079$~a.u.\ photon energy.
+
+The amplitudes associated with the continuum can be formally integrated and
+substituted back into the equations of motion for the bound state amplitudes. 
+If the dipole moments connecting bound states to free states are independent
+of the energy of the free state (flat continuum approximation), then the effect
+of this procedure is that the bound state amplitudes decay, which is just the
+ionization process.  The resulting equations of motion become (in the rotating
+wave approximation)
+\begin{eqnarray}
+i\dot{C}_{4S}& = &f^2(t)\overline{\Delta}_s C_{4S} +
+f^2(t)\sum_{n^*}\left(\Omega^{(2)}_{n^*S}C_{n^*S} +
+\Omega^{(2)}_{n^*D}C_{n^*D}\right) \\
+i\dot{C}_{n^*S}& = & \left[\Delta_{n^*}-if^2(t)\Gamma_{n^*S}\right] C_{n^*S} +
+f^2(t)\Omega^{(2)}_{n^*S} C_{4S} \\
+i\dot{C}_{n^*D}& = & \left[\Delta_{n^*}-if^2(t)\Gamma_{n^*D}\right] C_{n^*D} +
+f^2(t)\Omega^{(2)}_{n^*D} C_{4S}.
+\end{eqnarray}
+In these equations, $C_{j}$ is the amplitude of state $j$, $\Delta_{n^*} =
+\omega_{n^*} - 2\omega_L$ with $\omega_{n^*}$ the energy of state $n^*$, and
+$f(t)$ is the electric field pulse envelope taken to be $f(t) = \sin^2(\pi
+t/\tau_p)$.  This is a convenient smooth pulse shape because it is zero at
+$t=0$ and $t=\tau_p$ and hence the integration domain is finite.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/step/mix_thy1.eps}
+\bigskip
+\wcap{Calculated three-photon ionization signal as a function of two-photon
+detuning from threshold using the multiphoton model.}
+{Calculated three-photon ionization signal as a function of two-photon detuning
+from threshold using the multiphoton model.  In (a) the peak intensity is
+2~GW/cm$^2$ and in (b) 25~GW/cm$^{2}$.
+\label{mix_thy1}}
+\end{figure}
+
+A consequence of integrating the equations of motion for the free state
+amplitudes and making the flat continuum approximation is that the
+normalization of the remaining amplitudes is not constant in time.  This
+decaying normalization is due to the ionized population.  We therefore
+calculate the total ionization at the end of the pulse as
+\begin{equation}
+{\rm ion} = 1 - \left|C_{4S}\right|^2 - \sum_{n^*} \left(
+\left|C_{n^*S}\right|^2 + \left|C_{n^*D}\right|^2 \right).
+\end{equation}
+\Figure{mix_thy1} shows the results of this calculation for the two intensities
+corresponding to the experimental parameters presented in \Fig{mix_expt}.  In
+this theoretical calculation, we do not attempt to model the dc-field ionization
+of populated Rydberg states because we are interested in the shape of the
+three-photon ionization signal below this dc-field ionization feature.  The
+agreement between the multiphoton theory and the experimental results is not
+very strong.  The resonance peaks are similar but the shape of the curve in the
+smooth, unresolved Rydberg state region is essentially flat in the theoretical
+results.  The step-like fall-off seen in the experiment for $I=2$~GW/cm$^2$ is
+not seen at all in the theoretical calculation shown in \Fig{mix_thy1}(a).  And
+while the shape of the curve in
+\Fig{mix_thy1}(b) shows a negative slope for increasing frequency, the slope is
+not nearly as large as that seen in the corresponding experimental curve of
+\Fig{mix_expt}(b).  Furthermore, the larger intensity curve of
+\Fig{mix_thy1}(b) is in fact very similar to the lower intensity curve of
+\Fig{mix_thy1}(a), which is not true of the experimental results of
+\Fig{mix_expt}.
+
+Because of these discrepancies, we sought to determine if the ion signals
+seen in the experiment were affected by the optical mixing of Rydberg
+states, which is neglected in the multiphoton model.  We now will present a
+second model (which we will refer to as the mixing model) which includes
+Rydberg mixing.  It will be built upon the analytic results of
+\rChapter{direct}.  Since we are interested in the experimental results in the
+regime where the pulse bandwidth overlaps many
+$n$ levels, we cannot use the single $n$-manifold theory presented in
+\rChapter{direct}.  However, we will make the simplest possible multiple-manifold
+extension to this theory by assuming that the manifolds are not coupled to each
+other.  This was one of the main approximations discussed in \rChapter{direct}. 
+Then, to model the interaction when the laser pulse bandwidth overlaps many
+$n$ levels, we simply multiply the single manifold result by the local density
+of states, $(n^*)^3$.  As mentioned previously, this has the effect of cancelling
+the $n$-dependence of the squared ground-to-Rydberg Rabi frequency in the
+expression for the Rydberg population.
+
+Since the ionized population is very small we will assume that the dynamics are
+not modified by the ionization process.  Therefore, the time-dependent
+coefficients of the Rydberg states can be calculated in the absence of
+ionization.  Then, the ionization signal can be calculated from these
+time-dependent amplitudes.  Since the theory presented in \rChapter{direct} is
+implicitly hydrogenic, we will not attempt to modify it to potassium, but rather
+assume that the Rydberg mixing phenomenon is insensitive to the particular
+atomic structure.  The largest difference between the Rydberg states of
+potassium and the Rydberg states of hydrogen is the quantum defect,
+$\delta_{\ell}$, which prevents the angular momentum states from being
+degenerate for small $\ell$.  In potassium,
+$\delta_0 = 2.18, \delta_1 = 1.71$, and $\delta_2 = 0.277$
+\cite{Gallagher_book}.  Therefore, the assumption of degenerate Rydberg states
+will not be valid for potassium.  However, when we are considering Rabi
+frequencies on the scale of the optical frequency, a lack of degeneracy on the
+order of the Rydberg spacing should be entirely negligible.  We will therefore
+use the hydrogen results calculated in \rChapter{direct} and use hydrogenic
+ionization cross-sections calculated using \Eq{H_ion}.
+
+We shall further simplify the model by neglecting the two-photon nature of the
+coupling of the ground state to the Rydberg series and model it as a
+single-photon coupling to the $P$ state.  The motivation here is that this
+coupling is assumed weak and therefore will not dominate the dynamics.  Of
+course, the Stark shift can impact the dynamics, but again, the largest
+coupling is the Rydberg-to-Rydberg coupling.  Our motivation in using this
+theory, that essentially only models the Rydberg mixing, is to see if this effect
+predicts ionization curves similar to those observed experimentally.
+
+The differential equations for the Rydberg state amplitudes get modified in
+the presence of ionization to
+\begin{equation}
+i\dot{c}_{n \ell} = -if^2(t)\Gamma_{n \ell} c_{n \ell} + \left\{\cdots \right\}
+\end{equation}
+where the term in curly brackets, given by \Eq{schrodinger_eqn}, represents the
+coupling among Rydberg states and the ground state, and was solved in
+\rChapter{direct}. We calculate the ionization signal as follows.  The
+Rydberg amplitudes, assumed to be essentially unperturbed by ionization,  can be
+written (assuming resonance) using \Eq{unitary} and \Eq{eq:harmonics} as
+\begin{equation}
+c_{n\ell} = \sum_{k=-n+1}^{n-1} S_{\ell k} b_{nk}
+\end{equation}
+with
+\begin{eqnarray}
+b_{nk}(t)&=&-i \Omega_{gn} S_{k1} \exp \left[-i\omega_n t -i
+\frac{\Delta_k}{\omega_L} f(t)
+\sin (\omega_L t)\right] \nonumber \\ 
+&& \times \int_{-\infty}^{t} dt^{'} \left(\frac{\omega_L}{\Delta_k}\right)
+ J_{1} \left[\frac{\Delta_k}{\omega_L}
+f\left(t^{'}\right) \right].
+\end{eqnarray}
+The ionization is then calculated as
+\begin{equation}
+{\rm ion}(E_n \ell) =(n)^6\left| \int_{-\infty}^{\infty} f^2(t)\Gamma_{n
+\ell} c_{n \ell}(t) dt \right|^2.
+\label{ion_nl}
+\end{equation}
+This integral represents the time-integrated change to the Rydberg amplitude
+coefficient due to the presence of ionization, which is the desired ionization
+signal.  The factor of $(n)^6$ in this expression is the square of the local
+density of states.  As mentioned previously, to generalize the
+bound-bound excitation step from a single Rydberg state to a continuum of
+Rydberg states entails multiplying the single state result by the density of
+states, $(n)^3$.  This is also true for the ionization step.  While we
+calculate the ionization from a single Rydberg state, we generalize this to the
+ionization from a continuum of Rydberg states by multiplying by the density of
+states.  The total ion signal for a given $n$-manifold is then
+\begin{equation}
+{\rm ion}(E_n) = \sum_{\ell} {\rm ion}(E_n \ell).
+\end{equation}
+
+The integral in \Eq{ion_nl} has no known analytical evaluation.  We can
+simplify it by analyzing the time scales of the integrand.  The Rydberg
+coefficients vary in time on the scale of the optical frequency, whereas the
+pulse envelope varies on the much longer time scale of the pulse duration. 
+We can write the Rydberg coefficients as
+\begin{equation}
+c_{n\ell}(t) = \overline{c}_{n\ell}(t) + \Delta c_{n\ell}(t)
+\end{equation}
+where $\overline{c}_{n\ell}(t)$ is the slowly-varying component that is
+time-averaged over the rapid optical frequency oscillation and
+$\Delta c_{n\ell}(t)$ is the rapid optical frequency variation that has a zero
+integrated value.  If we use this decomposition in \Eq{ion_nl} then the terms
+in $\Delta c_{n\ell}(t)$ will be approximately zero because of the much longer
+time variation of $f^2(t)$.  Therefore, the ionization signal will be
+determined by the slow variation of the Rydberg amplitudes.  It can be shown that
+the Rydberg states that have parity opposite to the $P$ state have zero
+time-averaged amplitude, and hence do not contribute significantly to the
+ionization signal.  We therefore predict that the dominant ionization signal
+will come from states with the same parity as the $P$ state that do not have
+zero time-averaged amplitudes.  Furthermore, we estimate the magnitude of the
+time-averaged signal for these states to be equal to their value at the end of
+the pulse.  We then have an approximate expression for the total ionization
+signal as
+\begin{eqnarray}
+{\rm ion}(E_n) &=& n^6 \sum_{\ell\ {\rm
+odd}} \left| \int_{-\infty}^{\infty}f^2(t) \Gamma_{n\ell}\overline{c}_{n\ell}(t)
+\right|^2 \\
+&\approx& n^6 (\tau_p^2) \sum_{\ell\ {\rm odd}}\left| \Gamma_{n\ell}
+\overline{c}_{n\ell}(t \rightarrow \infty) \right|^2 
+\end{eqnarray}
+where $\overline{c}_{n\ell}(t \rightarrow \infty)$ is the
+the population at the end of the pulse.  So that we may use the
+analytic results obtained in \rChapter{direct} we will assume a hyperbolic secant
+pulse and use the amplitude expressions from \Eq{delta0} and \Eq{unitary}.
+This equation represents the result of our mixing model.  In many ways it is a
+crude estimate of the full dynamics of potassium in an intense picosecond dye
+laser field.  However, it is an accurate model of the Rydberg mixing in the
+presence of weak ionization.  It is worth noting that the $n^6$ factor due to
+the density of states exactly cancels the $n^{-3}$ dependence of the squared
+ground-to-Rydberg Rabi frequency and the $n^{-3}$ dependence of the squared
+Fermi decay rate.  The only $n$ dependence in this expression then is the optical
+mixing which is implicit in $\overline{c}_{n\ell}$.  As one tunes higher into
+the Rydberg series, the Rydberg-Rydberg coupling grows, and therefore, any
+variation in this predicted ion signal will be due to the changing degree of
+optical mixing.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/step/mix_thy2.eps}
+\bigskip
+\wcap{Calculated three-photon ionization signal as a function of two-photon
+detuning from threshold using the mixing model.}
+{Calculated three-photon ionization signal as a function of two-photon detuning
+from threshold using the mixing model.  In (a) the peak intensity is
+2~GW/cm$^2$ and in (b) 25~GW/cm$^{2}$.  The dashed line is the experimental
+results from \Fig{mix_expt} and the solid line is the theoretical prediction.
+\label{mix_thy2}}
+\end{figure}
+
+The predictions of this model are shown in \Fig{mix_thy2}.  The only remnant of
+the potassium atom in this model is the conversion of the intensity to the
+mixing parameter, $\beta$.  This parameter, as defined in \rChapter{direct}, is
+given in hydrogen approximately by the $nS \rightarrow nP$ Rabi frequency
+measured in terms of the $1S \rightarrow nP$ transition frequency.  We shall
+extend this to potassium by taking the $\beta$ parameter to be equal to the
+$n^*S \rightarrow n^*P$ Rabi frequency measured in terms of the
+$4S \rightarrow n^*P$ transition frequency.  This is the essence of
+\Fig{inten_K}, which uses this definition to define the threshold intensity for
+optical mixing.  Therefore, the laser intensity, which is $I=2$~GW/cm$^2$ in
+\Fig{mix_thy2}(a) and $I=25$~GW/cm$^2$ in \Fig{mix_thy2}(b), is converted into
+a ($n^*$-dependent) $\beta$ value using the potassium dipole moments and twice
+the dye laser frequency.
+
+The shapes of these theoretical curves are very different from the predictions
+of the multiphoton model. The mixing model has been built assuming that the
+Rydberg resonances are not resolved, and hence the predictions of this model
+should only be compared with the corresponding portions of the experimental
+curve.  \Figure{mix_thy2}(a) shows a dramatic step-like fall-off in the
+ionization signal in the same region as in the experimental curve.  The
+fall-off, however, continues for frequencies above -40~cm$^{-1}$ in the
+theoretical curve, whereas the experimental curve levels off in this region. 
+However, the prediction of this feature at this location is a significant
+improvement over the predictions of the multiphoton model, which predicted a
+featureless ionization signal in this region.
+
+For the higher intensity in \Fig{mix_thy2}, the agreement is very good.  The
+model predicts a decreasing ionization signal for increasing laser frequency,
+and the slope of this decrease is similar to the experimental value.  As in the
+multiphoton model, we did not model the dc-field ionization as we were
+interested only in the photoionization signal.
+
+In general, the agreement between the experiment and the mixing model is very
+good.  Major features seen in the experimental curves, which are absent from
+the predictions of the multiphoton model, are reproduced in the mixing
+model.  This should be regarded as strong evidence that indeed the optical
+mixing of Rydberg states is the dominant interaction affecting the laser-atom
+dynamics in this regime.
+
+
+

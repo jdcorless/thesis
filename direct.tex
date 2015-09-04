@@ -1,0 +1,1179 @@
+% Chapter 1:  Direct Excitation: Theory
+
+
+\begin{singlespace}
+
+\chapter{Direct Excitation: Theory}
+\label{direct}
+\begpagestyle
+%\pagenumbering{arabic}
+
+\end{singlespace}
+
+In this chapter, we consider the problem of complete
+population transfer from an initially populated ground state to a desired
+Rydberg state by direct single-photon excitation. The close proximity of
+neighboring Rydberg states to the desired Rydberg state can cause the ground
+state to be coupled to multiple Rydberg levels, and we examine under what
+conditions this interaction can be reduced to the usual two-level problem
+\cite{Allen:87}.  This leads us to the realization that angular momentum
+mixing of degenerate Rydberg states in the optical field can be a critical
+limitation to the selectivity of the optical excitation.  We formulate a
+model describing this interaction and explore its consequences.
+
+\section{Limitations to Two-Level Model}
+
+\hspace{\parindent} The most straightforward technique to excite efficiently
+a single Rydberg eigenstate is to use direct optical excitation from the
+ground state to the desired Rydberg state.  Because of the parity selection
+rules, this method is limited to low angular momentum quantum numbers.
+However, several techniques of dressing the Rydberg $n$-manifold with dc or
+low-frequency fields enable excitation to higher angular momentum quantum
+numbers \cite{Hulet:83,Molander:86}.  In each case the dressing field splits
+the (nearly) degenerate states in the manifold so that laser excitation can
+couple to a particular dressed state.  Subsequent turn-off of the external
+field determines the resultant distribution of angular momentum quantum
+numbers.  This suggests that the excitation of an arbitrary Rydberg
+eigenstate can be reduced to the problem of exciting the upper level of a
+two-level atom.  Standard excitation techniques can then be employed,
+including the use of $\pi$-pulses \cite{Allen:87}, or adiabatic following
+using a slowly varying sweep field (which can either be a dc field
+\cite{Loy:74} or a chirped optical field \cite{Melinger:92}).
+
+When is this two-level approximation invalid?  Of course, the pulse duration
+must be long enough so that the Fourier bandwidth of the pulse only overlaps
+a single $n$-manifold.  This implies that the pulse duration must be greater
+than the Kepler period, $T_k = 2 \pi n^3$ (atomic units are used unless
+otherwise specified), for the desired
+level $n$.  For pulses shorter than $T_k$ a coherent superposition of
+Rydberg states will be formed which has been shown (under weak field
+excitation conditions) to create a wave packet state that has many
+interesting classical and quantum properties
+\cite{Parker:86,tenWolde:88,Yeazell:89}.  Furthermore, we expect that as the
+peak electric field becomes large, neighboring Rydberg states can become
+excited as well.  For instance, if the ground-to-Rydberg Rabi frequency,
+$\Omega_{gn}$, exceeds the local level spacing, $\delta_n = 1/n^3$, then a
+wave packet may still be created due to power broadening of the off-resonant
+Rydberg transitions.  This type of wave packet has been referred to as a
+``depletion wave packet'' \cite{Alber:91} because the rapid depletion of the
+ground state gives rise to a coherent excitation of off-resonant Rydberg
+states.  The large Rabi frequency therefore gives rise to $n$-mixing of the
+Rydberg states.
+
+Strong electric fields can also give rise to another type of Rydberg state
+mixing.  It is well known that Rydberg states are easily perturbed by dc or
+low-frequency radiation fields.  This is due to the fact that the dipole moment
+connecting states with the same $n$ but differing $\ell$ grows as $n^2$ for
+$\ell \ll n$.  These large dipole moments give rise to the coupling of states
+of differing $\ell$ within an $n$-manifold.  For the moment we are considering
+an atom in an optical frequency field and are ignoring any possibilities of the
+presence of dc or low-frequency fields.  The question at this point then is, can
+electric fields created by the optical frequency field that is inducing the
+ground-to-Rydberg transition be large enough to induce this type of
+$\ell$-mixing?
+
+The coupling of these nearest neighbor degenerate states is characterized by
+a detuning given by the optical frequency.  Therefore, we can expect that
+these transitions are negligible for field strengths that produce Rabi
+frequencies much less than the optical frequency.  Now, optical frequencies
+are on the order of $10^{15}$ Hz.  Rabi frequencies vary greatly depending
+on dipole moments and field strengths, however, we can elucidate the physics
+by considering the Rabi frequency associated with the familiar doublet
+transition, $3S_{1/2} \rightarrow 3P_{1/2}$ in sodium, with wavelength
+$\lambda = 589.76$ nm.  This transition has a dipole moment of $1.5$ a.u
+\cite{Wiese:69}.  In order for this transition to have a Rabi frequency
+equal to the applied optical frequency that resonantly drives the transition
+requires a peak intensity of 9.3 $\times 10^{13}$ W/cm$^2$.  With a field of
+such enormous intensity, perhaps it is not surprising that the Rabi
+frequencies would be large.  However, in the case of degenerate Rydberg
+transitions, dipole moments become asymptotically large with
+increasing $n$.  For example, the $nS
+\rightarrow nP$ transition in hydrogen has a dipole moment (for linear
+polarization) given by
+\begin{equation}
+d_{nS \rightarrow nP} = \frac{\sqrt{3}}{2} n \sqrt{n^2 -1}.
+\label{dnSnP}
+\end{equation}
+For $n = 30$ this is  $d_{30S \rightarrow 30P} \approx 779$ a.u.
+If the same optical field with $\lambda = 589.76$~nm is used to couple the
+$30S$ state of hydrogen to the $30P$ state, an intensity of 3.5~$\times
+10^8$~W/cm$^2$ is enough to make the associated Rabi frequency equal to the
+optical frequency.  We therefore see that modest optical fields can give rise
+to mixing of degenerate Rydberg states.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/direct/inten.eps}
+\bigskip
+\ncap{Critical intensities to induce Rydberg state mixing.} {Critical
+intensities to induce Rydberg state mixing. The dashed line is the intensity
+for which the $1S \rightarrow nP$ Rabi frequency equals the local level spacing
+and the solid line is the intensity for which the $nS \rightarrow nP$ Rabi
+frequency equals the optical frequency.
+\label{inten}}
+\end{figure}
+
+We have identified two types of Rydberg state mixing which can occur
+as the result of a large electric field.  The first is  $n$-mixing due to
+strong ground-to-Rydberg coupling, and the other is $\ell$-mixing due to
+strong Rydberg-to-Rydberg coupling. To characterize these two types of
+couplings,
+\Fig{inten} shows the critical intensity required to make the $1S
+\rightarrow nP$ Rabi frequency equal the local level spacing, and the
+critical intensity needed to make the $nS
+\rightarrow nP$ Rabi frequency equal to the $1S \rightarrow nP$ transition
+frequency.  These intensities therefore identify threshold values above which
+the corresponding type of Rydberg mixing ($n$ or $\ell$) can occur.  It is
+interesting to note that for fixed $n$, as the intensity is increased, $\ell$
+levels are mixed before the $n$ levels.  Furthermore, for an energy level
+with $n \approx 30$ (a relatively small $n$ value given that a recent
+experiment in potassium excited $n \approx 520$ \cite{Frey:96}),
+the required $\ell$ mixing field is only $10^{10}$~W/cm$^2$.
+
+Now that we have shown that the $\ell$-mixing of Rydberg states is the
+strongest interaction, it is clear that if the goal is to preferentially excite
+a single Rydberg eigenstate, then the peak electric field must be kept as small
+as possible to avoid $\ell$-mixing in the final state.   The threshold for
+$\ell$-mixing of Rydberg states was identified to be the intensity for which the
+$nS \rightarrow nP$ Rabi frequency equals the $1S \rightarrow nP$ transition
+frequency, or in atomic units
+\begin{equation}
+\Omega_{nS \rightarrow nP} = \frac{1}{2}.
+\label{mix}
+\end{equation}
+For the electric field this becomes
+\begin{equation}
+E_0 = \frac{1}{2 d_{nS \rightarrow nP}}.
+\end{equation}
+We can turn this expression into a threshold $n$ value rather than a threshold
+electric field value by taking $d_{nS \rightarrow nP} \approx n^2$ using
+\Eq{dnSnP} as
+\begin{equation}
+n_{th} = \sqrt{\frac{1}{2 E_0}}.
+\label{nth}
+\end{equation}
+This expression identifies the minimum $n$ value for a given electric field
+above which $\ell$-mixing occurs.
+
+For complete population transfer to the final state, the pulse must have an area
+of at least $\pi$.  This implies a relationship between the peak electric field
+and the pulse duration.  If we assume an electric field of the form $E(t) = E_0
+f(t) ({\rm e}^{-i\omega_L t} + c.c.)$ where $f(t)$ is Gaussian with a FWHM of
+$\tau_p$, then for a $\pi$-pulse, this relationship takes the form (in a.u.)
+\begin{equation}
+E_0 = \frac{\sqrt{\pi \log_e(2)}}{d_{gn} \tau_p}.
+\label{pi_pulse}
+\end{equation} 
+In this expression, $d_{gn}$ is the dipole moment connecting the ground state 
+to the $n$ Rydberg state.   Clearly, for very long pulses, the peak electric
+field will be very small and we may expect that $n_{th}$ will be very
+large.  In general, however, because of the $n^{-3/2}$ scaling of the
+ground-to-Rydberg dipole moment, the electric field must increase for
+increasing $n$ (for fixed pulse duration).  Then, because the threshold field for
+$\ell$-mixing decreases with increasing $n$, there will always be an $n_{th}$
+above which $\ell$-mixing occurs.  Note also that since $d_{gn}$ depends on $n$,
+\Eq{nth} is only implicitly solved for $n_{th}$.
+
+The particular pulse duration used in a given experiment will be determined by
+several factors.  Because this pulse duration is one of the parameters that
+determines $n_{th}$, we shall consider three different pulse
+durations and evaluate the corresponding $n_{th}$.  This will determine, for
+fixed pulse duration and desired $n$ level, whether $\ell$-mixing will affect
+the interaction.  The three time scales we consider for the pulse duration are 
+the spontaneous emission lifetime, the Stark period in a typical stray dc
+electric field, and the Kepler period.  The spontaneous emission lifetime places
+an upper limit on the pulse duration consistent with complete population
+transfer.  The Stark period in a stray dc electric field imposes a practical
+upper limit, given that stray electric fields persist in every experimental
+configuration.  And finally, a pulse whose duration is the Kepler period is the
+shortest pulse consistent with exciting a single $n$ state.
+
+Typical radiative lifetimes for low-$\ell$ Rydberg states are 10~$\mu$s at $n
+\sim 30$ with $n$-scaling of $n^3$ (see Table~\ref{table1}).  The
+ground-to-Rydberg dipole moment in hydrogen can be evaluated analytically to be
+$d_{gn} \approx 1.3/n^{3/2}$ \cite{Bethe_Salpeter}.  For a pulse with
+duration given by this radiative lifetime, \Eq{pi_pulse} gives the threshold
+electric field to be $E_0 \approx 7.4 \times 10^{-8} n^{-3/2}$.  Notice that this
+electric field decreases with $n$. The threshold $\ell$-mixing state decreases
+as $n^{-2}$ so we still predict a threshold $n$ value for $\ell$-mixing.  Using
+this result and \Eq{nth} we obtain
+$n_{th} \approx 10^{14}$.  Clearly, $\ell$-mixing will not be an important
+interaction for pulses with this maximum possible duration.
+
+We now consider a shorter pulse duration which is derived from more practical
+considerations.  Though we have considered that the atom is perturbed
+only by an optical frequency field, in any real experimental situation, stray dc
+electric fields persist. Even when care is taken to ground interaction region
+metal plates, stray electric fields of $\sim 1$ mV/cm are typically present
+\cite{Frey:93}.  These electric fields can cause mixing of the nearly degenerate
+manifold of Rydberg states.  In the energy domain, the requirement that the
+angular momentum states are not mixed by the electric field corresponds to
+having a pulse whose Fourier bandwidth overlaps the entire Stark-split manifold.
+Then the optical pulse samples a short time interval during which the effect of
+the stray field cannot be resolved.  In hydrogen, the total energy spread is
+given by $\omega_s = 3 n (n-1) F$ with $F$ the stray electric field
+amplitude.  Therefore the pulse must be shorter than the mixing time, defined as
+\begin{eqnarray}
+T_s & = & \frac{2 \pi}{\omega_s} \\
+    & = & \frac{2 \pi}{3 n (n-1) F}. \label{Ts}
+\end{eqnarray}
+A stray field amplitude of $1$ mV/cm gives a mixing period of
+$T_s = 0.3$ $\mu s$ at $n = 30$ and has an $n$-scaling of $n^{-2}$.
+
+If the pulse duration is constrained to be much less than $T_s$, say $(1/10)
+T_s$ to be concrete, then the effect of the stray dc field can be ignored.
+If we use this pulse duration in \Eq{pi_pulse} we obtain an electric field of
+$E_0 \approx 1.0 \times 10^{-12} n^{7/2}$.  This electric field increases with
+$n$ and hence the threshold $n$ should be lower.  Using \Eq{nth} we calculate
+$n_{th} \approx 130$.  We see then that if the practical consideration of
+avoiding the dc Stark mixing of Rydberg states is considered, the threshold for
+$\ell$-mixing is dramatically reduced.
+
+The final pulse duration we consider is the Kepler period, $T_K = 2\pi n^3$. 
+From \Eq{pi_pulse} this gives an electric field of $0.18 n^{-3/2}$.  Again, this
+decreases with $n$ at a rate which is slower than the decrease in the threshold
+field for $\ell$-mixing, and hence a threshold $n$ will exist.  From \Eq{nth}
+this threshold is $n_{th} \approx 8$.  This shortest pulse consistent with
+exciting a single $n$ level then causes $\ell$-mixing of Rydberg states with $n
+> 8$.  It must be emphasized that these threshold $n$ values assume the pulse
+has an area of $\pi$.  If efficient transfer of population is not required, the
+threshold $n$ values can be increased significantly.
+
+\section{Theoretical Model}
+\label{theory}
+\hspace{\parindent}  We have seen that over a broad range of parameters,
+$\ell$-mixing of Rydberg states can be induced by optical fields.  This mixing
+clearly degrades the selectivity of the excitation process. If a single
+\{$n,\ell,m$\} state is desired, then coupling between $\ell$ and $\ell \pm
+1$ states will cause a range of angular momenta to be populated.  In this
+section we shall examine this coupling to quantify the extent to which it
+can degrade the Rydberg selection process.  But from a broader standpoint,
+we shall examine the nature of this interaction independent of any
+particular excitation goals and we shall show that some rather interesting
+dynamics can occur in these strongly driven Rydberg systems.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/direct/mix_levels.eps}
+\bigskip
+\ncap{Model of $\ell$-mixing interaction.} {Model of $\ell$-mixing interaction.
+\label{mix_levels}}
+\end{figure}
+
+The model we consider is shown in \Fig{mix_levels}.  A ground state is
+near resonantly coupled to a Rydberg manifold by a laser frequency
+$\omega_L$.  The detuning of the ground-to-Rydberg resonance is given by
+$\delta \ll \omega_L$ (we also assume that $\delta < \delta_n$ so that
+we are considering the manifold closest to resonance).  The detuning for
+transitions within the Rydberg manifold is
+$\Delta = \omega_L$.  We showed in \Fig{inten} that as the intensity is increased, the
+$\ell$-mixing coupling becomes important before $n$-mixing.  Furthermore,
+the critical intensities for $\ell$- and $n$-mixing have different
+asymptotic scalings.  For the ground-to-Rydberg Rabi frequency, $\Omega_{gn}
+= (d_0 E_0)/n^{3/2}$, to equal the local Rydberg level spacing, $\delta_n =
+1/n^3$, requires an electric field scaling of $E_0 \sim n^{-3/2}$.  For the
+case of $\ell$-mixing interactions, for which the Rabi frequency must equal the
+laser frequency, the $n^2$ scaling of the Rydberg dipole moments gives $E_0
+\sim n^{-2}$.  Therefore, for sufficiently large $n$, the
+coupling of the ground-to-Rydberg state is perturbative, while the
+Rydberg-to-Rydberg states are strongly mixed.
+
+The next consideration is the presence of neighboring $n$-manifolds not
+shown in the figure.  The influence of these states can be estimated by making
+use of Heisenberg's correspondence principle \cite{Picart:78}.  This principle
+relates quantum mechanical matrix elements to Fourier components of the
+corresponding classical dynamical variable.  If we consider $\Delta n = n -
+n'$ transitions with $\ell \ll n$, then the correspondence principal estimates
+the ratio of these dipole moments to the $\Delta n = 0$ transitions as
+\begin{equation}
+\frac{d(\Delta n)}{d(\Delta n = 0)} = \frac{2}{3 \Delta n} J_{\Delta
+n}^{'}(\Delta n)
+\end{equation}
+with $J_{\Delta n}^{'}(\Delta n)$ the derivative of the Bessel function of the
+first kind, order $\Delta n$.  For $\Delta n = 1$ this number is $\approx 0.2$
+and for $\Delta n = 2$ it is $\approx 0.07$.  The ratio continues to fall for
+increasing $\Delta n$.  We therefore estimate the coupling between
+neighboring manifolds to be significantly smaller than the degenerate
+couplings, and thus not critical in our model of these degenerate
+transitions.
+
+Another way to estimate the influence of these neighboring levels comes from
+the ac Stark effect.  In the presence of the optical field, level
+\{$n,\ell$\} will have its energy shifted due to its non-resonant
+interaction with all levels of the atom.  The contributions to this shift
+from states degenerate in energy with the \{$n,\ell$\} state cancel.  This
+is because the ``resonant'' and ``anti-resonant'' terms have equal and opposite
+contributions because of the degeneracy of the levels.  Therefore only
+non-degenerate levels contribute to this shift.  However, the magnitude of
+the contribution from level $n^{'}$ decreases rapidly as $n^{'}$ moves far
+away in energy from $n$ (provided $n \gg 1$).  This is due to the fact that
+the oscillator strength of level \{$n,\ell$\} is concentrated near
+\{$n,\ell$\} for $n \gg 1$.  Therefore, the ac Stark shift of
+\{$n,\ell$\} Rydberg states is predominantly determined by nearby manifolds. 
+However, the ac Stark shift of Rydberg states is also known to be closely
+approximated by the ponderomotive energy of a free electron
+\cite{Avan:76,Obrian:94}.  This is due to the quasi-free nature of Rydberg
+electrons.  Using the ponderomotive energy to estimate the ac Stark shift of
+the Rydberg states is then an estimate of the influence of neighboring
+$n$-manifolds on the \{$n,\ell$\} state.  The ponderomotive energy is given
+by $ U_p = (1/4)E_0^2/\omega_L^2$ independent of $n$ \cite{Avan:76}.  If we
+use the threshold field strength for $\ell$-mixing in this expression, we
+find that
+\begin{eqnarray}
+U_p &\approx & 1/(4n^4)  \\
+    & \sim   & \frac{1}{n} \delta_n.
+\end{eqnarray}
+Since this shift is asymptotically small in terms of the local level spacing,
+we can again conclude that the contribution from neighboring $n$-manifolds
+may be ignored.
+
+The time-dependent wavefunction of our atom expanded on these essential
+states is
+\begin{equation}
+\ket{\Psi(t)} = c_g(t)\ket{g} + \sum_{\ell} c_{\ell}(t)\ket{n,\ell}.
+\end{equation}
+The Schr\"{o}dinger equation for the amplitudes of the Rydberg states,
+$c_\ell$, is then given by
+\begin{equation}
+i\dot{c}_\ell = \omega_n c_\ell + f(t)\cos (\omega_L t)
+\left[\delta_{\ell1}\Omega_g c_g +
+\sum_{\ell^{'}=0}^{n-1} \Omega_{\ell \ell^{'}} c_{\ell^{'}}\right]
+\label{schrodinger_eqn}
+\end{equation} 
+where $c_g$ is the ground state amplitude, $\omega_n$ is the
+ground-to-Rydberg transition frequency, $\delta_{\ell1}$ is the Kronecker
+delta indicating coupling to the $P (\ell=1)$ state only, and
+$\Omega_{\ell\ell^{'}}$ is the Rydberg-to-Rydberg Rabi frequency. The applied
+optical field is taken to be linearly polarized in the $z$-direction and given
+by $E(t) = E_0 f(t) \cos(\omega_L t)$, with $f(t)$ the laser pulse envelope
+and $E_0$ the amplitude.  $\Omega_g$ is the ground-to-Rydberg Rabi frequency.
+As described previously, the ground-to-Rydberg coupling can be treated
+perturbatively in regimes in which the Rydberg states are strongly mixed.
+Hence, at this stage we abandon the goal of complete population transfer to
+the Rydberg state.  We do this so that we may investigate the nature of the
+Rydberg $\ell$-mixing, with the knowledge that if it is important when a
+small amount of population is transferred, it will certainly be important
+when the intensity is increased to produce complete population transfer.
+So at this stage, we assume that the ground state is weakly perturbed
+and set $c_g \approx 1$ (taking the ground state as the zero of
+energy). Because the Rabi frequencies, $\Omega_{\ell\ell^{'}}$, are greater
+than $\omega_L$ we can not make the rotating-wave approximation
+\cite{Piraux:89}.  We can however, diagonalize the Rydberg-to-Rydberg coupling
+by transforming to the parabolic state basis,
+\begin{equation}
+b_k = \sum_{\ell=0}^{n-1} S_{k\ell} c_\ell.
+\end{equation}
+These states are labeled by the electric quantum number
+$k\ \epsilon\ \{-n+1,-n+3,\ldots,n-3,n-1\}$.  $S_{k\ell}$
+is the unitary transformation matrix whose components are proportional to the
+Wigner-$3j$ symbol \cite{Gallagher_book} and is given by
+\begin{eqnarray}
+S_{k\ell} &=& \braket{n,k,m}{n,\ell,m} \\
+              &=& (-1)^{(1-n+m+k)/2 + \ell} \sqrt{2\ell+1}
+\left( 
+\begin{array}{ccc}
+\frac{n-1}{2} & \frac{n-1}{2} & \ell  \\
+\frac{m+k}{2} & \frac{m-k}{2} & -m
+\end{array} \right)  \\
+&=& S_{\ell k}
+\end{eqnarray}
+where the term in large parentheses is the Wigner-$3j$ symbol.
+The last equality follows from the fact that the Wigner-$3j$ symbols are
+real.  The expense of this transformation is that every parabolic state is
+coupled to the ground state and has a time-dependent homogeneous term,
+\begin{equation}
+i \dot{b}_k = \left[\omega_n + \Delta_k f(t)
+\cos (\omega_L t)\right] b_k  
++S_{k1} \Omega_g f(t) \cos (\omega_L t) \label{eq:parabolic}.
+\end{equation}
+The term $\Delta_k = (3/2) n k E_0$ is the Stark shift of state $k$
+that a dc field of amplitude $E_0$ would generate (within the
+single $n$-manifold approximation).  $S_{k1}$ represents the
+projection of the $k$-th parabolic state onto the $P$ state.
+ 
+Assuming that $\delta = \omega_n - \omega_L$ is much less than the laser
+frequency, $\omega_L$, and that the pulse contains many optical cycles
+so that $\omega_L \tau_p \gg 1$ then \Eq{eq:parabolic} can be integrated
+yielding the solution
+\begin{eqnarray}
+b_k(t)&=&-i \Omega_g S_{k1} \exp \left[-i\omega_n t -i
+\frac{\Delta_k}{\omega_L} f(t)
+\sin (\omega_L t)\right] \nonumber \\ 
+&& \times \int_{-\infty}^{t} dt^{'} \frac{\omega_L}{\Delta_k}
+\exp \left(i \delta t^{'}\right) J_{1} \left[\frac{\Delta_k}{\omega_L}
+f\left(t^{'}\right)
+\right] \label{eq:harmonics}
+\end{eqnarray}
+where $J_1$ is the Bessel function of the
+first kind, order one.  For hyperbolic secant pulses, $f(t) =
+\mathrm{sech}(t/\tau_p)$, in the long-time limit, the solution can be expressed
+in terms of confluent hypergeometric functions \cite{Gradshteyn_Ryzhik},
+\begin{eqnarray}
+\lim_{t \rightarrow \infty} b_k(t) e^{i \omega_n t} & = &
+\frac{-i \pi \Omega_g \tau_p e^{i \Delta_k/\omega_L}}
+{2 \cosh(\pi \delta \tau_p/2)} S_{k1}
+\Biggl\{
+{}_1F_1\left(1/2-i\delta \tau_p/2,1,-i\Delta_k/\omega_L\right) 
+\Biggr. \nonumber \\ 
+&&\times {}_1F_1\left(1/2+i\delta \tau_p/2,1,-i\Delta_k/\omega_L\right) +
+\left(\frac{\Delta_k}{\omega_L}\right)^2
+\frac{\left[1+(\delta\tau_p)^2\right]}{2^4} \nonumber \\
+&& \times {}_1F_1\left(3/2-i\delta \tau_p/2,3,-i\Delta_k/\omega_L\right)
+\nonumber \\
+&& \Biggl. \times {}_1F_1\left(3/2+i\delta
+\tau_p/2,3,-i\Delta_k/\omega_L\right)
+\Biggr\} \label{bigequation}
+\end{eqnarray}
+where $_1F_1$ is the confluent hypergeometric function.
+For $\delta = 0$ this solution simplifies considerably as
+\begin{equation}
+\lim_{t \rightarrow \infty} b_k(t) e^{i \omega_n t}  = 
+\frac{ -i\pi \Omega_g \tau_p}{2} S_{k1}
+\left\{\left[J_0\left(\frac{\Delta_k}{2 \omega_L}\right)\right]^2+
+       \left[J_1\left(\frac{\Delta_k}{2 \omega_L}\right)\right]^2 \right\}
+\label{delta0}
+\end{equation}
+where $J_0$ and $J_1$ are Bessel functions of the first kind.
+The amplitudes in the spherical basis can be obtained by unitary
+transformation as 
+\begin{equation}
+c_\ell = \sum_{k=-n+1}^{n-1} S_{\ell k} b_k
+\label{unitary}
+\end{equation}
+with the sum being over $k$ odd if $n-1$ is odd and over $k$ even otherwise. 
+In what follows, we examine some of the predictions of this model.  Unless
+otherwise stated we will use the results for the hyperbolic secant pulse.  We
+have, however, verified that the qualitative results are insensitive to the
+particular (smooth) pulse shape.
+
+
+\section{Amplitudes}
+\hspace{\parindent}  The first question to ask is to what extent is population
+redistributed among higher angular momentum states?  In order to answer this
+question we introduce a field strength parameter,
+\begin{equation}
+\beta = \frac{3 n (n-1) E_0}{2 \omega_L},
+\end{equation}
+which is the maximum value of the Stark shift, $\Delta_k$, measured in terms
+of the laser frequency.  To verify the theory, we first consider the small
+$\beta$ limit.  Then the term in \Eq{delta0} in curly brackets becomes equal
+to one.  The amplitude of each parabolic state is then only determined by its
+projection onto the $P$-state.  If we transform back to the spherical basis,
+we find
+\begin{eqnarray}
+\lim_{t \rightarrow \infty} c_\ell e^{i \omega_n t} &=&
+\frac{-i \pi \Omega_g \tau_p}{2} \sum_{k} S_{\ell k} S_{k1} \nonumber \\
+& = &  \frac{-i \pi \Omega_g \tau_p}{2} \delta_{l1}.
+\end{eqnarray}
+The total population in the Rydberg manifold is in the
+$P$-state as expected and furthermore, since
+${\displaystyle \int}_{-\infty}^{\infty}\mathrm{sech}(t/\tau_p) dt = \pi \tau_p$,
+we see that the total population transferred is consistent with the perturbative
+ground-to-Rydberg coupling.  This small-$\beta$ limit provides a convenient
+normalization for subsequent analysis.  Amplitudes will be normalized by $\pi
+\Omega_g \tau_p/2$,
+\begin{eqnarray}
+\tilde{b}_k &=& \frac{b_k}{\left(\pi \Omega_g \tau_p/2\right)} \\
+\tilde{c}_{\ell} &=& \frac{c_{\ell}}{\left(\pi \Omega_g \tau_p/2\right)},
+\label{normalize}
+\end{eqnarray}
+so that in the small-$\beta$ limit, the $P$-state would have normalized
+population equal to one.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/direct/ampk.eps}
+\bigskip
+\wcap{Amplitudes of the parabolic basis states.} {Amplitudes of the parabolic
+basis states for various values of the strength parameter $\beta$.
+\label{ampk}}
+\end{figure}
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/direct/ampl.eps}
+\bigskip
+\wcap{Amplitudes of the spherical basis states.} {Amplitudes of the spherical
+basis states for various values of the strength parameter $\beta$.
+\label{ampl}}
+\end{figure}
+
+Now we consider larger $\beta$ distributions and focus first on the amplitudes
+of the parabolic basis states.  \Figure{ampk} shows the amplitudes of the
+states in the parabolic basis at the end of the pulse.  The distributions are
+symmetric in the electric quantum number, $k$, and hence only positive $k$ is
+shown.  The strength parameter $\beta$ is varied from 2 to 16 and is doubled at
+each step.  For this calculation we chose $n = 30$.  The amplitudes of the
+states are normalized as mentioned previously.  For $\beta=0$, the amplitudes
+are determined entirely by the transformation matrix, $S_{k1}$.  We see
+that for $\beta = 2$ the distribution is highly linear in $k$
+with only a slight curvature seen near the middle of the range in $k$. For
+larger values of $\beta$ the overall magnitude of the states starts to decrease
+and some oscillation as a function of $k$ begins to develop.  The amplitude
+remains small for $k=0$ even for the maximum value of $\beta$, where the other
+states have very similar amplitude (ignoring the small oscillation).
+ 
+\Figure{ampl} shows the amplitude of the spherical basis states obtained by
+transformation using \Eq{unitary} of the parabolic state distributions shown
+in \Fig{ampk}.  Several interesting features emerge upon examination of
+\Fig{ampl}.  One is that only states with the same parity as the $P$ state are
+populated at the end of the pulse.  Furthermore, the maximum $\ell$ with
+significant amplitude is given approximately by $\beta$.  Given that a single
+parity has population at the end of the pulse, one might predict that the
+physical mechanism giving rise to the angular momentum mixing is
+$\Delta \ell = 2$ Raman transitions \cite{Grobe:86,Ivanov:94}.  That is, the
+$P$-state is populated by direct excitation from the ground state and its
+population flows to higher angular momentum states via resonant two-photon Raman
+transitions to states with the same parity as the $P$-state.  However, we have
+already argued that the threshold for {\it neighboring} state transitions would
+be when the Rabi frequency is equal to the detuning, or laser frequency.  Given
+that these states have a non-zero detuning tells us that even for enormous Rabi
+frequencies, if the pulse is turned on and off adiabatically (in this case
+meaning over many optical cycles) then the detuned states will not be
+populated in the long-time limit.  However, they can receive significant
+transient population, as shown in \Fig{ampl_t}.  In this figure, the
+amplitude of the Rydberg states is shown near the peak of the laser pulse,
+which occurs at $t=0$.  The $t=0$ distribution looks qualitatively similar to
+the distribution at the end of the pulse.  But this is not true for
+the remaining distributions shown, which are snapshots every quarter of an
+optical cycle after $t=0$.  Both parities have significant population during the
+pulse. Indeed, the $t = \frac{1}{4}\left(\frac{2\pi}{\omega_L}\right)$
+distribution has the $S$-state maximally populated and the $t =
+\frac{1}{2}\left(\frac{2\pi}{\omega_L}\right)$ distribution is
+generally smooth showing a gradual decay towards larger angular momentum. 
+These figures emphasize that the nearest neighbor coupling is the dominant
+coupling and not a $\Delta\ell = 2$ Raman coupling via other states (continuum
+or lower-lying bound).
+
+  
+\begin{figure}[tbp]
+\postfull{thesisfigs/direct/ampl_t.eps}
+\bigskip
+\wcap{Amplitudes of the spherical basis states at various times.} {Amplitudes of
+the spherical basis states for $\beta = 8$ and for various times near the peak
+of the pulse at $t=0$.
+\label{ampl_t}}
+\end{figure}
+
+
+\section{Angular Distributions}
+\hspace{\parindent}
+
+Given that population is spread to higher angular momentum states, it is
+natural to investigate the resultant angular distributions.  The
+electronic wavefunction can be written
+\begin{equation}
+\psi(\vec{r},t) = \sum_{\ell} c_{\ell}(t) R_{n \ell}(r)
+Y_{\ell}^{m}(\theta,\phi).
+\end{equation}
+Because linear polarization is assumed we take $m=0$.  Since the radial part
+of the wavefunction depends on $\ell$, strictly speaking the angular
+distribution will depend upon what radius we are interested in.  This
+dependence, however, can be shown to be very simple for a large part of the
+$r$-range.  The WKB radial wavefunctions are given by \cite{Bethe_Salpeter}
+\begin{equation}
+R_{n \ell}(r) = \sqrt{\frac{2}{\pi n^3}}\left(\frac{r}{2}\right)^{1/4} \cos
+\left[\sqrt{8 r} - (2 \ell +1)\frac{\pi}{2} - \frac{\pi}{4}\right].
+\end{equation}
+This expression is valid between the inner and outer turning points of the
+corresponding classical electron's motion, given by
+\begin{equation}
+r_{1,2} = n^2 \pm n\sqrt{n^2 - \ell (\ell+1)}
+\end{equation}
+with $r_1$ the perihelion of the orbit, and $r_2$ the aphelion.  As long as
+$\ell \ll n$ this range essentially encompasses the entire orbit.  While we are
+considering $\ell$ larger than this in our problem, these wavefunctions still
+give valid results for a large fraction of the orbit.  Furthermore,
+outside of the turning points the wavefunctions are exponentially decaying
+and thus very little probability resides beyond the turning points.  Under this
+approximation then the $\ell$-dependence reduces to
+$R_{n \ell} \propto (-1)^{\ell}$.  The wavefunction then becomes
+\begin{eqnarray}
+\psi(r,\theta,t) &\approx& f(r) \sum_{\ell} c_{\ell}(t) (-1)^{\ell}
+Y_{\ell}^{0}(\theta,\phi) \\
+& = & f(r) \chi(\theta,t)
+\end{eqnarray}
+with $f(r)$ containing the radial dependence and $\chi(\theta,t)$ the desired
+angular distribution.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/direct/angular.eps}
+\bigskip
+\wcap{Angular distributions.} {Angular distributions of the Rydberg
+population for various values of the strength parameter $\beta$.  The linear
+polarization direction is shown in each with the polar angle indicated in the
+first.
+\label{angular}}
+\end{figure}
+
+\Figure{angular} shows the probability distribution,
+$\left|\chi(\theta,t)\right|^2$, for various values of the strength parameter,
+$\beta$, at the end of the pulse, $t \rightarrow \infty$.  For $\beta=2$ we see
+an essentially undistorted
+$P$-wave angular distribution.  This is to be expected, for when $\beta=2$,
+very little amplitude is transferred to higher angular momentum states and the
+$P$-state is the only state receiving population.  As $\beta$ increases, the
+distribution starts to become less extended along the laser polarization axis,
+and more spread out orthogonal to this direction.  This is in distinction with
+photoelectron angular distributions obtained with very intense lasers in
+non-Rydberg systems.  There, for increasing laser field strength, the
+distribution becomes more peaked along the polarization direction.  This is
+consistent with the tunneling theory of ionization, which becomes more valid
+for increasing intensity and decreasing laser frequency.  In this model, the
+electrons escape along the polarization direction because the atomic potential
+is suppressed by the oscillating electric field such that the electron can
+escape through a narrow barrier.
+
+However, we are considering bound state angular distributions here, at
+much lower intensities.  To date there is no method for accurately measuring a
+bound state angular distribution, but the ionization from these distorted
+states should show evidence of this distribution.  Since photoionization from
+Rydberg states strongly favors small-$\ell$ states (for optical frequency
+fields), the photoelectron distribution will appear more as a $P$-state than
+as the bound electron distribution.  However, the strong tendency of the bound
+state to spread orthogonal to the polarization direction should cause the
+photoelectron distribution to bulge in this direction.  This type of
+distribution was observed experimentally by Leuchs \etal \cite{Leuchs:85}. In
+that experiment, the angular distributions of photoionized electrons were
+measured as an intermediate resonance was tuned through the Rydberg series. For
+small $n$ the distribution was peaked along the polarization direction. As
+$n$ was increased, the distribution, while still peaked along the
+polarization, began to bulge in the orthogonal direction.  As $n$ increases
+for a fixed field strength, $\beta$ increases and we predict that the bound
+state distribution becomes elongated perpendicular to the polarization axis,
+but since photoionization cross-sections decrease rapidly with increasing
+$\ell$, mostly the small $\ell$-component of the wavefunction will be
+photoionized.  This leads to a photoion distribution which remains peaked
+along the polarization direction but begins to show increased probability in
+the orthogonal direction, as seen in \cite{Leuchs:85}. A very similar
+distribution was observed in a high intensity experiment in xenon
+\cite{Yang:93}.  Evidence for this type of distribution was also seen
+in a theoretical study of the classical hydrogen atom in a strong
+electromagnetic field \cite{Kyrala:87}.
+
+The distributions shown are at the end of the pulse.  Since we showed
+previously that the coefficients $c_{\ell}(t)$ change on the time scale of the
+optical frequency, it may appear that the angular distribution must change on
+this time scale as well.  While this is true for the wavefunction, it is not
+true for the probability distribution.  That is to say that the changes in the
+wavefunction are in its phase and not in its amplitude.  The probability
+changes on the much longer time scale of the pulse, looking at early times
+like the $P$-state orbital and smoothly changing into the distributions shown
+in \Fig{angular} at the end of the pulse.
+
+\section{Stabilization}
+\hspace{\parindent}
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/direct/pop_v_beta.eps}
+\bigskip
+\ncap{Population versus $\beta$ (fixed ground coupling).} {Total normalized
+population in Rydberg manifold versus $\beta$.  The ground-to-Rydberg coupling
+is kept constant for this figure.
+\label{popvbeta}}
+\end{figure}
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/direct/pop_v_I.eps}
+\bigskip
+\ncap{Population versus $\beta$.} {Total population
+in Rydberg manifold versus $\beta$.  The ground-to-Rydberg coupling increases
+as the electric field ($\beta$) increases.
+\label{popvI}}
+\end{figure}
+
+Now we consider the total population transferred to the Rydberg manifold.  The
+strong mixing of Rydberg states leads to a change in the effective coupling of
+the (dressed) manifold with the ground state.  In \Fig{popvbeta} we show the
+total normalized population (normalization as in \Eq{normalize}) transferred to
+the Rydberg manifold as a function of
+$\beta$.  In this plot the coupling of the ground state to the $P$-state is
+kept constant.  This plot shows that the dressed manifold has
+decreasing overlap with the $P$-state as $\beta$ increases.
+
+This variation in $\beta$ is somewhat artificial in that an increase in
+$\beta$ can occur either by increasing $n$ or by increasing electric field.
+In the former case, the ground-to-$P$-state coupling decreases and in the
+latter it increases.  However, the figure shows that the dressed manifold has
+decreased coupling with the ground state than the ``undressed'' manifold.  In
+\Fig{popvI} we consider the effect of increasing the electric field.  This
+causes $\beta$ to increase and the ground-to-$P$-state coupling to increase
+as well.  The figure shows that for small $\beta$, the population goes to zero as
+expected. As $\beta$ increases initially, the population grows, until $\beta
+\sim 4$ at which the slope changes sign and the population begins to decrease
+with increasing $\beta$.  This is a bound state analog of dynamic laser
+induced stabilization \cite{Burnett:91,Huens:93} (as opposed to adiabatic, or
+high frequency, stabilization \cite{Pont:88}).  This theory predicts that as
+the laser intensity is increased (under certain circumstances) the
+photoionization can become a decreasing function of laser intensity.  The
+conditions for achieving this stabilization can depend on the laser frequency
+and the initial state.  Stabilization in Rydberg systems has been
+predicted \cite{Fedorov:90}.  In this model, a strong, low frequency field causes
+$n$-mixing of neighboring $n$-manifolds via the continuum which can give rise
+to a stabilized wave function, due in large part to the formation of a dark
+state wave packet.  The low frequency condition of this model causes the
+$n$-mixing via the continuum to be an important interaction.  In optical
+frequency fields, however, this interaction is negligible compared to the
+$l$-mixing because the photoionization cross-sections are so small.
+
+This bound state stabilization should give rise to traditional photoionization
+stabilization for the following reasons.  The photoionization signal from the
+Rydberg states depends on the population in the Rydberg states.  Thus if the
+population decreases the ion signal should decrease as well.  Also, since the
+population which is in the Rydberg manifold is moving towards larger angular
+momentum states that have smaller ionization cross sections, the signal should
+also decrease due to the reduced effective cross-section.  These two effects
+combined should give rise to a more dramatic stabilization figure than that
+shown in \Fig{popvI}.
+
+\section{Lineshape}
+\hspace{\parindent}
+
+The solution obtained in \Eq{bigequation} is for arbitrary detuning of the
+laser field from the Rydberg manifold.  Given that the strong field mixing of
+Rydberg states can change the strength of the coupling to the ground state, we
+might expect the absorption lineshape to also change.  The validation of this
+expectation is shown in \Fig{lineshpe} which depicts the absorption lineshape
+for various values of $\beta$.  When $\beta$ is small, the lineshape is
+completely determined by the Fourier transform of the hyperbolic secant pulse
+which is shown as the dashed line in each graph.  For $\beta=4$ we see a
+slightly narrower distribution with essentially the same shape as the weak
+field case. For $\beta=8$ and $\beta=16$, however, the lineshape shows
+modulation structure but generally occupies a width in frequency space
+given by the weak field envelope.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/direct/lineshpe.eps}
+\bigskip
+\wcap{Rydberg manifold absorption lineshape.} {Absorption lineshape of
+Rydberg manifold for various values of strength parameter $\beta$.  The
+dashed line shows the Fourier transform of hyperbolic secant pulse.  The
+dimensionless frequency units are the detuning, $\delta$, multiplied by the
+pulse duration, $\tau_p$.
+\label{lineshpe}}
+\end{figure}
+
+\section{High Harmonic Generation}
+\hspace{\parindent}
+
+Another interesting consequence of this model can be seen by examination of
+\Eq{eq:harmonics}.  If the exponential in front of the integral is expanded in a
+Fourier series, we obtain the result
+\begin{eqnarray}
+b_k(t) &=& -i \Omega_g S_{k1} \exp(-i \omega_n t) \sum_{q= -\infty}^{\infty}
+J_q\left[\frac{\Delta_k}{\omega_L} f(t)\right] \exp(iq\omega_L t)
+\nonumber \\
+&& \times \int_{-\infty}^{t} dt^{'} \frac{\omega_L}{\Delta_k}
+\exp \left(i \delta t^{'}\right) J_{1} \left[\frac{\Delta_k}{\omega_L}
+f\left(t^{'}\right)
+\right] \nonumber \\
+& =& g_k(t) \exp(-i \omega_n t) \sum_{q=-\infty}^{\infty}
+J_q\left[\frac{\Delta_k}{\omega_L} f(t)\right] \exp(iq\omega_L t)
+\end{eqnarray}
+with $g_k(t)$ a slowly varying function of time.
+The parabolic state amplitudes therefore oscillate at harmonics of the driving
+field, with amplitudes determined by Bessel functions.  We may therefore expect
+that the time dependent dipole moment, which is a bilinear product of the ground
+and excited state amplitudes, will also show oscillation at these harmonics and
+hence the Rydberg system may emit radiation at the harmonics of the driving
+field.  If we write the electron wavefunction as
+\begin{equation}
+\ket{\psi(t)} = c_g(t)\ket{g} + \sum_{\ell}c_{\ell}(t)\ket{\ell},
+\end{equation}
+then the time dependent dipole moment is
+\begin{eqnarray}
+d(t) &=& \bra{\psi(t)}\hat{d}\ket{\psi(t)} \nonumber \\
+&=& c_g(t) \sum_{\ell}c_{\ell}^{*}(t)\bra{\ell}\hat{d}\ket{g} + \sum_{\ell
+\ell^{'}} c_{\ell}(t)c_{\ell^{'}}^{*}(t) \bra{\ell^{'}}\hat{d}\ket{\ell}
++ c.c.
+\label{dipole}
+\end{eqnarray}
+Since the ground-to-Rydberg coupling is treated perturbatively, the ground
+state amplitude is near one and thus the Rydberg amplitudes are small.  The
+second term in \Eq{dipole} is therefore much smaller than the first and can be
+dropped. Furthermore, the dipole selection rules allow us to reduce the sum to
+\begin{eqnarray}
+d(t) &=& c_g(t) c_1(t)d_{1g} + c.c. \nonumber \\
+&=& c_1(t)d_{1g} + c.c.
+\end{eqnarray}
+with $d_{1g}$ the ground-to-$P$-state dipole moment, and
+where we have used $c_g(t) \approx 1$, consistent with the perturbative
+assumption (and the zero of energy taken to be the ground state).  Then our
+time-dependent dipole moment is (for $\delta =0$)
+\begin{eqnarray}
+d(t) &=& \sum_k S_{1k} b_k(t) \nonumber \\
+     &=& \sum_k S_{1k} (-i \Omega_g) S_{k1} \exp \left[-i\omega_n t 
+\right] \int_{-\infty}^{t} dt^{'} \frac{\omega_L}{\Delta_k}
+\exp \left(i \delta t^{'}\right) J_{1} \left[\frac{\Delta_k}{\omega_L}
+f\left(t^{'}\right)
+\right] \nonumber \\
+&& \times \sum_{q= -\infty}^{\infty}
+J_q\left[\frac{\Delta_k}{\omega_L} f(t)\right] \exp(iq\omega_L t)
+\nonumber \\
+&=& \sum_{q=-\infty}^{\infty}\Biggl\{ \sum_k (-i) \Omega_g S_{1k}^2
+J_q\left[\frac{\Delta_k}{\omega_L} f(t)\right]
+\int_{-\infty}^{t} dt^{'} \frac{\omega_L}{\Delta_k}
+ J_{1} \left[\frac{\Delta_k}{\omega_L}
+f\left(t^{'}\right) \right] \Biggr\} \nonumber \\
+&& \times  \exp\left[i(q\omega_L-\omega_n)t\right]. \label{eq:harmonics2}
+\end{eqnarray}
+Before turning to numerical evaluation of this expression, we can make some
+qualitative predictions.  The symmetry of the parabolic states
+enables us to analyze the amplitude of each harmonic term in the $q$
+expansion.  The parabolic terms naturally separate into pairs of equal
+$\left|k\right|$.
+$S_{1k}^2$ and the time integral are even functions of $k$,
+because $\Delta_{-k}=-\Delta_{k}$, and from the parity of the Bessel functions
+\begin{equation}
+J_q\left[\frac{\Delta_{-k}}{\omega_L} f(t)\right] =
+(-1)^{q} J_q\left[\frac{\Delta_{k}}{\omega_L} f(t)\right].
+\end{equation}
+Therefore, all contributions to the $q^{th}$ amplitude cancel if $q$ is odd. 
+Since the exponential contains $\omega_n = \omega_L$ (for $\delta=0$), this
+means that only odd harmonics are present.  The case $k=0$ (which only occurs
+when $n$ is odd) does not contribute because $S_{1k}=0$ for $k=0$.  Therefore
+the dipole moment contains only odd harmonic contributions.  Also, given that the
+$q^{th}$ harmonic has amplitude proportional to
+$J_q\left[\frac{\Delta_k}{\omega_L} f(t)\right]$, this amplitude will be small
+for all $k$ unless $\beta \geq q$.  We therefore predict odd harmonics with
+maximal spectral content $\omega \approx \beta \omega_L$.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/direct/harmonics.eps}
+\bigskip
+\wcap{Atomic dipole moment spectrum.} {Fourier spectrum of the time dependent
+atomic dipole moment for several values of strength parameter
+$\beta$.
+\label{fig:harmonics}}
+\end{figure}
+
+Numerical results of evaluating the Fourier transform of \Eq{eq:harmonics2} are
+shown in \Fig{fig:harmonics}.  They confirm our expectations that only odd
+harmonics are present and that the majority of the spectral content is
+contained for $\omega < \beta \omega_L$.  The shape of the spectra displays what
+might be called the typical high harmonic generation curve \cite{Gavrila:92}. 
+The harmonics have a rapid decay from the fundamental, then a relatively flat
+plateau region extends to a cut-off, above which the harmonic amplitudes fall
+rapidly to the background level.  High harmonic generation has been observed
+when very intense laser fields ($I \sim 10^{13}$ W/cm$^2$) are incident on noble
+gas atoms and has been predicted in several models, ranging from full three
+dimensional calculations of Schr\"{o}dinger's equation \cite{Kulander:89} to an
+analysis of a two-level atom in a strong field \cite{Sundaram:90,Burlon:96}. 
+Here, we see the possibility for high harmonic generation from these strongly
+driven Rydberg systems.  However, the most interesting feature of this
+interaction, from the standpoint of short wavelength generation, is that the
+required intensity is much lower than that needed in the noble gas experiments. 
+For example, the harmonic generation spectrum shown for $\beta = 32$ is very
+similar to an experiment with argon atoms illuminated by 3 $\times 10^{13}$
+W/cm$^2$ Nd:YAG light \cite{Li:89}.  To achieve the $\beta=32$ spectrum for
+$n=65$ requires a factor of 50 lower intensity. If higher $n$ could be used the
+required intensity would be even lower. 
+
+\section{Landau-Zener Model}
+\hspace{\parindent}
+In this section, we attempt to elucidate some of the previous
+results by modeling the interaction using Landau-Zener (LZ) theory
+\cite{Zener:32,Landau:32,Rubbmark:81}.
+LZ theory describes the evolution of a two-state quantum system for which the
+energy separation between the two levels varies with an external parameter (e.g.
+time).  In the original form of the theory, the two levels were taken to have an
+energy separation of $\omega = +\infty$ at $t=-\infty$ and $\omega = - \infty$ at
+$t=\infty$. The levels are degenerate at $t=0$.  If there is no
+coupling between the levels, then the levels cross without any effects of one
+impacting the evolution of the other.  However, when the levels are coupled,
+there is an avoided crossing in which the coupling serves to prevent exact
+degeneracy during the time evolution.  These avoided crossings are such that if
+the system begins in one state and evolves adiabatically (defined
+precisely below) then the state moves through the avoided crossing so that at the
+end of the interaction, the system is in the opposite state.  This interaction
+is characterized by a single parameter given by
+\begin{equation}
+\Lambda =\frac{|\left\langle 1 \right| \hat{V} \left|2\right\rangle|^2}{d \omega/dt},
+\end{equation}
+where $\hat{V}$ is the interaction term coupling state
+$\left|1\right\rangle$ to $\left|2\right\rangle$ and $\omega(t)$ is the energy
+difference between the two states \cite{Rubbmark:81}.  The probability of an
+adiabatic transition can be shown to be $P_a = 1 - {\rm e}^{-2 \pi
+\Lambda}$.  The condition for adiabaticity is therefore $2 \pi \Lambda \gg 1$. 
+LZ theory has previously been applied in Rydberg systems when the energy
+shift is due to slowly varying dc electric fields \cite{Rubbmark:81} and also
+in the case of avoided crossings of Rydberg Floquet levels due to large ground
+state Stark shifts \cite{Story:93,Story:94}.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/direct/lz1.eps}
+\bigskip
+\ncap{Landau-Zener model of $\ell$-mixing.} {Landau-Zener model of the
+$\ell$-mixing interaction.  The energy of the parabolic states shift linearly
+with the applied optical electric field such that they experience avoided
+crossings with the ground state twice during one optical cycle.
+\label{lz1}}
+\end{figure}
+
+This simple two-level model can be applied to our $\ell$-mixing interaction by
+considering each parabolic state coupled to the ground state as individual
+two-level problems, as shown in \Fig{lz1}.  This figure is analogous to
+the Stark maps of Rydberg atoms in a dc electric field \cite{Zimmerman:79}.   In
+that problem, a dc electric field (of given polarity) causes the energy levels of
+the Rydberg states to shift by an amount that increases with the electric field. 
+Here, the shifting is due to an optical frequency electric field, and hence both
+polarities are present.  The $x$-axis in the figure is therefore the optical
+electric field.  The parabolic states have their energies shifted by this field,
+with the sign of the shift determined by the sign of the electric field.  The
+ground state is unshifted. The energy of the $k^{th}$ parabolic state
+(within the single $n$-manifold approximation used here) is given by the
+homogeneous term in \Eq{eq:parabolic},
+\begin{equation}
+\omega(t) = \omega_n + \Delta_k f(t) \cos(\omega_L t) .
+\end{equation} This function oscillates between $\omega_n - \Delta_k f(t)$ and
+$\omega_n + \Delta_k f(t)$ during the optical cycle.  The function $f(t)$ is a
+slowly varying envelope function and so is nearly constant for several optical
+cycles.  Notice that this term can equal zero twice during one optical cycle.
+At these times the ground and parabolic states are degenerate (in the absence
+of coupling).  The presence of the coupling term in \Eq{eq:parabolic} causes
+these levels to repel and leads to an avoided crossing, shown in \Fig{lz1}.
+Therefore we may formulate the LZ theory of our problem for each optical cycle,
+allowing for free evolution, then avoided-crossing, then free evolution followed
+by a second avoided crossing.  In this picture, population can be transferred
+from the ground state to the parabolic state by two separate routes in one
+optical cycle.  \Figure{lz2} depicts these two transfer routes. The population
+may first make a diabatic traversal followed by an adiabatic transition, or
+an adiabatic transition followed by a diabatic traversal.  The fact that two
+independent routes can lead to the same final state is the hallmark of quantum
+interference and we may expect to find such effects here.  This interference is
+due to the accumulation of phase between avoided crossings and is the analogue of
+St\"{u}ckelberg oscillations in inelastic atomic collisions
+\cite{Stuckelberg:32}.  It has been recently observed in microwave
+multiphoton transitions \cite{Gatzke:95}.
+
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/direct/lz2.eps}
+\bigskip
+\ncap{Two Landau-Zener population transfer routes.} {The two possible
+population transfer routes per optical cycle are shown for a given parabolic
+state interacting with the ground state.
+\label{lz2}}
+\end{figure}
+
+For simplicity, we formulate our model for square pulses, though recent studies
+have shown how LZ theory can be extended to include the effects of a smoothly
+varying pulse \cite{Vitanov:96}.  The crossing that occurs closest to
+$t=0$ is given by
+\begin{equation}
+t_c = \frac{1}{\omega_L}\cos^{-1}(\frac{-\omega_n}{\Delta_k}).
+\label{tc}
+\end{equation}
+The next crossing occurs within the same optical cycle at time $2
+\pi/\omega_L- t_c$. By adding $\frac{2\pi}{\omega_L}$ to these two numbers we
+obtain the crossing times for the next optical cycle, and so on for subsequent
+cycles.  Clearly, for values of $k$ such that $\Delta_k <
+\omega_n$ there will be no crossings and our model will predict no
+population in those parabolic states.
+
+The evolution from time $t_1 \rightarrow t_2$, during which no avoided crossings
+occur, can be described using the time evolution operator
+\begin{equation}
+\hat{U}(t_2,t_1) = \left[\begin{array}{cc}
+               \exp(-i\int_{t_1}^{t_2}\omega(t)dt) & 0 \\
+	      0 & 0
+	     \end{array}\right]
+\end{equation}
+where we have taken the ground state to be the zero of energy.
+The transition matrix for the avoided crossing is \cite{Gatzke:95}
+\begin{equation}
+\hat{T}_1 = \left[\begin{array}{cc}
+               \sqrt{1 - P_a} & -\sqrt{P_a} e^{i\phi} \\
+	       \sqrt{P_a} e^{-i\phi} & \sqrt{1 - P_a}
+	    \end{array} \right]
+\end{equation}
+where $\phi$ is the phase associated with the LZ transition and is given by
+\cite{Garraway:92}
+\begin{equation}
+\phi = \frac{-\pi}{4} + \Lambda \log_e \Lambda -\Lambda -
+{\rm arg}\left[\Gamma(\Lambda)\right]
+\label{phi}
+\end{equation}
+with ${\rm arg}\left[\Gamma(\Lambda)\right]$ the phase of the gamma function
+evaluated at $\Lambda$.
+Now, this transition matrix assumes that the states cross in a
+particular order (i.e. one from above, the other from below).  If they cross
+in the opposite order, the transition matrix is slightly different and is given
+by
+\begin{equation}
+\hat{T}_2 = \left[\begin{array}{cc}
+               \sqrt{1 - P_a} & \sqrt{P_a} e^{-i\phi} \\
+	       -\sqrt{P_a} e^{i\phi} & \sqrt{1 - P_a}
+	    \end{array} \right].
+\end{equation}
+This change from $\hat{T}_1 \rightarrow \hat{T}_2$ can be effected by letting
+the phase change as $\phi \rightarrow -\phi \pm \pi$.
+
+We now calculate the evolution for one optical cycle with the
+time evolution from $t=0 \rightarrow 2\pi/\omega_L$.  The single cycle
+evolution operator is
+\begin{equation}
+\hat{U}_1 =
+\hat{U}\left(\frac{2\pi}{\omega_L},\frac{2\pi}{\omega_L}-t_c\right)\hat{T}_2
+\hat{U}\left(\frac{2\pi}{\omega_L} -t_c,t_c\right)\hat{T}_1\hat{U}(t_c,0).
+\end{equation}
+
+The analysis thus far has been for an arbitrary two-level system that exhibits
+periodic level crossings mediated by an ac modulated detuning.  However, at this
+point we specialize to our particular problem and use our knowledge of our
+problem's adiabaticity.  The matrix element of the interaction term coupling
+our two states is
+\begin{equation}
+V = S_{k1} \Omega_g \cos(\omega_L t).
+\end{equation}
+This term is modulated at the optical frequency but we will only need
+its value at the crossing times.  Also the time rate of change of
+the frequency separation is
+\begin{equation}
+\frac{d\omega}{dt} = \Delta_k \omega_L \sin(\omega_L t),
+\end{equation}
+which also will be evaluated at the crossing times. Therefore we may evaluate
+$\Lambda$ as
+\begin{equation}
+\Lambda_k = \frac{S_{k1}^2 \Omega_g^2 \cos^2(\omega_L t_c)}{\left|\Delta_k
+\omega_L \sin(\omega_L t_c)\right| }.
+\end{equation}
+$\Omega_g$ is a small perturbative quantity and $\Delta_k \approx \omega_L$.
+Therefore, $\Lambda_k \ll 1$ and our transition is overwhelmingly diabatic.
+That is, $P_a \approx 2 \pi \Lambda_k \ll 1$.  Keeping to lowest order in $P_a$
+the single cycle transition matrix is
+\begin{equation}
+\hat{U}_1 \approx \left[\begin{array}{cc}
+               e^{-i 2 \pi x} & \Psi_k \sqrt{2 \pi \Lambda_k} \\
+	       \Psi_k \sqrt{2 \pi \Lambda_k} & 1
+	     \end{array}\right]
+\end{equation}
+with
+\begin{eqnarray}
+x &=& \frac{\omega_n}{\omega_L}, \\
+\Psi_k &=& \exp\left[-i(\phi_k -\alpha_k+2\pi x)\right] - \exp\left[i
+(\phi_k -\alpha_k)\right],
+\end{eqnarray}
+where $\phi_k$ is defined as in \Eq{phi} and
+\begin{equation}
+\alpha_k = \omega_n t_c + \frac{\Delta_k}{\omega_L}\sin(\omega_L t_c).
+\end{equation}
+The $N$-cycle evolution matrix can be calculated, again to lowest order in
+$P_a$, as
+\begin{equation}
+\hat{U}_N \approx \left[\begin{array}{cc}
+    e^{-i2\pi N x} & \Psi_k \sqrt{2 \pi \Lambda_k}
+    {\displaystyle \sum_{j=0}^{N-1}e^{-i j 2 \pi x}}  \\
+    \Psi_k \sqrt{2 \pi \Lambda_k}{\displaystyle \sum_{j=0}^{N-1}e^{-i j
+    2 \pi x}} & 1
+    \end{array}\right].
+\end{equation}
+If we assume $\delta = \omega_n - \omega_L \ll \omega_L$, then $ x \approx 1$
+and we can write the $N$-cycle time evolution matrix as
+\begin{equation}
+\hat{U}_N \approx
+\left[\begin{array}{cc}
+ e^{-i\delta \tau_p} & N \Psi_k \sqrt{2 \pi \Lambda_k}
+ {\displaystyle \frac{\sin(\delta \tau_p/2)}{(\delta \tau_p/2)}}  \\
+ N \Psi_k \sqrt{2 \pi \Lambda_k}{\displaystyle \frac{\sin(\delta
+ \tau_p/2)}{(\delta\tau_p/2)}} & 1
+\end{array}\right]
+\end{equation}
+with
+\begin{equation}
+\Psi_k \approx 2 i \sin(\alpha_k - \phi_k)
+\end{equation}
+for $x \approx 1$. The probability of a transition, $k \leftarrow g$,
+is then given by
+\begin{equation}
+P_{k \leftarrow g} = N^2 8 \pi \Lambda_k \sin^2(\alpha_k-\phi_k)
+\frac{\sin^2(\delta \tau_p/2)}{(\delta \tau_p/2)^2}
+\label{lzprob}
+\end{equation}
+
+This last equation represents the main result of our LZ calculation.  It has
+several interesting features that deserve elaboration.  The first is the
+factor $N^2$.  While each transition probability is small, each small one
+adds coherently to produce a significant population transfer, depending on the
+number of optical cycles.  This many cycle periodic avoided crossing has
+recently been examined in the microwave domain \cite{Watkins:96}.  The second
+feature to notice is the presence of the detuning term.  This is the traditional
+weak field absorption response due to a square pulse.  This shows that the
+coherent-many-cycle addition of the small transition probabilities will only add
+up to an appreciable value if the detuning is within a reciprocal pulse width of
+resonance.  This helps to justify ignoring the neighboring $n$ manifolds.
+One might wonder if our LZ theory is flawed because if level $n$ shifts
+through the ground state and gets populated, then the shift of level $n
+\pm 1$ is approximately the same and hence they too should be populated.  The LZ
+theory, however, shows that even though these states have avoided crossings
+with the ground state, they accumulate phase at a slightly different rate so
+that many small amplitudes add to give a still small transition probability,
+with the smallness determined by the detuning and the pulse width.  This
+theory does not predict the distorted lineshape that was seen for hyperbolic
+secant pulses previously.  However, we saw there that the width of the
+absorption feature was not significantly modified from its weak field value,
+and this feature is reproduced in the LZ square pulse model.
+A second feature of this result is the presence of the $\sin(\alpha_k -
+\phi_k)$ term.  This represents the interference of the two population
+transfer routes during one cycle depicted in \Fig{lz2}.
+
+A quantitative comparison of the LZ theory (dashed line) with the predictions
+of \Eq{eq:harmonics} for a square pulse (solid line) are shown in \Fig{poplz}.
+In this case, the population in the parabolic states are shown versus
+the electric quantum number $k$ for increasing values of $\beta$. 
+The distribution is symmetric in $k$ and hence only positive $k$ values are
+shown.  For $\beta=8$ we see excellent agreement between the two models for $k
+>17$.  For this value of $\beta$, we see from \Eq{tc} that the crossing time
+is imaginary for $\left| k \right| < 8$.  That is, these states do not have
+avoided crossings with the ground state.  Our LZ theory tacitly assumes that each
+state has avoided crossings with the ground state, and hence, this model
+predicts zero population for these states, as shown in the figure. The LZ
+theory also assumes that the evolution time can be well separated into
+crossing and free evolution periods.  This will not be true for those states
+that have avoided crossings with the ground state near the extreme of their
+motion.  Therefore, we see that  until $k \sim 17$ the model does not predict
+quantitatively the population transfer.  Above this value, the agreement is
+excellent.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/direct/pop_lz.eps}
+\bigskip
+\wcap{Landau-Zener predictions of parabolic state populations} {The
+predictions of the Landau-Zener theory (dashed line) is compared to the
+predictions of \Eq{eq:harmonics} (solid line) for a square pulse and various
+values of $\beta$. The principal quantum number is taken to be $n=60$.
+\label{poplz}}
+\end{figure}
+
+
+For $\beta=16$, the no-crossing cut-off is for $k < 4$ and the agreement
+becomes quantitatively accurate for $k > 9$.  And finally, for $\beta=32$ the
+no crossing cut-off is $k < 2$ and here the quantitative agreement
+essentially extends over the entire $k$ range. 
+Typical applications of LZ theory include Rydberg atoms in dc or
+microwave electric fields, and recently, in strong optical fields where the ac
+Stark shift gives rise to avoided crossings between Floquet states.  In this
+last example, the time scale of the state shifting is the optical pulse
+length.  In our case, it is the optical period.  It is perhaps surprising then
+that this model should work so accurately in such an unorthodox application.
+Yet the conditions for applicability of the LZ theory are straightforward.  The
+levels must be separated by $\infty$ (infinite energy) at early times, the shift
+must vary linearly with the time (or another parameter), and
+they must be separated by $-\infty$ at large positive times.  These conditions
+are closely approximated in our problem.  The levels are separated by an
+amount $\sim \omega_L$ at early times and experience an avoided crossing of
+width $\sim \Omega_g \ll
+\omega_L$ so that on the scale of the avoided crossing, the levels appear to
+be separated by $\infty$ at early times.  The levels also shift linearly with
+the optical electric field.  And finally, provided the avoided crossing
+does not occur near the extreme of the motion, the levels appear to be
+separated by $-\infty$ for long times.  And indeed, the agreement shown in
+\Fig{poplz} is excellent for those states that meet these requirements.
+
+\section{Conclusions}
+\hspace{\parindent}
+
+In this chapter, we delineated regimes under which efficient excitation of
+Rydberg states can be achieved by single-photon coupling from the ground
+state. We have found that one of the main limitations is that the strong
+electric field needed to transfer the population to the Rydberg state is also
+strong enough to induce $\ell$-mixing of the Rydberg states.  The interaction
+degrades the selectivity of the excitation process, but from a broader point
+of view, the interaction gives rise to some exciting predictions for these
+Rydberg atoms in strong optical fields.

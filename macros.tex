@@ -1,0 +1,26 @@
+%macro for Postscript figures with scaling
+\newcommand{\postscript}[2]
+ {\setlength{\epsfxsize}{#2\hsize}
+  \centerline{\epsfbox{#1}}
+ }
+
+%macro for Postscript figures without scaling
+\newcommand{\post}[1]{
+\setlength{\epsfxsize}{\hsize}
+  \centerline{\epsfbox{#1}}
+ }
+
+The above "w/o scaling" seems still to scale to column width (\hsize).
+The following does not.
+
+%macro for Postscript figures without scaling
+\newcommand{\post}[1]{ \centerline{\epsfbox{#1}} }
+
+Various short cuts ...
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bra}[1]{\left< #1 \right|}
+\newcommand{\ket}[1]{\left| #1 \right>}
+\newcommand{\braket}[2]{\left< #1 \mid #2 \right>}
+

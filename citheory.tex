@@ -1,0 +1,1032 @@
+\begin{singlespace}
+
+\chapter{Two-Photon Excitation: Theory}
+\label{citheory}
+\begpagestyle
+%\pagenumbering{arabic}
+
+\end{singlespace}
+
+
+In this chapter, we examine excitation from the initial ground state to a
+final Rydberg state that proceeds through an intermediate resonance, modeling
+the atom as an ideal three-level cascade system.  We examine theoretically
+this three-level interaction mediated by two laser pulses as a function of
+the time delay between the two excitation pulses.  This leads us into the
+field of ``counterintuitive'' interactions \cite{Shore:95a} and we examine
+this process in detail by including such experimental effects as Doppler
+broadening, Gaussian spatial profiles, and laser amplitude fluctuations.  We
+find that even in the presence of these effects, the population transfer is
+maximized when pulses are applied in the counterintuitive order.  Finally,
+extending this ideal three-level model to a Rydberg final state is discussed.
+
+\section{Counterintuitive Pulses}
+\label{CI}
+
+\hspace{\parindent} Consider the general three level interaction shown in
+\Fig{apt_levels}.  A ground state, $\ket{0}$, is near resonantly coupled to
+an intermediate level, $\ket{1}$, by a field of frequency $\omega_1$, which
+in turn is coupled by a field of frequency $\omega_2$, to a final state,
+$\ket{2}$.  If the goal of the interaction is to transfer maximal population
+from the initially populated ground state to the upper state, $\ket{2}$,
+then the natural approach would be to use ``intuitive'' pulse ordering.  That
+is, first a laser pulse resonant with the $\ket{0} \rightarrow \ket{1}$
+transition takes population from the ground state to the middle state.
+Then, after a short time delay (shorter than the spontaneous emission
+lifetime of the middle state), the second pulse, resonant with the
+$\ket{1} \rightarrow \ket{2}$ transition, takes the population from the
+middle level to the upper level.  This step-wise approach is
+traditionally used in this problem \cite{Stebbings_book}.  Under ideal
+conditions (single atom, fully coherent fields), this method can achieve
+complete population transfer if odd-$\pi$ pulses are used \cite{Allen:87}.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon/apt_levels.eps}
+\bigskip
+\ncap{Level scheme for the three-level interaction.} {Level scheme for the
+three-level interaction excited by two laser fields.
+\label{apt_levels}}
+\end{figure}
+
+The possibility of counterintuitive pulse ordering was suggested by Oreg
+\etal \cite{Oreg:84}.  In this work, it was shown (using the group-theoretic
+technique of the SU($N$) coherence vector of an $N$-level system
+\cite{Hioe:81}) that adiabatic transfer to the final state could be achieved
+by applying the driving fields in the opposite order, where the second
+transition pulse interacts with the atom first.  This effect was first
+experimentally observed by Gaubatz \etal \cite{Gaubatz:88}.  In this
+experiment, single-mode CW dye lasers intersected an Na$_2$ molecular beam at
+right angles.  By displacing the two laser beams with respect to each other
+along the molecular beam axis, a time delay between the two laser beams is
+experienced by the molecules in the molecular beam.  This experiment
+demonstrated efficient and selective population transfer to highly excited
+vibrational levels of the Na$_2$ ground electronic state and was later examined
+in greater detail \cite{Gaubatz:90}, with transfer efficiencies approaching
+100\%.  Subsequent experimental work using the hyperfine resolved Cs D$_2$ line
+showed that when the ideal three-level system is coupled to other levels, the
+population transfer efficiency can be reduced \cite{Pillet:93}.  A transfer
+efficiency of 50\% was observed due to coupling among magnetic sublevels.  An
+extensive study of the effects of magnetic sublevels in a degeneracy-lifting
+magnetic field has recently been reported in three parts
+\cite{Shore:95b,Martin:95,Martin:96}.  Counterintuitive delays have also been
+used to transfer momentum efficiently to the center-of-mass motion of atoms in
+laser cooling \cite{Lawall:94,Goldner:94}, which has led to the development of
+an atomic interferometer based on adiabatic population transfer
+\cite{Weitz:94}.
+
+The use of pulsed lasers rather than spatially displaced CW lasers was first
+demonstrated with NO molecules \cite{Schiemann:93} obtaining nearly 100\%
+transfer efficiency.  An experiment with SO$_2$ molecules extended the pulsed
+laser work by demonstrating efficient transfer in a polyatomic molecule and
+the existence of the ``dark'' resonance in the pulsed regime.  Efficient
+population transfer in a cascade system has been demonstrated with a chirped
+ultrashort laser pulse in Rb where the direction of the chirp produces a
+counterintuitive sequence of resonances in a three-state anharmonic
+ladder \cite{Broers:92}.
+
+Following the original theoretical work by Oreg \etal \cite{Oreg:84},
+Kuklinski \etal \cite{Kuklinski:89} showed the connection between this special
+type of time-dependent population transfer and some of the classic results of
+three-level atoms in CW laser fields \cite{Arimondo:76,Gray:78}.  Conditions
+for adiabatic evolution were also established.  Subsequent theoretical work
+included analytic solutions for special classes of pulse shapes
+\cite{Carroll:90} and analytic results for multilevel systems
+\cite{Coulston:92}.  A relative comparison among the various excitation
+techniques (including counterintuitive pulse sequences) has been made
+\cite{He:90,Shore:92}.  Kuhn \etal investigated the effects of
+non-transform-limited laser performance on the transfer efficiency and found
+the efficiency to be degraded strongly for spectrally broad light
+\cite{Kuhn:92}.  Counterintuitive pulses have also been suggested to
+transfer population efficiently between discrete states using a continuum as
+the intermediate state \cite{Carroll:92}.
+
+While we shall consider optically thin media (Beer's absorption length longer
+than the propagation length), some interesting results have been predicted and
+observed in these three-level systems in optically thick media, most notably
+the phenomenon of electromagnetically induced transparency \cite{Harris:89}. 
+This effect makes use of a coupling laser that strongly dresses one
+transition producing ac-Stark split states that interfere to produce a minimum
+in the absorption of a probe laser that (weakly) drives the second transition. 
+This coupling laser in effect renders an initially opaque medium transparent
+to the probe laser, and has been experimentally observed \cite{Boller:91}. 
+Analysis of propagation dynamics has yielded predictions of matched pulse
+production \cite{Harris:93}.  Normal modes for this propagation were identified
+\cite{Harris:94} and the existence of dressed-field pulses (where the field's
+evolution in space is equivalent to the dressed atoms evolution in time) was
+demonstrated \cite{Eberly:94}.  Analytic predictions of solitary wave formation
+\cite{Hioe:94} and the prediction of a special class of pulses termed
+``adiabatons'' \cite{Grobe:94} have been predicted in this vein.  Eberly
+\cite{Eberly:95} discussed the importance of counterintuitive pulse ordering for
+these propagation problems.  Another on-going research effort in driven
+three-level systems is the closely related phenomenon of lasing without
+inversion which has been experimentally demonstrated \cite{Zibrov:95}.
+
+The physics behind these counterintuitive pulse sequences can be understood
+by examining the Hamiltonian (in the rotating wave approximation) of the
+three-level system in
+\Fig{apt_levels} driven by two laser fields
+% HAMILTONIAN
+\begin{equation}
+\hat{H} = \left[ 
+\begin{array}{ccc}
+0 & \Omega_1 & 0  \\
+\Omega_1 & 0 & \Omega_2 \\
+0 & \Omega_2 & 0
+\end{array} \right],
+\label{hamil}
+\end{equation}
+where we assume that we have two-photon and single-photon resonance, $\Delta_1
+= \Delta_2 = 0$.  If we diagonalize this Hamiltonian, then one of the three
+dressed state solutions has zero eigenvalue and is given by
+\begin{equation}
+\ket{\lambda_0} = \cos\left(\theta\right)\ket{0} -
+\sin\left(\theta\right)\ket{2}
+\end{equation}
+with
+\begin{equation}
+\tan\theta = \frac{\Omega_1}{\Omega_2}.
+\end{equation}
+This is the familiar trapped, or dark state, which is the
+source of coherent population trapping \cite{Gray:78}.  One of the most
+important features of this state is that it contains no admixture of the
+middle state, $\ket{1}$.  If the level structure is in the
+$\Lambda$-configuration, or if $\ket{2}$ is a metastable state in
+\Fig{apt_levels}, then the fluorescence from this system can be turned off
+by driving the atom to the $\ket{\lambda_0}$ state.  That is why this
+state is referred to as the dark state, and typically a minimum in the
+fluorescence is seen as one tunes through two-photon resonance.  The other
+two dressed states contain admixtures of all three levels.
+
+So far, we have not discussed the time-dependence of the fields.  If
+$\Omega_1,\Omega_2$ are allowed to vary in time, then
+$\ket{\lambda_0}$ becomes an adiabatic solution of the time-dependent
+Hamiltonian.  In this case,
+\begin{equation}
+\ket{\lambda_0} \rightarrow \ket{\lambda_0(t)}= \cos\left[\theta(t)\right]
+\ket{0} - \sin\left[\theta(t)\right]\ket{2}
+\label{dark}
+\end{equation}
+and
+\begin{equation}
+\tan\theta \rightarrow \tan\left[\theta(t)\right] = \frac{\Omega_1(t)}
+{\Omega_2(t)}.
+\label{theta}
+\end{equation}
+This adiabatic dressed state can be used to transfer
+population to the upper state \cite{Kuklinski:89}.  By examining
+\Eq{dark} we see that if $\theta(t) \rightarrow 0$ as $ t \rightarrow -\infty
+$ then $\ket{\lambda_0}$ corresponds with the ground state at early times.
+Furthermore, if $\theta(t) \rightarrow \pi/2$ as $ t \rightarrow \infty $, then
+$\ket{\lambda_0}$ corresponds with the upper state at later times.  Then using
+\Eq{theta} we see that these asymptotic limits are realized if $\Omega_2(t)$ is
+applied to the atom {\em before} $\Omega_1(t)$.  This sequence of pulses has been
+called counterintuitive, being opposite ordering to the
+intuitive scheme.  Such adiabatic population transfer schemes in
+$\Lambda$-configuration level structures are called STIRAP
+(\underline{sti}mulated \underline{R}aman \underline{a}diabatic
+\underline{p}assage) processes, but this terminology seems poorly suited for
+our cascade geometry.
+
+Thus if the systems time dependent wavefunction satisfies
+\begin{equation}
+\ket{\Psi(t)} \approx \ket{\lambda_0(t)}
+\end{equation}
+for all times $t$, and the counterintuitive order of
+pulses is applied to the atom, then $\ket{\Psi(t)}$ begins as the ground state
+at early times, and evolves into the upper state at later times, transferring
+population to the final state without populating the middle state.  We now need
+to explore the restrictions on our counterintuitive pulses to ensure an
+adiabatic interaction. This has been studied previously \cite{Kuklinski:89}
+with the interesting result that the condition for adiabaticity depends not only
+on the duration of the applied laser pulses, but also on their energies.  We can
+understand this result by making a time-dependent unitary transformation to the
+adiabatic basis.  First we must know the time-dependent eigenvalues of the
+Hamiltonian.  By diagonalizing
+\Eq{hamil}, we obtain the adiabatic dressed state energies
+\begin{eqnarray}
+\lambda_{+}(t) &=& \sqrt{\Omega_1^2(t) + \Omega_2^2(t)} \\
+\lambda_{0}(t) &=& 0 \\
+\lambda_{-}(t) &=& -\sqrt{\Omega_1^2(t) + \Omega_2^2(t)}.
+\end{eqnarray}
+These eigenvalues are plotted in \Fig{lips} for the symmetric case of equal
+peak Rabi frequencies. For early and late times, the system (in the rotating
+frame) is three-fold degenerate.  As the Rabi frequency of the first pulse
+grows, the dressed state energies separate.  The separation between two
+neighboring levels at any time is given by $\lambda_+(t)$.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon/lips.eps}
+\bigskip
+\ncap{Time-dependent dressed state energies.} {Time-dependent dressed state
+energies for three-level system interacting with two delayed pulsed fields.
+The two pulses create equal Rabi frequencies, and are separated by
+approximately a pulsewidth.
+\label{lips}}
+\end{figure}
+
+The corresponding eigenvectors associated with these adiabatic dressed state
+energies are
+\begin{eqnarray}
+\ket{\lambda_{+}(t)} &=& \frac{\sin\theta(t)\ket{0} + \ket{1}
++\cos\theta(t)\ket{2}}{\sqrt{2}} \\
+\ket{\lambda_{0}(t)} &=& \cos\theta(t)\ket{0} - \sin\theta(t)\ket{2} \\
+\ket{\lambda_{-}(t)} &=& \frac{\sin\theta(t)\ket{0} - \ket{1} +
+\cos\theta(t)\ket{2}}{\sqrt{2}}.
+\end{eqnarray}
+Then, if these $\ket{\lambda}$ states are used as the basis states (by
+means of a time-dependent unitary transformation), the Hamiltonian
+in the adiabatic state basis becomes \cite{Khidekel:95}
+\begin{equation}
+\hat{H}_{adiabatic}(t) = 
+\left[ \begin{array}{ccc}
+\lambda_+(t) & 0 & 0  \\
+0 & \lambda_0(t) & 0 \\
+0 & 0 & \lambda_-(t)
+\end{array} \right] -i\frac{\dot{\theta}(t)}{\sqrt{2}} 
+\left[ \begin{array}{ccc}
+0 & -1 & 0  \\
+1 & 0 & 1 \\
+0 & -1 & 0
+\end{array} \right]
+\end{equation}
+with
+\begin{equation}
+\dot{\theta}(t) = \frac{\dot{\Omega}_1(t)\Omega_2(t) -
+\Omega_1(t)\dot{\Omega}_2(t)}{\Omega_1^2(t) + \Omega_2^2(t)}.
+\end{equation}
+If the term in $\dot{\theta}(t)$ can be neglected, then there will be no
+coupling between our adiabatic states.  Therefore, $\dot{\theta}$ represents
+the strength of the non-adiabaticity.  If $\dot{\theta}$ is much
+smaller than the energy separation of the adiabatic dressed state energies,
+then the evolution is approximately adiabatic.  Specifically, the condition
+for adiabatic evolution is
+\begin{equation}
+\dot{\theta}(t) \ll \lambda_{+}(t)
+\end{equation}
+or equivalently
+\begin{equation}
+\frac{\dot{\Omega}_1\Omega_2 -
+\Omega_1\dot{\Omega}_2}{\left(\Omega_1^2 + \Omega_2^2\right)^{3/2}} \ll 1.
+\end{equation}
+This has been shown \cite{Kuklinski:89} to be equivalent to
+\begin{equation}
+\left(\sqrt{\Omega_1^2 + \Omega_2^2}\right)\tau_p \gg 1
+\label{adiab_criterion}
+\end{equation}
+with $\tau_p$ the pulse duration.  As mentioned previously, this adiabatic
+condition depends on both the duration and the energy of the pulses.
+Therefore, a short pulse can still satisfy the adiabaticity criterion
+if it has sufficient energy.
+
+\section{Theoretical Formalism}
+
+\hspace{\parindent} In this section, we introduce the general theoretical
+formalism that will be used to describe the counterintuitive pulse dynamics. 
+We assume the level structure as in
+\Fig{apt_levels}.  The equations of motion for the density matrix
+are \cite{Allen:82}
+\begin{equation}
+\dot{\rho_{ll}} = -\Gamma_{ll}\rho_{ll} + \sum_{E_i > E_l} A_{il}\rho_{ii}
++ \frac{i}{\hbar}\sum_{i} \left[d_{li}\rho_{il}-d_{il}\rho_{li}\right]E(t)
+\end{equation}
+for the populations, and
+\begin{equation}
+\dot{\rho_{ml}} = \left(-i\omega_{ml}-\Gamma_{ml}\right)\rho_{ml}
++\frac{i}{\hbar}\sum_{i}\left[d_{mi}\rho_{il} - d_{il}\rho_{mi}\right]E(t)
+\end{equation}
+for the coherences.  Here, $A_{il}$ is the Einstein ``A'' coefficient of the
+$i \rightarrow l$ transition,
+\begin{equation}
+\Gamma_{ll} = \sum_{E_i < E_l}A_{li},
+\end{equation}
+and
+\begin{equation}
+\Gamma_{lm} = \frac{1}{2}\left(\Gamma_{ll} + \Gamma_{mm}\right).
+\end{equation}
+
+Specializing these equations to our three-level problem, we introduce 
+the slowly varying amplitudes
+\begin{eqnarray}
+x_{ll} & = & \rho_{ll} \\
+x_{01} & = & \rho_{01}\exp(-i \omega_1 t) \\
+x_{02} & = & \rho_{02}\exp\left[-i\left(\omega_1 + \omega_2\right)t\right] \\
+x_{21} & = & \rho_{21}\exp(i\omega_2 t).
+\end{eqnarray}
+The applied (bichromatic) field is taken to be $E = E_1\left({\rm e}^{-i
+\omega_1 t} + c.c.\right) + E_2\left({\rm e}^{-i\omega_2 t} + c.c.\right)$.
+The equations of motion in the rotating wave approximation are then given by
+\begin{eqnarray}
+\dot{x_{00}} & = & A_1 x_{11} + i (x_{10} - x_{01})\Omega_1 \\
+\dot{x_{01}} & = & \left(i\Delta_1 -\frac{A_1}{2}\right)x_{01} +
+i (x_{11}-x_{00})\Omega_1 -i x_{02} \Omega_2 \\
+\dot{x_{02}} & = & \left[i(\Delta_1+\Delta_2) - \frac{A_2}{2}\right]x_{02} +
+i x_{12} \Omega_1 -i x_{01} \Omega_2 \\
+\dot{x_{11}} & = & -A_1 x_{11} + A_2 x_{22}
++i (x_{01}-x_{10})\Omega_1 +i (x_{21}-x_{12})
+\Omega_2 \\
+\dot{x_{21}} & = & \left[-i\Delta_2 +\frac{1}{2}(A_1+A_2)\right]x_{21} +
+i (x_{11}-x_{22})\Omega_2 - i x_{20}\Omega_1 \\
+\dot{x_{22}} & = & -A_2 x_{22} + i (x_{12} - x_{21})\Omega_2
+\end{eqnarray}
+where $\Omega_1 = d_1 E_1$ and $\Omega_2 = d_2 E_2$ are the transition Rabi
+frequencies . The single-photon detunings are $\Delta_1 = \omega_{10} -
+\omega_1$ and $\Delta_2 = \omega_{21} - \omega_2$.  The detuning from
+two-photon resonance is $\Delta_1 + \Delta_2$.
+
+This theory will enable us to investigate the driven atomic response.  The
+presence of the Einstein ``A'' coefficients enables us to correctly model
+spontaneous emission.  Furthermore, the density matrix equations of motion can
+be readily generalized to include other homogeneous broadening mechanisms by the
+addition of phenomenological decay terms.  Doppler broadening can be modeled
+with the appropriate detuning terms, and finally, by making the Rabi frequencies
+space-dependent, we can model the spatial profile of the exciting lasers.
+
+\section{Single-Atom Response}
+\hspace{\parindent} In the next chapter we shall present experimental results
+obtained in sodium vapor.  To facilitate comparisons with theory, we will
+specialize our formalism here to the $3S_{1/2} \rightarrow
+3P_{1/2} \rightarrow 4D_{3/2}$ cascade system in sodium, with laser
+wavelengths of $589.755$ nm ($3S_{1/2} \rightarrow 3P_{1/2}$) and $568.421$
+nm ($3P_{1/2} \rightarrow 4D_{3/2}$) \cite{Moore:71}, and with Einstein ``A''
+coefficients of $A_1 = ($15.9~ns$)^{-1}$ and $A_2 = (91.7$~ns$)^{-1}$
+\cite{Wiese:69}.
+
+Since our goal is to maximize population in the final state, we must identify
+an experimental parameter to monitor this population information.  There
+is a slight subtlety in this choice.  At issue is the fact that our
+final state has a finite spontaneous emission lifetime.  The experiment consists
+in varying the delay between two resonant laser pulses and measuring the upper
+state population for each delay.  Consider that the orange
+($589.755$ nm) pulse is fixed with respect to some time axis with its peak at
+$t=0$, and the green ($568.421$ nm) pulse is delayed in time with peak occurring
+at time $t_G$.  From a very crude standpoint, the population is transferred
+to the upper state when the green pulse is ``on'', at $t_G$.  If we choose some
+arbitrary time, $t_f$, to measure the upper state population, then
+the population can vary depending on the delay between $t_f$ and $t_G$.  So
+while the peak transfer of population may be the same at two different values
+of $t_G$, the population at $t_f$ may be different.  Notice that if the upper
+state had an infinite lifetime, this would not be an issue (and is not an issue
+when studying counterintuitive pulses in the $\Lambda$-configuration
+\cite{He:90}).  This might be remedied by changing $t_f$ for every value of
+$t_G$ so that their difference is kept fixed, fixing the time axis with respect
+to the green pulse instead of the orange.  This solves the problem for pulses
+with duration much shorter than the decay time of the upper state (91.7 ns).  In
+our case, we use pulses with full width at half maximum (FWHM) durations of
+$\tau_{\scriptscriptstyle \!F\!W\!H\!M}
+\sim 15$ ns and so this does not entirely solve the problem
+($\exp[-\tau_{\scriptscriptstyle \!F\!W\!H\!M}A_2] =
+\exp[-15/91.7] \approx 0.85$).
+
+To remedy this situation, we chose to integrate the fluorescence from the
+$4D_{3/2} \rightarrow 3P_{1/2}$ transition during the entire interaction.  At
+any given time the fluorescence is proportional to the population in state
+$\ket{4D_{3/2}}$.  The issue then is to demonstrate that the
+integrated fluorescence is a meaningful measure of transferred
+population.  In order to show this, we first consider the situation where
+spontaneous emission is neglected.  Both laser pulses are modeled with a
+Gaussian electric field envelope, $f_1(t) = \exp\left[-t^2/2\sigma_p\right]$
+for the orange pulse and $f_2(t) = \exp\left[-(t+\Delta
+t)^2/2\sigma_p\right]$ for the green. The pulse duration is $\tau_{
+\scriptscriptstyle \!F\!W\!H\!M} = 2
+\sqrt{\log_e(2)} \sigma_p = 15$ ns.  Note that $\Delta t > 0$ corresponds to a
+counterintuitive pulse sequence with these definitions.  The dipole moments
+for the transitions are $\bra{3S_{1/2}}\hat{z}\ket{3P_{1/2}} = d_1 = 1.45$
+a.u. and $\bra{3P_{1/2}}\hat{z}\ket{4D_{3/2}} = d_2 = 0.813$ a.u.
+\cite{Wiese:69}.  Even though the dipole moments are different, we
+shall take the associated Rabi frequencies to be equal for simplicity (this does
+not have a large impact as the adiabatic criterion is a threshold condition and
+therefore, exact values of the Rabi frequency are not as important as their
+relationship to the threshold).
+
+Since the fluorescence is proportional to the $\ket{4D_{3/2}}$ state at any
+time, we chose to model the fluorescence integration by integrating the
+population in the $\ket{4D_{3/2}}$ state.  We shall use the terms
+``time-integrated fluorescence'' and ``time-integrated population''
+interchangeably because of their proportionality.  Also, to ensure that the
+interaction had completed, we performed this integration from a very early
+time ($t_i = -1000$ ns) to a very late time ($t_f = 1000$ ns).  The
+time-integrated fluorescence is given by
+\begin{equation}
+F = \int_{t_i}^{t_f} x_{22}(t) dt.
+\end{equation}
+Note, as defined, this has units of time.
+
+\begin{figure}[tbp]
+\postscript{thesisfigs/two_photon/nodecay.eps}{.5}
+\bigskip
+\ncap{Comparison of instantaneous to time-integrated population in the absence
+of decay.} {Comparison of (a) instantaneous to (b) time-integrated population
+in the absence of decay, plotted against delay between two resonant
+pulses.  Positive time delays (measured in units of pulse standard deviation)
+correspond to counterintuitive pulse ordering.  Each pulse area is $ 10 \pi$.
+\label{nodecay}}
+\end{figure}
+
+In \Figure{nodecay} we show the comparison between the final upper-state
+population (as measured at $t_f$) and the time-integrated population for
+pulses having areas of $10 \pi$.  The two curves display the characteristic
+response of the three-level system to these strong pulses.  On the intuitive
+side, the population shows oscillation structure versus delay.  For very early
+times, there is no population transfer due to our choice of the area being an
+even multiple of $\pi$.  When the pulses are well separated on the intuitive
+side, the orange pulse leaves the system in its ground state, and hence the green
+pulse cannot transfer any population to the final state.  The counterintuitive
+side displays a flat region of population transfer near one.  For large
+counterintuitive delays, the population goes back to zero.  This is not an
+artifact of the even number of $\pi$ chosen for the interaction, but represents
+the fact that if the pulses are not overlapping to some degree, the original
+intuition which told us the counterintuitive ordering shouldn't work is
+correct.  The magnitude of the integrated population in \Fig{nodecay}(b)
+demonstrates that the entire population is transferred to the upper state near
+$t=0$ and this population ($=1$) is integrated in time from $t=0$ to
+$t=t_f=1000$ ns.  Therefore, the value of the integrated population is nothing
+more that the total population transferred times the integration time.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon/decay.eps}
+\bigskip
+\ncap{Comparison of instantaneous to time-integrated population in the
+presence of decay.}{Comparison of (a \& b) instantaneous to (b \& d)
+time-integrated population in the presence of decay, plotted against delay
+between two resonant pulses.  Positive time delays (measured in units of pulse
+standard deviation) correspond to counterintuitive pulse ordering.  Each pulse
+area is $10\pi$.  In (a) and (b) the origin of time (not time delay) is
+defined with respect to the orange pulse and in (c) and (d) with respect to
+the green pulse.
+\label{decay}}
+\end{figure}
+
+The general shapes of the two curves are very similar, and this gives good
+reason to infer information about the population from the integrated
+fluorescence.  However, we must investigate this relationship in the presence of
+decay, and we will further explore the issue of the time choice for measuring
+the final state population, discussed previously. 
+In \Fig{decay}(a) and \Fig{decay}(b), the orange pulse is held fixed and the
+population is measured at time $t_f = 1000$ ns after the peak of the orange
+pulse.  Notice that the population in \Fig{decay}(a) is very small.  This is
+because the population has had $1000/91.7 \approx 10.9$ lifetimes to decay
+($\exp(-10.9) \approx 1.8 \times 10^{-5}$).  Such a long delay guarantees that
+the atom is no longer interacting with the laser pulses, and that essentially
+all the population has been integrated.   The magnitude of $F$ in \Fig{decay}(b)
+represents the fact that essentially the entire population is transferred to the
+upper state, which then decays to the middle level in a time $1/A_2$.  So, $F
+\approx {\displaystyle \int}_0^{t_f} x_{22}(0) \exp(-A_2 t)dt = x_{22}(0)/A_2
+=x_{22}(0) \times 91.7$ ns.  Therefore, for $x_{22}(0)\approx 1$, $F$ will have
+a maximum signal near $91.7$ ns, which is the value obtained in \Fig{decay}(b).
+
+The first dramatic feature to notice about both \Fig{decay}(a) and
+\Fig{decay}(b) is that the population is larger on the counterintuitive side
+than on the intuitive.  This is in contrast to \Fig{nodecay} where the
+two sides achieved very similar maximum population transfer.  This discrepancy
+is due primarily to the decay of the middle state.  In the presence of decay,
+pulse area is not a particularly meaningful quantity.  For instance, a CW laser
+field may have infinite area, but in the long-time limit, only 50\% of the
+population in a two-level system will be in the excited state \cite{Allen:87}. 
+Consequently, the population transfer on the intuitive side suffers from this
+decay.  The counterintuitive scheme transfers population via the dark state
+(\Eq{dark}), which has no admixture of the decaying middle level and thus is
+unaffected by the spontaneous emission.
+
+Upon closer examination of \Fig{decay}(a), we notice that what was a flat
+constant population on the counterintuitive side in the no-decay case of
+\Fig{nodecay}(a) now has an upward rising tendency for increasing pulse delay.
+Again, this is due to the choice of $t_f$ being a fixed time with respect to
+the orange pulse.  For larger delays, the time difference between the green
+pulse and $t_f$ decreases and so the population increases, having had less
+time to decay.  The integrated population in \Fig{decay}(b) does not suffer
+from this complication.
+
+Given that this slope feature in \Fig{decay}(a) seems like an artifact of the
+measurement technique, we propose to measure time with respect to
+the green pulse peak, vary the orange pulse in time, and measure the population
+at the fixed time $t_f$ (now defined with respect to the green pulse peak). 
+This is the approach taken in \Fig{decay}(c) and
+\Fig{decay}(d).  This actually overcompensates for the upward rise by
+producing a slight downward trend for increasing pulse delay.  This shows that
+the actual time ``when'' population is transferred is not a well defined
+quantity and is a crude approximation mentioned previously.  Again, if the
+pulse duration was much shorter than this decay time, this would not be an
+issue, but we do experience this difficulty with our 15 ns pulses. 
+However, the integrated population in \Fig{decay}(d) is essentially identical to
+that shown in \Fig{decay}(b).  Furthermore, it displays the nice flat region on
+the counterintuitive side, and the general shape is similar to the population
+curves (save for the flat region).  We have therefore demonstrated that the
+time-integrated fluorescence (population) is a more desirable measure of
+population transfer than the instantaneous population measured after
+the interaction, when there is final state decay.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon/N10and11.eps}
+\bigskip
+\ncap{Comparison of time-integrated population for odd and even pulses
+areas.}{Comparison of time-integrated population for pulses with area $10 \pi$
+(solid line) and $11 \pi$ (dashed line).
+\label{N10and11}}
+\end{figure}
+
+The response shown in \Fig{decay}(b) is generally indicative of the
+single-atom response of this system, for pulse areas even, and greater than
+$\sim 6\pi$. Odd area pulses have a slightly modified intuitive side as shown
+in \Fig{N10and11}.  Physically this occurs because for large intuitive delays,
+whether the first pulse inverts the lower transition or not determines whether
+the second pulse will have the opportunity to invert the second
+transition.  \Figure{N10and11} shows a longer tail on the intuitive side for the
+odd $\pi$ pulse (dashed line).  In general, for larger areas, more interference
+oscillations are seen on the intuitive side, while the width of the main
+counterintuitive feature grows slightly.  As mentioned before, this is because
+the adiabatic criterion is a threshold condition, and hence the dynamics in the
+counterintuitive regime is essentially the same for all areas satisfying
+\Eq{adiab_criterion}.  We will see later that this causes the counterintuitive
+transfer process to be relatively insensitive to laser amplitude fluctuations
+compared to the intuitive transfer.  For pulse areas less than $\sim 6\pi$, the
+shape is somewhat different.  The evolution stops being adiabatic and the
+population transferred on the counterintuitive side decreases until again the
+original intuition correctly predicts very little population transfer for the
+counterintuitive pulse ordering.  The intuitive side loses evidence of the
+interference structure and it too gradually decreases in its efficiency of
+population transfer.  The intuitive ordering, however, achieves much greater
+transfer efficiency than the counterintuitive ordering when the pulses are weak.
+
+\section{Doppler Broadening}
+
+\hspace{\parindent} The experiments performed so far on this type of adiabatic
+population transfer have been carried out in molecular (atomic) beam
+geometries.  Recall that in this geometry, CW dye lasers intersect the molecular
+beam at right angles, with the two laser beams being separated by an amount that
+determines the time delay seen by the molecules.  The laser frequency experienced
+by an atom varies depending on its motion relative to the laser, a phenomenon
+referred to as the Doppler effect, with the resultant broadening of the
+absorption line termed Doppler broadening \cite{Loudon_book}.  Typical atomic
+velocities at
+$\sim 200^{\circ}$C are 1 mm/$\mu$s = 10$^{-6} c$ (with $c$ the speed of light)
+so relativistic descriptions of the Doppler effect need not be
+considered.  The shift in frequency seen by the moving atom is given by
+\begin{equation}
+\delta\omega = \vec{k} \cdot \vec{v}
+\end{equation}
+with $\vec{k}$ the wavevector of the laser beam, and $\vec{v}$
+the atom's velocity, a stochastic variable.  For fixed laser beam
+direction, the distribution of frequency shifts will be determined by the
+distribution of $ v_k = \hat{k} \cdot \vec{v}$, which is given by the
+Maxwell-Boltzmann distribution ($\hat{k}$ is the unit vector in
+the direction of $\vec{k}$). The geometry of a laser beam interacting with a
+molecular beam at right angles then has the advantage that there is essentially
+no atomic motion in the direction of the wavevector of the laser,
+and hence no Doppler broadening of the excited transitions.
+However, under some circumstances, simple absorption cells are preferable to
+molecular beams.  In these cells, there is no preferred direction for atomic
+motion, and Doppler broadening will be present.
+
+There is some cause to be concerned about the effect of Doppler broadening on
+the counterintuitive population transfer technique.  The theory considered in
+\rSection{CI} assumed both one-photon and two-photon
+resonance conditions.  The single-photon condition was mainly for mathematical
+convenience, because $\ket{\lambda_0(t)}$ is still an adiabatic solution of the
+time-dependent Hamiltonian for $\Delta_1 \neq 0$.  However, for
+non-zero two-photon detuning, $\Delta_{TP} = \Delta_1 + \Delta_2 \neq 0$, the
+state $\ket{\lambda_0(t)}$ is no longer an adiabatic solution and state
+$\ket{1}$ gets mixed in to all dressed states.
+
+We must therefore consider the Doppler shift of the two-photon transition. 
+For an atom with velocity $\vec{v}$, the effective resonance frequency of the
+lower transition is
+\begin{equation}
+\omega_{10}(\vec{v}) = \omega_{10}(0) + \vec{k}_1 \cdot \vec{v}
+\end{equation}
+and for the second transition
+\begin{equation}
+\omega_{21}(\vec{v}) = \omega_{21}(0) + \vec{k}_2 \cdot \vec{v}.
+\end{equation}
+Since the resonance detunings are
+\begin{eqnarray}
+\Delta_1(\vec{v}) = \omega_{10}(\vec{v}) - \omega_1 = \Delta_1(0) + \vec{k}_1
+\cdot
+\vec{v}
+\\
+\Delta_2(\vec{v}) = \omega_{21}(\vec{v}) - \omega_2= \Delta_2(0) + \vec{k}_2
+\cdot
+\vec{v}
+\end{eqnarray}
+the two-photon detuning is
+\begin{equation}
+\Delta_{TP} = \Delta_1(0) + \Delta_2(0) + (\vec{k}_1+\vec{k}_2) \cdot \vec{v}.
+\end{equation}
+If $\vec{k}_1$ is chosen to be anti-parallel to $\vec{k}_2$ (and to have nearly
+equal magnitudes), then the two-photon Doppler shift can be very small.  This
+effect is referred to as Doppler-free two-photon spectroscopy
+\cite{Corney_book}.  However, if the laser beams are copropagating so that
+$\vec{k}_1 \parallel \vec{k}_2$, then the Doppler shifts add.  This more
+troublesome situation is investigated theoretically here and
+experimentally in the next chapter.
+
+In order to model Doppler broadening of the cascade transition, we will
+use the probability distribution of frequency shifts.  The
+Maxwell-Boltzmann distributions of velocities is Gaussian and is given
+by 
+\begin{equation}
+P(v) = \frac{1}{\sqrt{2 \pi \sigma_{T}^2}} \exp\left(-v^2/2 \sigma_T^2 \right)
+\end{equation}
+where $v = \vec{v} \cdot \vec{k}$, and the standard deviation of this
+distribution is
+\begin{equation}
+\sigma_T = \sqrt{\frac{k_B T}{M}},
+\end{equation}
+where $k_B$ is Boltzmann's constant, $T$ is the temperature of the atomic
+ensemble, and $M$ is the mass of an atom.  From this we define a ``thermal
+velocity'',
+\begin{equation}
+v_T = \sqrt{8 \log_e(2)} \sigma_T = \sqrt{\frac{8 \log_e(2) k_B T}{M}}
+\label{thermal_v}
+\end{equation}
+such that $P(v_T/2) = 1/2$. The probability distribution of frequency shifts then
+is also Gaussian and is given by
+\cite{Loudon_book}
+\begin{equation}
+P_D(\delta\omega) =
+\frac{1}{\sqrt{2\pi\sigma_D^2}}\exp\left[-\delta\omega^2/2\sigma_D^2\right]
+\end{equation}
+with
+\begin{equation}
+\sigma_D = \omega_0 \sqrt{\frac{k_B T}{M c^2}}.
+\end{equation}
+In this equation, $\omega_0$ is the (angular) transition frequency of atoms with
+$\vec{v} =0$.  For the $\ket{3S_{1/2}} \rightarrow
+\ket{3P_{1/2}}$ transition, the FWHM Doppler width at $T=200^{\circ}$C is
+approximately 1.6~GHz.  The shift scales as $\sqrt{T}$ and thus changes slowly
+with temperature.  Since the Doppler width is inversely
+proportional to the center wavelength of the transition, we can immediately
+infer that for the $\ket{3P_{1/2}} \rightarrow \ket{4D_{3/2}}$ transition, the
+Doppler width is $(589.755/568.421)\times1.6$~GHz $\approx 1.038 \times
+1.6$~GHz.
+
+Let $\delta\omega$ be the Doppler shift produced on the lower transition
+by an atom moving with velocity $v$.  Then the shift on the upper transition is
+$1.038 \times \delta\omega$ and so we can average over the single variable
+$\delta\omega$.  Let the integrated fluorescence signal from atoms
+with a lower transition shift of $\delta\omega$ be written
+$F(\delta\omega)$. Then the total signal measured from a vapor cell will be an
+ensemble average over the collection of atoms, or equivalently, the
+distribution of Doppler shifts.  That is,
+\begin{equation}
+\langle F \rangle_D = \int_{-\infty}^{\infty}P_D(\delta\omega)
+F(\delta\omega) d(\delta\omega)
+\label{dopp_eq}
+\end{equation}
+where $\langle \cdots \rangle_D$ denotes the ensemble average over the
+moving atoms (\underline{D}oppler broadening).
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon/N11dopp.eps}
+\bigskip
+\ncap{Doppler averaged time-integrated population signal as a function of
+delay between pulses.}{Doppler averaged time-integrated population signal as a function
+of delay between pulses.  Pulse area (on resonance) is $11 \pi$.  Points `A'
+and `B' mark reference time delays that will be examined in \Fig{lw}.
+\label{N11dopp}}
+\end{figure}
+
+In \Fig{N11dopp}, we show the results of the Doppler average of \Eq{dopp_eq}
+for pulses whose on resonance area is $11 \pi$.  We see from this curve that
+not only does the counterintuitive remain the more efficient population
+transfer scheme, the enhancement of transfer efficiency on the
+counterintuitive side relative to the intuitive is improved in
+the presence of Doppler broadening.  This can be seen by examining
+\Fig{N10and11} and \Fig{N11dopp}.  Whereas in the absence of Doppler
+broadening, this enhancement is $\sim 300\%$, in the presence of Doppler
+broadening, this number is increased to $ \sim 500\%$.
+
+\begin{figure}[tbp]
+\postscript{thesisfigs/two_photon/lw.eps}{.5}
+\bigskip
+\ncap{Time-integrated fluorescence signal as a function of the velocity of the
+atom.}{Time-integrated fluorescence signal as a function of the velocity of the
+atom.  In (a) is the intuitive time delay labeled `A' in \Fig{N11dopp} and in
+(b) is the counterintuitive time-delay labeled `B' in \Fig{N11dopp}.  Pulse
+area is $11\pi$.
+\label{lw}}
+\end{figure}
+
+To further investigate this enhancement, we calculated the integrated
+fluorescence signal as a function of velocity of the atoms.  This is a special
+sort of linewidth which is not exactly the same as traditional linewidths.  To
+achieve the same sort of information by tuning a laser frequency, one would have
+to change $\Delta_1$ and $\Delta_2$ in such a way that $\Delta_2 = 1.038 \times
+\Delta_1$.  This is the tuning that is realized as one moves through 
+velocity in the ensemble of atoms.  We consider two time delays in
+\Fig{N11dopp}, one far on the intuitive side (labeled ``A''),
+and one near the peak on the counterintuitive side (labeled ``B'').  For
+these time delays, we calculated the time-integrated fluorescence as a function
+of atomic velocity, and the result is shown in
+\Fig{lw}.  \Figure{lw}(a) shows this special linewidth for position ``A'' in
+\Fig{N11dopp} and \Fig{lw}(b) shows this linewidth for position ``B'' in
+\Fig{N11dopp}.  The velocity is measured in terms of the thermal velocity
+defined in \Eq{thermal_v}.  The figure shows that indeed the counterintuitive
+delay has a broader linewidth as a function of velocity than does the
+intuitive.  Notice that $v$ is much smaller than $v_T$ in these figures and
+hence the probability of an atom having a velocity shown within the linewidths
+in \Fig{lw} is essentially constant.  The width of these features is similar to
+the homogeneous linewidth of a traditional (laser-tuned) lineshape. Nonetheless,
+the width of the counterintuitive feature is significantly larger than the
+associated intuitive feature.  This is what leads to improved performance of the
+counterintuitive technique in the presence of Doppler broadening.  More atoms
+significantly contribute to the total signal in the counterintuitive case.
+
+\section{Gaussian Spatial Averaging}
+
+\hspace{\parindent}  Another potential difficulty in using a vapor cell as
+opposed to a molecular beam is that the entire spatial profile of the exciting
+lasers can contribute to the total signal.  In the case of molecular beams, the
+transverse spatial profile serves to produce the temporal pulse seen by the
+molecules traveling in the beam.  As long as the transverse dimension of the
+laser beam is much larger than that of the molecular beam (typical dimension
+of 1 mm), then all molecules in the beam see the same peak laser amplitude. 
+When an absorption cell is used, the spatial extent of the vapor is larger than
+the transverse dimension of the laser beam, and hence, atoms in the vapor cell
+see different peak laser amplitudes depending on their location relative to
+the optical axis of the laser beam.  Again, this is cause for concern in terms
+of the counterintuitive transfer efficiency.  Since the adiabatic criterion is
+a threshold condition, there will be a two-dimensional surface in space inside
+which the atomic dynamics are adiabatic and outside which they are not. 
+Furthermore, more atoms are outside this surface than inside (since the laser
+beam has to fit cleanly through the cell).  We may thus wonder if their
+contribution to the total signal will dominate, and conspire to make the
+counterintuitive transfer process less efficient than the intuitive.
+
+The well-known Gaussian beam solution to the paraxial wave equation can be
+written in cylindrical coordinates \cite{Boyd_book2}
+\begin{equation}
+E(r,z) = \frac{E_0}{1 + i\xi}\exp\left[\frac{-r^2}{w_0^2(1 + i\xi)}\right]
+\end{equation}
+with the dimensionless longitudinal coordinate
+\begin{equation}
+\xi = 2z/b,
+\end{equation}
+defined in terms of the confocal parameter
+\begin{equation}
+b = 2 \pi w_0^2/\lambda.
+\end{equation}
+The meaning of the beam parameters ($w_0$ and $b$) become clear if we examine
+the amplitude variation of the beam.  Along the optical axis ($r = 0$), the
+amplitude is given by
+\begin{equation}
+\left|E(0,z)\right| = \frac{E_0}{\sqrt{1 +(2z/b)^2}}.
+\end{equation}
+The confocal parameter, $b$, therefore represents the depth of focus of the
+beam.  In the plane $z=0$, the transverse profile is
+\begin{equation}
+E(r,0) = E_0 \exp\left(-r^2/w_0^2\right).
+\label{gaussian}
+\end{equation}
+The parameter $w_0$ then represents the minimum transverse dimension of
+the Gaussian beam, and is called the spot-size. For $z \neq 0$ the beam size is
+\begin{equation}
+w^2(z) = w_0^2 \left[ 1 + (2z/b)^2\right].
+\end{equation} 
+
+If the spot-size, $w_0$, is much larger than the beam's wavelength, $\lambda$,
+then the variation in amplitude along the optical axis is much slower than the
+variation transverse to the optical axis.  We will specialize our treatment
+allowing only for transverse amplitude variation, which has the simple
+functional form given in \Eq{gaussian}.
+
+Then, we must consider the integrated fluorescence to be a function of the
+radial dimension through its dependence on the electric field,
+$F = F\left[E(r)\right]$.  The signal measured at our detector will be
+the sum over all atoms, which are uniformly distributed throughout the
+spatial profile of the laser beam, 
+\begin{eqnarray}
+\langle F \rangle_S &=& \int F\left[E(r)\right] dA \\
+&=& \int_0^{2\pi}\!\!\int_{0}^{\infty}F\left[E(r)\right] r dr d\phi
+\end{eqnarray}
+(the subscript ``S'' refers to the \underline{s}patial average).
+While the upper integration limit in $r$ should actually be the edge of the
+absorption cell, we assume here that the beam passes cleanly through the cell
+so that effectively the beam is zero at the cell and the limits can be
+extended to $\infty$.  By changing variables from $r \rightarrow E$ using
+\Eq{gaussian}, we obtain the result for the spatially averaged time-integrated
+fluorescence
+\begin{equation}
+\langle F \rangle_S = 2\pi w_0^2 \int_0^{E_0} F(E) \frac{dE}{E}.
+\end{equation}
+While the probability of a given electric field strength, $E$, increases as $E$
+decreases and is divergent at $E=0$, the fluorescence signal goes
+to zero more rapidly than $E$, and the average is convergent.  The
+$1/E$ divergence is due to the approximation that the absorption cell is
+infinite. But even for finite cell size, more atoms ``see'' a small intensity
+than ``see'' a near-maximal one.  This is the source of potential difficulty for
+the counterintuitive process. 
+
+One complication that has been neglected up to this point is the fact that we
+have two laser beams, and hence, two spatial profiles.  The integrated
+fluorescence signal depends on both laser amplitudes, $F =
+F\left[E_1(r),E_2(r)\right]$.  However, in the experiment, we were careful
+to insure that the two beams were spatially coincident and had similar
+divergences. Therefore,
+$E_2(r)/E_1(r) = $c
+(for some constant c ) for all $r$.  Then the average can be written as
+\begin{equation}
+\langle F \rangle_S = 2\pi w_0^2 \int_0^{E_1} F\left[E, {\rm
+c}E\right]
+\frac{dE}{E}.
+\label{spatial_eq}
+\end{equation}
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon/N10spat.eps}
+\bigskip
+\ncap{Time-integrated fluorescence signal averaged over Gaussian
+spatial beam.}{Time-integrated fluorescence signal averaged over Gaussian
+spatial beam.  Pulse area (at center of beam) is $10 \pi$.
+\label{N10spat}}
+\end{figure}
+
+\Figure{N10spat} shows a typical result of the evaluation of \Eq{spatial_eq}. 
+In this figure, the pulses have peak area (on-axis) of $10\pi$.  The
+counterintuitive pulse sequence remains the most efficient population transfer
+process in spite of the spatial averaging.  The efficiency improvement from the
+intuitive to the counterintuitive, however, has been decreased, as can be seen
+by comparing \Fig{N10and11} with \Fig{N10spat}.  In the absence of spatial
+averaging, the increase from intuitive to counterintuitive transfer efficiency
+is $\sim 300\%$.  When spatial averaging is included, this enhancement
+decreases to $ \sim 50\%$.  The shape of this curve stays essentially the same
+for larger peak pulse area, with the enhancement factor improving only slightly.
+
+
+\section{Amplitude Fluctuations}
+
+\hspace{\parindent} We now examine the impact of amplitude fluctuations on
+the population transfer process.  We model the peak intensities driving 
+each transition as independent Gaussian random variables.  Then the
+probability distribution of intensities (due to amplitude
+fluctuations) will be given by
+\begin{equation}
+P_A(I_j) = \frac{1}{\sqrt{2\pi\sigma_{I_j}^2}}\exp\left[-\frac{(I_j
+-\overline{I_j})^2}{2 \sigma_{I_j}^2}\right]
+\end{equation}
+(the subscript ``A'' refers to \underline{a}mplitude fluctuations).
+In this equation, the index $j =\{1,2\}$ represents the intensities driving
+the two transition,
+$\overline{I_j}$ is the mean of intensity $j$, and $\sigma_{I_j}$
+is the standard deviation of $I_j$'s fluctuations.
+
+Since the fluorescence signal depends on the random variables, $I_1$ and $I_2$,
+it in turn is a random variable.  We thus compute the average fluorescence
+signal,
+\begin{equation}
+\langle F \rangle_A = \int_0^{\infty}\!\!\int_0^{\infty} F(I_1,I_2)
+P_A(I_1) P_A(I_2) dI_1 dI_2.
+\label{F_A}
+\end{equation}
+We also will be interested in examining the fluctuations of the fluorescence
+signal.  This is calculated according to
+\begin{equation}
+\sigma_F = \sqrt{\langle F^2 \rangle_A - \langle F \rangle_A^2}.
+\end{equation}
+Furthermore, we shall characterize the fluctuations relative to the mean value
+by examining the variable, 
+\begin{equation}
+\sigma_F/\langle F \rangle_A.
+\label{relative_fluc}
+\end{equation}
+For the subsequent
+calculations, we have taken the two fields to have equal means, $\overline{I}$,
+and standard deviations of $\sigma_I = 20\%\ \overline{I}$.  These choices
+model the experimental situation discussed in the next chapter.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon/fluc_ave.eps}
+\bigskip
+\ncap{Time-integrated fluorescence signal averaged over amplitude
+fluctuations.}{Time-integrated fluorescence signal averaged over amplitude
+fluctuations.  Both fields have mean intensities, $\overline{I}$, that produce
+$11 \pi$ pulses, and fluctuation standard deviations of
+$\sigma_I = 20\%\ \overline{I}$.
+\label{fluc_ave}}
+\end{figure}
+
+\Figure{fluc_ave} displays the average integrated population, from \Eq{F_A},
+versus delay between pulses.  The average pulse area is $11 \pi$.  Generally,
+this shape is very similar to the curves without any fluctuations, except that
+the interference oscillations on the intuitive side have been washed-out.  The
+counterintuitive side still has the flat peak transfer efficiency region.  The
+transfer efficiency enhancement in going from intuitive pulse delays to
+counterintuitive is approximately the same as in the fluctuation-free case.  We
+note that what makes the amplitude fluctuations have such small effect (in terms
+of average quantities) is the presence of decay.  In the absence of decay, the
+interference terms on the intuitive side have complete modulation.  That is, the
+signal cycles from zero to some maximum value and back.  When fluctuations are
+present these oscillations will average to half the maximum value.  Further out
+in the intuitive regime, where the pulses are not overlapping, the amplitude
+fluctuations give rise to an averaged signal of approximately one-quarter.  This
+is due to the fact that, if the pulses have fluctuation in area greater than
+$\pi$, then the first pulse fluctuates between complete and no population
+transfer to the middle state.  Hence, on average, half the population reaches
+the middle state.  Then the second pulse similarly redistributes the population
+so that on average, one-quarter of the total population reaches the upper state.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon/fluc.eps}
+\bigskip
+\ncap{Fluctuations of fluorescence signal in the presence of
+laser amplitude fluctuations.}{Fluctuations of fluorescence signal in the presence of
+laser amplitude fluctuations.  Both fields have mean intensities,
+$\overline{I}$, that produce $11 \pi$ pulses, and fluctuation standard
+deviations of $\sigma_I = 20\% \ \overline{I}$.
+\label{fluc}}
+\end{figure}
+
+The fluctuations of the fluorescence signal are shown in \Fig{fluc}.  Here the
+relative fluctuations, as defined in \Eq{relative_fluc}, are shown as a
+function of delay between the laser pulses.  This figure shows several
+interesting features.  We see that for large intuitive delays, the relative
+fluctuations are constant.  We can explain this constancy with a simple
+argument.  Assume the first pulse transfers population to the middle state so
+that its population is $x_{11} = f_1(\theta_1)$, where $\theta_1$ is the
+area of lower transition pulse.  Then, this population decays for a time $\sim
+\Delta \tau$ to a value $\exp(-A_1 \Delta \tau) f_1(\theta_1)$. Then the
+second pulse cycles the remaining population through Rabi oscillations so that
+when it has finished, $f_2(\theta_2) \exp(-A_1 \Delta \tau) f_1(\theta_1)$
+population is transferred to the upper state (with $\theta_2$ the area of
+the upper transition pulse).  This value will be averaged over the amplitude
+fluctuations, but the decay term is not affected.  The calculation
+of the variance proceeds in a similar fashion and it is proportional to
+$\exp(- 2 A_1 \Delta \tau)$.  When the standard deviation is calculated and
+the ratio taken, the decay terms cancel and we predict delay-independent
+fluctuations, which is what is seen in \Fig{fluc}.
+
+After this flat feature, there is a local minimum on the intuitive side, where
+the fluctuation is reduced to approximately half its previous value, then grows
+rapidly in a narrow spike near zero.  Finally, on the counterintuitive side,
+there is a deep minimum that nearly reaches zero.  In this regime the atomic
+system acts as a noise-eater for the laser $\rightarrow$ fluorescence
+input $\rightarrow$ output system.  This happens because the energy dependence
+of the adiabatic transfer process is given by a threshold condition.  Once the
+laser fields have enough energy to satisfy the adiabaticity criterion in
+\Eq{adiab_criterion}, then larger energies will also satisfy it. 
+Therefore, as a ``rule of thumb'', if the mean laser intensity minus its
+standard deviation is above threshold, then all pulses will satisfy the
+adiabaticity criterion, and hence the entire population will be transferred to
+the upper state, independent of the fluctuations.
+
+\section{Extension to a Rydberg Final State}
+
+\hspace{\parindent} The ideal three-level results we have discussed are
+applicable to a Rydberg final state, provided the final transition behaves as
+a two-level system.  In \rChapter{direct}, we outlined the necessary conditions
+for the ground-to-Rydberg transition to behave as a two-level system.  The key
+requirement was to keep the peak electric field as low as possible, consistent
+with complete population transfer.  Then, if we want to use the counterintuitive
+excitation technique to excite a Rydberg final state, the electric field driving
+the Rydberg transition must be kept small.  There is an advantage in this scheme
+in that excited levels have larger dipole moment coupling to Rydberg states than
+does the ground state.  Thus the electric field needed to invert the transition
+will be smaller.  There also is a disadvantage to this scheme that as
+the applied laser frequency decreases, so does the threshold for optical
+mixing of the degenerate angular momentum states (see \Eq{mix}). 
+So whether this technique is more or less susceptible to angular momentum
+mixing than the ground-to-Rydberg transition depends on the relative scaling
+of these two quantities.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon/efield.eps}
+\bigskip
+\ncap{Influence of optical mixing of angular momentum on counterintuitive
+population transfer technique.}{Influence of optical mixing of angular momentum on counterintuitive
+population transfer technique.  $E_{\pi}$ is the electric field needed to make
+a $\pi$-pulse from state $n=n_i$ to $n=80$.  $E_{\ell}$ is the electric field
+needed to induce optical mixing at $n=80$ in a field which resonantly couples
+state $n=n_i$ to state $n=80$. Both fields are normalized to unity at $n_i=2$ to
+show scaling as a function of $n_i$ and are plotted on a log scale.
+\label{efield}}
+\end{figure}
+
+The electric field required for a $\pi$-pulse scales as $E_{\pi} \sim
+1/d_{n\, n_i}$ (\Eq{pi_pulse}) where $d_{n \, n_i}$ is the dipole moment from the
+intermediate state (labeled $n_i$) to the Rydberg state, $n$.  The threshold
+electric field for $\ell$-mixing scales as $E_{\ell} \sim \omega_{n \, n_i}$
+(\Eq{mix}), with $\omega_{n \, n_i}$ the $n_i \rightarrow n$ transition
+frequency.  So both fields are decreasing as $n_i$ increases and approaches
+$n$.  To check the scaling of these fields, we consider excitation to the
+$n=80,\ell = 2$ Rydberg state via an intermediate $\ell=1$ state that varies from
+$n_i =$ 2 to 79 (we will use hydrogen dipole moments and frequencies).  We
+normalized the two electric fields to be equal at
+$n_i=2$, so that we may just investigate the scaling.  So if $E_{\pi}$ goes to
+zero faster than
+$E_{\ell}$, then optical mixing will be less important for the case of
+coupling of an excited state to a Rydberg state as compared to coupling of the
+ground state to a Rydberg state.  On the other hand, if
+$E_{\ell}$ goes to zero faster than $E_{\pi}$, then optical mixing will be more
+important and we would predict the counterintuitive transfer technique to be
+more susceptible to optical mixing than direct excitation from the ground state. 
+\Figure{efield} shows the scaling of these two fields as a function of the
+intermediate state's principal quantum number, $n_i$.  While there is some
+deviation between the two curves, both electric fields have essentially the same
+scaling.   This shows that the issue of angular momentum mixing in an ac field is
+essentially independent of what lower-lying state is being coupled to  the
+Rydberg state (for low angular momentum states).  Consequently, the conditions
+which determine when optical mixing is unimportant for ground-to-Rydberg
+coupling are essentially the same as in the case of excited state to Rydberg
+coupling.  There will then be a range of Rydberg final states for which the
+ideal three-level system closely approximates the full dynamics.
+
+%\end{document}

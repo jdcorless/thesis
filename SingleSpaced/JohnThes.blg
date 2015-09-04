@@ -1,0 +1,19 @@
+This is BibTeX, C Version 0.99c
+The top-level auxiliary file: JohnThesSingle.aux
+A level-1 auxiliary file: front.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: direct.aux
+A level-1 auxiliary file: step.aux
+A level-1 auxiliary file: citheory.aux
+A level-1 auxiliary file: ciexpt.aux
+A level-1 auxiliary file: concl.aux
+The style file: theprsty.bst
+Database file #1: intro.bib
+Database file #2: direct.bib
+Database file #3: step.bib
+Database file #4: citheory.bib
+Database file #5: ciexpt.bib
+You can't pop an empty literal stack for entry Corless:97
+while executing---line 929 of file theprsty.bst
+(There was 1 error message)

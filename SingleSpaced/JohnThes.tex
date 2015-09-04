@@ -1,0 +1,53 @@
+%     Master File for Thesis, Official Version turned in.
+%     Turned in to Dean's office 2/13/97.
+
+
+\documentclass[12pt]{report}
+
+\input{epsf}
+\usepackage{fancyheadings,doublesp,urthesis}
+
+%\includeonly{direct}
+
+
+\begin{document}
+
+\begin{singlespace}
+
+\pagenumbering{roman}
+
+\include{front}
+\include{abstract}
+
+\tableofcontents
+\listoftables
+\listoffigures
+
+\addtocontents{toc}{\protect\begpagestyle}
+\addtocontents{lot}{\protect\begpagestyle}
+\addtocontents{lof}{\protect\begpagestyle}
+
+\addtocontents{lot}{
+    \protect\centerline{\bf Table  \hfill Title \hfill Page}} 
+\addtocontents{lof}{
+    \protect\centerline{\bf Figure \hfill Title \hfill Page}} 
+
+\include{intro}
+\include{direct}
+\include{step}
+\include{citheory}
+\include{ciexpt}
+\include{concl}
+
+
+\addcontentsline{toc}{chapter}{Bibliography}
+
+%\begin{singlespace}
+
+\bibliographystyle{theprsty}
+%\bibliography{WavePack}
+\bibliography{intro,direct,step,citheory,ciexpt}
+
+\end{singlespace}
+
+\end{document}

@@ -1,0 +1,432 @@
+% Official thesis style file, assumes report document style being used
+% This is the version turned in to the dean's office
+
+
+
+
+%--------------------------------------------------------------------
+
+%\pagestyle{headings}
+\markright{}
+\setlength{\voffset}{-1in}
+\setlength{\topmargin}{.4in}
+\setlength{\headheight}{.25in}
+\setlength{\headsep}{.6in}
+%\setlength{\topskip}{0in}
+\setlength{\textheight}{8.5in}
+\setlength{\oddsidemargin}{0.5in}
+\setlength{\evensidemargin}{0.5in}
+\setlength{\textwidth}{5.75in}
+
+%\usepackage{fancyheadings}
+\pagestyle{fancyplain}
+\lhead[\fancyplain{\bfseries\thepage}{\bfseries\thepage}]
+        {\fancyplain{}{\bfseries\rightmark}}
+\rhead[\fancyplain{}{\bfseries\leftmark}]
+        {\fancyplain{\bfseries\thepage}{\bfseries\thepage}}
+\cfoot{}
+
+\sloppy
+\raggedbottom
+\widowpenalty=10000
+\def\begpagestyle{\thispagestyle{plain}}
+
+\setlength{\floatsep}{0.5in}
+\setlength{\textfloatsep}{0.5in}
+
+
+\def\tableofcontents{\@restonecolfalse\if@twocolumn\@restonecoltrue%
+\onecolumn\fi\chapter*{Table of Contents\@mkboth{CONTENTS}{CONTENTS}}
+ \@starttoc{toc}\if@restonecol\twocolumn\fi}
+
+%\def\listoffigures{\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
+% \fi\chapter*{List of Figures\@mkboth
+% {LIST OF FIGURES}{LIST OF FIGURES}}\@starttoc{lof}\if@restonecol
+% \twocolumn\fi}
+
+
+%--------------------------------------------------------------------
+
+\font\cmdunh=cmdunh10 at 24pt
+
+\renewcommand{\@makechapterhead}[1]{%
+  \vspace*{50\p@}%
+  {\parindent \z@ \centering \reset@font
+    \ifnum \c@secnumdepth >\m@ne
+         \Huge \bfseries \@chapapp{} \thechapter
+         \par
+         \vskip 20\p@
+       \fi
+    \Huge \bfseries #1\par
+    \nobreak
+    \vskip 40\p@
+  }}
+
+\renewcommand{\@makeschapterhead}[1]{%
+  \vspace*{50\p@}%
+  {\parindent \z@ \centering
+    \reset@font
+    \Huge \bfseries  #1\par
+    \nobreak
+    \vskip 40\p@
+  }}
+
+\newcommand{\postscript}[2]
+{\setlength{\epsfxsize}{#2\hsize}
+\centerline{\epsfbox{#1}}}
+
+\newcommand{\postfull}[1]
+{\centerline{\epsfbox{#1}}}
+
+\newcommand{\ncap}[2]
+  {\centering
+   \begin{minipage}{.8\hsize}
+   \caption[#1]{#2}
+   \end{minipage}}
+
+\newcommand{\wcap}[2]
+  {\renewcommand{\figurename}{Figure}
+   \caption[#1]{#2}
+   \renewcommand{\figurename}{\footnotesize{Figure}}}
+
+\renewcommand{\figurename}{\footnotesize{Figure}}
+ 
+\setcounter{topnumber}{1}
+
+\def\Ref#1{Ref.~\cite{#1}}
+\def\Refs#1{Refs.~\cite{#1}}
+\def\Eq#1{Eq.~(\ref{#1})}
+\def\Eqs#1{Eqs.~(\ref{#1})}
+\def\Ep#1{(\ref{#1})}
+\def\Equation#1{Equation~(\ref{#1})}
+\def\Equations#1{Equations~(\ref{#1})}
+\def\Fig#1{Fig.~\protect\ref{#1}}
+\def\Figs#1{Figs.~\ref{#1}}
+\def\Fign#1{\ref{#1}}
+\def\Figure#1{Figure~\ref{#1}}
+\def\Figures#1{Figures~\ref{#1}}
+\def\rChapter#1{Chapter~\ref{#1}}
+\def\rChapters#1{Chapters~\ref{#1}}
+\def\rnChapter#1{\ref{#1}}
+\def\rSection#1{Section~\ref{#1}}
+\def\rSections#1{Sections~\ref{#1}}
+\def\rnSection#1{\ref{#1}}
+\def\rAppendix#1{Appendix~\ref{#1}}
+\def\etal{{\it et al.\ }}
+\def\eg{{e.\ g.\ }}
+\def\ie{{i.\ e.\ }}
+\def\bbox#1{\mbox{\boldmath$#1$}}
+
+
+%--------------------------------------------------------------------
+
+
+\def\ket#1{\vert #1 \rangle }
+\def\bra#1{\langle #1 \vert }
+\def\braket#1#2{\langle #1 \vert #2 \rangle}
+\def\runit{{\bf\hat r}}
+\def\ihbar{\frac{i}{\hbar}}
+
+%--------------------------------------------------------------------
+
+\def\Sch{{Schr\"odinger\ }}
+
+
+\def\xyplane{$x$-$y$~plane}
+\def\nubar{{{\bar\nu}}}
+\def\nbar{{\bar n}}
+\def\ubar{{\bar u}}
+\def\xbar{{\bar x}}
+\def\varepsilonbar{{\bar\varepsilon}}
+\def\omegabar{{{\bar\omega}}}
+\def\energy{\varepsilon}
+\def\meanenergy{\varepsilonbar}
+\def\deleps{\energy-\meanenergy}
+\def\epsgl{\energy_{g\ell}}
+\def\delepsgl{\energy-\epsgl}
+\def\cRk{{\cal R}_k}
+\def\cRkf{{\cal R}_{k_f}}
+\def\cRz{{\cal R}_0}
+\def\Tcl{T_{\rm cl}}
+\def\Trev{T_{\rm rev}}
+\def\Tnbar{T_{\nbar}}
+\def\br{{\bf r}}
+\def\bq{{\bf q}}
+\def\bp{{\bf p}}
+\def\bk{{\bf k}}
+
+\def\Tkep{T_{Kep}}
+\def\tk{T_K}
+\def\tr{T_R}
+\def\halftr{^1\!/\!_2\,T_R}
+\def\thirdtk{^1\!/\!_3\,T_K}
+\def\mvec#1{\mathbf{#1}}
+\def\mmat#1{\mbox{\large\textsf{\textbf{#1}}}}
+\def\onethird{^1\!/\!_3\,}
+\def\twothirds{^2\!/\!_3\,}
+\def\onehalf{^1\!/\!_2\,}
+
+
+
+\def\drz{\delta r_0}
+\def\drt{\delta r_t}
+\def\dxz{\delta x_0}
+\def\dxt{\delta x_t}
+\def\dyz{\delta y_0}
+\def\dyt{\delta y_t}
+\def\dthetaz{\delta\theta_0}
+\def\dthetat{\delta\theta_t}
+\def\dphiz{\delta\phi_0}
+\def\dphit{\delta\phi_t}
+\def\dprz{\delta p_{r_0}}
+\def\dprt{\delta p_{r_t}}
+\def\dpthetaz{\delta p_{\theta_0}}
+\def\dpthetat{\delta p_{\theta_t}}
+\def\dpphiz{\delta p_{\phi_0}}
+\def\dpphit{\delta p_{\phi_t}}
+\def\dangphi{\delta\Omega_\phi}
+\def\dele{\delta e}
+\def\deln{\delta n}
+\def\delu{\delta u}
+\def\dell{\delta l}
+
+
+%---------------------------------------------------
+%  Macros for the Classical Path Representation
+%---------------------------------------------------
+
+\def\Hop{\hat H}
+\def\Hatom{\Hop_a}
+
+
+\def\Emax{\xi_0}
+\def\vecE{{\bf E}}
+\def\vecEmax{\bbox{\xi}_0}
+\def\dip{\kern5pt\hat{\kern-5pt\vec{d}}}
+\def\beps{\bbox{\epsilon}}
+\def\optpol{\bbox{\hat\epsilon}}
+\def\bx{{\bf x}}
+\def\DdotPol{\dip\cdot\optpol}
+\def\ccDdotPol{\dip\cdot\optpol^*}
+\def\DdotE{\dip\cdot\vecEmax}
+\def\ccDdotE{\dip\cdot\vecEmax^*}
+
+\def\rsmall{r_{\scriptscriptstyle <}}
+\def\rbig{r_{\scriptscriptstyle >}}
+\def\Aslm{{\cal A}_{lm}(\varepsilon)}
+\def\Bslm{{\cal B}_{lm}(\varepsilon)}
+\def\sAeps{{\cal A}_\varepsilon}
+\def\sBeps{{\cal B}_\varepsilon}
+\def\DslmM{{\cal D}^-_{lm}(\varepsilon)}
+\def\DslmP{{\cal D}^+_{lm}(\varepsilon)}
+\def\Fsl{{\cal F}_l(\varepsilon,r)}
+\def\FslM{{\cal F}^-_l(\varepsilon,r)}
+\def\FslP{{\cal F}^+_l(\varepsilon,r)}
+\def\Ylm{Y_l^m(\theta,\phi)}
+\def\Ylmcc{Y_l^{m^{\scriptstyle*}}(\theta,\phi)}
+\def\CoulOut{\varphi_l^+(\varepsilon,r)}
+\def\CoulIn{\varphi_l^-(\varepsilon,r)}
+\def\CoulInOut{\varphi_l^\pm(\varepsilon,r)}
+\def\CoulS{s_l(\varepsilon,r)}
+\def\CoulC{c_l(\varepsilon,r)}
+\def\CoulF{f_l(\varepsilon,r)}
+\def\CoulP#1{\varphi_l^+(\varepsilon,#1)}
+\def\CoulM#1{\varphi_l^-(\varepsilon,#1)}
+\def\Sleps#1{s_l(\varepsilon,#1)}
+\def\Cleps#1{c_l(\varepsilon,#1)}
+\def\Fleps#1{f_l(\varepsilon,#1)}
+\def\Gplus{G^+(\varepsilon)}
+\def\Tgg{T_{gg}(\varepsilon)}
+\def\Gexplicit{[\varepsilon-H_a+i0]^{-1}}
+\def\TwoPhotonME#1#2{\bra{#1}\ccDdotPol\Gplus\DdotPol\ket{#2}}
+\def\ExplicitTwoPhotonME#1#2{\bra{#1}\ccDdotPol\Gexplicit\DdotPol\ket{#2}}
+\def\SelfEnergy#1#2{\bra{#1}\ccDdotE\Gplus\DdotE\ket{#2}}
+\def\ExplicitSelfEnergy#1#2{\bra{#1}\ccDdotE\Gexplicit\DdotE\ket{#2}}
+
+%----------------------------------------------------------------------
+
+
+
+
+\newcounter{eqnumroot}
+
+\def\mathletters{\\ \begin{minipage}{\textwidth}%
+\vspace{-0.5\abovedisplayskip}\stepcounter{equation}%
+\setcounter{eqnumroot}{\value{equation}}%
+\edef\@currentlabel{\theequation}\setcounter{equation}{0}%
+\renewcommand{\theequation}%
+{\arabic{chapter}.\arabic{eqnumroot}\alph{equation}}%
+}
+
+\def\endmathletters{\setcounter{equation}{\value{eqnumroot}}%
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}%
+\end{minipage}\vspace{1.25\baselineskip}}
+
+
+
+\def\boxeqn{\\ \begin{minipage}{\textwidth}%
+\vspace{-0.5\abovedisplayskip}}
+
+\def\endboxeqn{\end{minipage}\vspace{1.25\baselineskip}}
+
+
+
+
+
+%---------------------------------------------------------------------
+%  Use PRA style citations (includes ranges?)
+%---------------------------------------------------------------------
+
+% ****** Start of file prabib.sty ******
+%
+%
+%   This file is part of the APS files in the REVTeX 3.0 distribution.
+%   Version 3.0 of REVTeX, November 10, 1992.
+%
+%   Copyright (c) 1992 The American Physical Society.
+%
+%   See the REVTeX 3.0 README file for restrictions and more information.
+%
+
+\typeout{Filename: prabib.sty, v3.0 <9/14/92>}
+
+\def\@bibitem#1{\item\if@filesw \immediate\write\@auxout
+{\string\bibcite{#1}{\the\value{\@listctr}}}\fi\ignorespaces}
+
+\newdimen\WidestRefLabelThusFar
+
+\global\WidestRefLabelThusFar\z@
+
+\def\bibcite#1#2{\global\@namedef{b@#1}{#2}\@SetMaxRefLabel{#1}}
+
+\def\@SetMaxRefLabel#1{%
+{%
+\if\@ExpandsToRefNumber{#1}%
+\setbox0\hbox{\normalsize     % modified here
+\rm[\csname b@#1\endcsname]}%
+\else %
+\setbox0\hbox{\normalsize     % modified here
+$\scriptstyle\m@th{\csname b@#1\endcsname}$}%
+\fi
+\ifdim\wd0>\WidestRefLabelThusFar
+\global\WidestRefLabelThusFar=\wd0
+\fi
+}%
+}
+
+\def\@ExpandsToRefNumber #1{%
+TT\fi %
+\@ifundefined{b@#1}%
+{\@tempcntb=1
+}%
+{\edef\@tempb{\csname b@#1\endcsname}%
+\def\@tempa{\@temptokena=\bgroup}%
+\if0A { \else  \fi %
+\afterassignment\@tempa
+\@tempcntb=0\@tempb}%
+}%
+\ifnum\@tempcntb>0 %
+}%
+
+\def\cite{\@ifnextchar[{\@tempswatrue\@citex}{\@tempswafalse\@citex[]}}
+\let\CITE\cite
+\let\onlinecite\cite
+
+\def\@citex[#1]#2{%
+\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi
+\leavevmode\unskip\ \@cite{\@collapse{#2}}{#1}}
+
+\def\@bylinecite{%
+\@ifnextchar[{\@tempswatrue\@CITEX}{\@tempswafalse\@CITEX[]}%
+}
+
+\def\@CITEX[#1]#2{%
+\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi
+\leavevmode\unskip$^{\scriptstyle\@CITE{\@collapse{#2}}{#1}}$}
+
+\def\@cite#1#2{[{#1\if@tempswa , #2\fi}]} %
+\def\@CITE#1#2{{#1\if@tempswa , #2\fi}} %
+
+\def\@lbibitem[#1]#2{\item[\@BIBLABEL{#1}]\if@filesw
+{\def\protect##1{\string ##1\space}\immediate
+\write\@auxout{\string\bibcite{#2}{#1}}}\fi\ignorespaces}
+
+\def\@biblabel#1{{[#1]}} %
+\def\@BIBLABEL#1{$^{#1}\m@th$} %
+
+\def\references{%
+%\newpage
+%\hbox to\hsize{\hss\Large\bf Bibliography\hss}%
+     \chapter*{\bibname
+        \@mkboth{\uppercase{\bibname}}{\uppercase{\bibname}}}%from report.cls mwn
+\list{\@biblabel{\arabic{enumiv}}}%
+{\labelwidth\WidestRefLabelThusFar  \labelsep4pt %
+\leftmargin\labelwidth %
+\advance\leftmargin\labelsep %
+\ifdim\baselinestretch pt>1 pt %
+\parsep  4pt\relax %
+\else %
+\parsep  6pt\relax %was 0 mwn
+\fi
+\itemsep\parsep %
+\usecounter{enumiv}%
+\let\p@enumiv\@empty
+\def\theenumiv{\arabic{enumiv}}%
+}%
+\let\newblock\relax %
+\sloppy\clubpenalty10000\widowpenalty10000  %both were 4000 mwn
+\sfcode`\.=1000\relax
+}
+
+\def\endreferences{%
+\def\@noitemerr{\@warning{Empty `thebibliography' environment}}%
+\endlist     \let\@SetMaxRefLabel\@gobble
+}
+
+\def\thebibliography#1{\references}
+
+\def\endthebibliography{\endreferences}
+
+\def\@collapse#1{%
+{%
+\let\@temp\relax
+\@tempcntb\@MM
+\def\@citea{}%
+\@for \@citeb:=#1\do{%
+\@ifundefined{b@\@citeb}%
+{\@temp\@citea{\bf ?}%
+\@tempcntb\@MM\let\@temp\relax
+\@warning{Citation `\@citeb ' on page \thepage\space undefined}%
+}%
+{\@tempcnta\@tempcntb \advance\@tempcnta\@ne
+\edef\MyTemp{\csname b@\@citeb\endcsname}%
+\def\@tempa{\@temptokena=\bgroup}%
+\if0A{\fi%
+\afterassignment\@tempa %
+\@tempcntb=0\MyTemp\relax}%
+\ifnum\@tempcntb=0\relax%
+\@tempcntb=\@MM
+\@citea\MyTemp
+\let\@temp = \relax
+\else %
+\edef\@tempd{\number\@tempcntb}%
+\ifnum\@tempcnta=\@tempcntb %
+\ifx\@temp\relax %
+\edef\@temp{\@citea\@tempd}%
+\else
+\edef\@temp{\hbox{--}\@tempd}%
+\fi
+\else %
+\@temp\@citea\@tempd
+\let\@temp\relax
+\fi
+\fi
+}%
+\def\@citea{,}%
+}%
+\@temp %
+}%
+}%
+%
+% ****** End of file prabib.sty ******
+

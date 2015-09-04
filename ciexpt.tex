@@ -1,0 +1,988 @@
+
+\begin{singlespace}
+
+\chapter{Two-Photon Excitation: Experiment}
+\label{ciexpt}
+\begpagestyle
+%\pagenumbering{arabic}
+
+\end{singlespace}
+
+In this chapter, we shall discuss the results of our experimental investigation
+of population transfer using counterintuitive pulse sequences in a
+Doppler-broadened medium, in the presence of effects due to Gaussian spatial
+averaging and amplitude fluctuations.  In order to investigate the effects
+predicted in \rChapter{citheory}, the atomic system must behave as a three-level
+system under our excitation conditions.  Furthermore, since the counterintuitive
+population transfer technique is coherent, the lasers must have near ideal
+performance with respect to linewidth, spatial beam, and temporal profile.  We
+address these issues in the context of a system of sodium vapor excited by
+pulsed dye lasers.  We then present population transfer and amplitude
+fluctuation results for both weak and strong field excitation. 
+
+\section{Sodium as a Three-Level Atom}
+
+\hspace{\parindent}  The cascade level structure we used in sodium vapor is
+$\ket{3S_{1/2}} \rightarrow \ket{3P_{1/2}} \rightarrow \ket{4D_{3/2}}$ with
+transition wavelengths of $589.755$~nm (`orange') and $568.421$~nm (`green'),
+respectively.  These states are shown schematically in \Fig{Na_decay}. 
+Coupling from these levels to others outside of the cascade system via
+stimulated or spontaneous processes can have a negative impact on the
+counterintuitive transfer technique.  Other states that could be coupled via
+stimulated processes include the $\ket{3P_{3/2}}$ and the $\ket{4D_{5/2}}$
+states. The separation between the
+$\ket{3P_{1/2}}$ and $\ket{3P_{3/2}}$ levels is 17.196~cm$^{-1}
+\approx 0.5$~THz. This separation is easy to resolve with our pulsed
+dye lasers, which have linewidths of $< 1$~GHz.  The fine structure
+splitting of the $\ket{4D}$ states is $0.035$ cm$^{-1} \approx 1$ GHz, which
+is close to our resolution limit. By selective excitation of the
+$\ket{3P_{1/2}}$ state instead of the $\ket{3P_{3/2}}$, the
+dipole selection rules prohibit excitation from $\ket{3P_{1/2}}$ to
+$\ket{4D_{5/2}}$.  This way, the upper state will be the single
+$\ket{4D_{3/2}}$ state, instead of the two nearly degenerate states,
+$\ket{4D_{3/2}}$ and $\ket{4D_{5/2}}$.
+
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon_expt/Na_decay.eps}
+\bigskip
+\ncap{Spontaneous emission decay channels of sodium cascade system.}
+{Spontaneous emission decay channels of sodium cascade system.
+Coupled states of cascade system excited in experiment are shown in bold while
+extra decay channels are indicated with fine lines.
+\label{Na_decay}}
+\end{figure}
+
+The importance of coupling due to spontaneous emission is determined by
+the relative magnitudes of the various transition lifetimes.  The spontaneous
+emission coupling is shown schematically in \Fig{Na_decay}.  The decay lifetimes
+between the cascade system states are 15.9~ns for the $\ket{3P_{1/2}}
+\rightarrow \ket{3S_{1/2}}$ transition and 91.7~ns for the $\ket{4D_{3/2}}
+\rightarrow \ket{3P_{1/2}}$ transition.  We see from \Fig{Na_decay} that the
+upper $\ket{4D_{3/2}}$ state has other available decay channels. 
+This coupling takes population out of the three-level system, and
+hence could affect the time evolution of the driven system.  However, if
+lifetimes associated with these transitions are long enough, they will not
+influence the dynamics during the laser pulse.  After the pulses have turned
+off, the various lifetimes will only serve to determine branching ratios to
+all possible states.  Then, the time-integrated (green) fluorescence will
+still be proportional to the population in the $\ket{4D_{3/2}}$, but now
+with a proportionality constant determined by the associated branching ratio.
+
+Level $\ket{4D_{3/2}}$ has three other levels to which it can radiatively decay
+other than the $\ket{3P_{1/2}}$.  They are the $\ket{4P_{3/2}}$,
+$\ket{4P_{1/2}}$, and the $\ket{3P_{3/2}}$, shown in \Fig{Na_decay}.  These
+decay channels have lifetimes of 901~ns, 180~ns, and 457~ns, respectively
+\cite{Wiese:69}.  Subsequent decay from these levels to the ground
+$\ket{3S_{1/2}}$ state occurs with lifetimes of 345~ns, 341~ns, and 15.9~ns. 
+Thus, the fastest competing decay from the upper state is $\ket{4D_{3/2}}
+\rightarrow \ket{4P_{1/2}}$ with a lifetime of 180~ns.  This lifetime is twice
+the 91.7~ns lifetime of the driven $\ket{4D_{3/2}} \rightarrow \ket{3P_{1/2}}$
+transition and furthermore is approximately twelve times longer than our
+pulsewidth of 15~ns.  The decay channels other than those within the cascade
+system can therefore be ignored during the interaction.  Afterwards,
+approximately 55\% of the population decays from the $\ket{4D_{3/2}}$
+level to the $\ket{3P_{1/2}}$ level.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon_expt/mj_levels.eps}
+\bigskip
+\ncap{Magnetic sub-levels of sodium cascade system.}
+{Magnetic sub-levels of sodium cascade system.  The solid line corresponds
+to choosing the quantization axis along $\omega_1$'s linear polarization
+direction, and the dashed lines along $\omega_2$'s linear polarization
+direction.  The two laser polarizations are orthogonal.
+\label{mJ_levels}}
+\end{figure}
+
+The magnetic level degeneracy is another potential complication that could
+cause the driven system to stray from the three-level cascade model.  Given the
+reduction of the problem to the three fine-structure levels, $\ket{3S_{1/2}}
+\rightarrow \ket{3P_{1/2}} \rightarrow \ket{4D_{3/2}}$, the magnetic level
+degeneracy is shown in \Fig{mJ_levels}, in which laser frequency $\omega_1$
+drives the lower transition and $\omega_2$ the upper transition.  In the
+experiment, we use two linearly polarized beams with orthogonal axes of
+polarization.  This orthogonality is not required, and as we will
+show, is formally equivalent to the parallel linear polarizations case.  This
+orthogonality, however, did simplify the experimental layout.  In
+\Fig{mJ_levels}, the ground and middle states, with total angular momentum
+$J=1/2$, have two levels corresponding to $m_J = \pm 1/2$.  The upper state, with
+its total angular momentum of $J=3/2$, has four states, $m_J = \pm 1/2,\pm
+3/2$.  In specifying $m_J$ values, we are specifying states with definite $J_z$,
+which assumes that we have chosen a direction in space to serve as our
+``$z$''-axis of quantization.  While no direction is more ideal than another,
+the coupling schemes are simplest if this quantization axis is chosen along one
+of the linear polarization directions.  \Figure{mJ_levels} shows the coupling
+scheme for the quantization axis chosen along the lower transition laser
+polarization axis as solid lines, and for the quantization axis
+chosen along the upper transition laser polarization axis as dashed lines.
+
+For two linearly polarized fields with parallel polarizations, the
+dipole selection rule $\Delta m_J =0$ causes the excitation
+scheme to separate into independent $m_J=\pm1/2$ channels.  While the laser
+fields cannot couple the channels spontaneous emission can mix channels
+as we will discuss later.  Now if we keep the $\omega_1$ laser's linear
+polarization fixed (parallel to the quantization axis), and rotate the
+$\omega_2$ laser's linear polarization so that it is orthogonal to
+$\omega_1$ (shown as solid lines in \Fig{mJ_levels}), the selection rules
+on the lower transition remain $\Delta m_J =0$, while the selection rules
+on the upper transition become $\Delta m_J = \pm 1$.  This can be understood by
+considering the polarization basis.  We chose to represent the polarization
+vector with basis vectors that include the direction of the quantization axis
+(parallel to the $\omega_1$ laser polarization axis), and the corresponding
+right- and left-handed circular polarizations.  In this basis, the polarization
+of the $\omega_2$ laser would be represented as a linear combination of right-
+and left-handed circular polarizations with corresponding dipole selection rules
+$\Delta m_J = -1$ and $\Delta m_J = + 1$.  This might appear to turn the
+three-level problem into a four-level one because the upper state now splits
+into two degenerate levels.  However, by examining the equations of motion, it
+can be seen that the middle level interacts with a particular linear combination
+of upper levels, and furthermore, the dipole moment to this superposition of
+upper levels is the same as the dipole moment of the upper transition when both
+lasers are parallel.  So while the upper level contains two separate levels,
+they behave as a single level with the same dipole moment as the parallel
+polarization case, and so long as measurements that could distinguish
+$m_J$ are not made, the system remains a three-level system for orthogonal laser
+polarizations.  This reasoning can also be applied to the dashed line coupling
+shown in \Fig{mJ_levels}, except here the system remains as independent
+three-level systems, but the dipole moment on the lower transitions can be
+shown to be unaffected by the polarization of the $\omega_1$ laser being
+rotated 90$^{\circ}$ relative to the polarization of the $\omega_2$ laser.
+
+The final consideration regarding level structure is whether or not spontaneous
+emission can couple these otherwise independent three-level systems together. 
+If spontaneous emission can mix the population between
+the two three-level systems during the interaction, then our three-level
+description may not suffice.  Since the lower transition's spontaneous emission
+lifetime is approximately equal to the pulse duration and the upper transition's
+spontaneous lifetime is six times longer than the pulse duration, we focus our
+attention on the lower transition.
+
+Assume the $\omega_1$ laser beam has its polarization axis parallel to the
+quantization axis (solid line in \Fig{mJ_levels}).  Then spontaneous emission
+from the middle levels can proceed both along these solid lines, $m_J = \pm 1/2
+\rightarrow \pm 1/2$, and between channels along the dashed lines, $m_J = \pm
+1/2 \rightarrow \mp 1/2$.  This causes the two channels to be coupled. 
+However, there are two factors which conspire to make this coupling
+trivial.  The first is the symmetry of the problem: the coupling
+parameters are equal for both $m_J = + 1/2 \rightarrow - 1/2$ and $m_J = -1/2
+\rightarrow + 1/2$ transitions.  Furthermore, the initial conditions are
+symmetric in $m_J$.  The ground states are initially thermally populated
+which means that they have equal population (degenerate energies) and there is no
+coherence between these two states (thermal preparation).  Therefore, we can
+imagine that as the laser drives this transition, equal population on both sides
+is excited to the middle level.  Each of these populations is then
+redistributed between the ground states.  But as much population decays
+along one path as decays along the other path and so the ground states receive
+the same population.  The second important point here is that this transfer
+process is incoherent.  Therefore, coherence will not be built up between
+these channels.  
+
+The interaction we investigate is actually relatively insensitive to the
+details of the decay from the middle level.  For the counterintuitive
+excitation, the middle level is not populated and so the specific details of
+its decay are unimportant for the adiabatic population transfer.  Even for the
+intuitive case, when the delay between pulses is large enough to allow
+significant decay from the middle level, the population in this level is
+necessarily reduced and hence the population ultimately
+transferred to the final state will be small.  So by the time this decay process
+is important in the intuitive regime, the technique will have become an
+inefficient way to transfer population to the final state.
+
+So far, we have discussed issues relating to an individual sodium atom.  Now
+we consider important experimental aspects of using sodium vapor.  When
+using sodium vapor in a sealed absorption cell, the only physical parameter that
+can be controlled is the temperature of the vapor.  The temperature changes the
+number density of the sodium atoms, which in turn has an effect on
+the way in which the sodium vapor interacts with light.  That is, the density
+changes both the Beer's absorption length, and the line broadening.  
+The vapor pressure, $p$, of sodium as a function of temperature in Kelvin
+($T_K$) is given by \cite{CRC_book}
+\begin{equation}
+\log_{10}\left[p({\rm mmHg})\right] = 7.55299 - \frac{5395.37}{T_K}
+\end{equation}
+which can be converted into an expression involving the number density, $N$, by
+use of the ideal gas law,
+\begin{equation}
+N({\rm cm}^{-3}) = \frac{9.6559 \times 10^{18}}{T_K} \exp\left(17.3914 -
+\frac{12423.3}{T_K}\right).
+\end{equation}
+For a temperature of 120$^{\circ}$C, $N \approx 1.7 \times 10^{10}$ cm$^{-3}$.
+
+The Beer's absorption length, $L_{Beer}$, is a parameter that characterizes the
+1/e length of power absorption of a weak resonant field \cite{Allen:87},
+\begin{equation}
+\frac{1}{L_{Beer}} = \frac{1}{4\pi\epsilon_0}\frac{4 \pi^2 N |d_{12}|^2
+\omega_0}{3 \hbar c} g(\Delta).
+\end{equation}
+In this expression, $d_{12}$ is the dipole moment of the driven transition with
+angular frequency $\omega_0$, and $g(\Delta)$ is the lineshape function, which
+will be Lorentzian for a homogeneously broadened line or Gaussian for a Doppler
+broadened line, and $\Delta$ is the detuning from resonance.  For the
+$\ket{3S_{1/2}}\rightarrow\ket{3P_{1/2}}$ transition on resonance and at
+120$^{\circ}$C (where it is predominantly Doppler broadened), $L_{Beer}
+\approx 30$ cm.
+
+The broadening of the transition line is also dependent on temperature.  We
+mentioned previously that the Doppler broadening of the
+$\ket{3S_{1/2}}\rightarrow\ket{3P_{1/2}}$ transition is approximately $1.6$ GHz
+FWHM and changes slowly with temperature ($\sim \sqrt{T}$).  The
+radiative broadening was also given previously in terms of the decay parameters
+in the density matrix equations of motion.  The $16$ ns lifetime of the
+$\ket{3P_{1/2}}$ state gives rise to a Lorentzian linewidth of 10 MHz FWHM.
+The other main line broadening mechanism is collisional, or self-broadening (we
+do not use a buffer gas in our cell and hence inter-species broadening is not
+an issue).  This mechanism was reviewed extensively by Lewis \cite{Lewis:80}. 
+It was found that the FWHM linewidth due to self-broadening (for fine structure
+levels) is
+\begin{equation}
+\Delta \nu_{1/2} = K^{'}(J_g,J_e)\sqrt{\frac{2J_e+1}{2J_g+1}} \frac{N
+\lambda_{eg}^3}{8 \pi^2}\Gamma_e
+\end{equation}
+where $J_g,J_e$ are the angular momentum quantum numbers of the ground and
+excited levels, $K^{'}(J_g,J_e)$ is a number approximately equal to one
+(described in detail in \cite{Lewis:80}),
+$\lambda_{eg}$ is the transition wavelength, and $\Gamma_e$ is the natural
+linewidth of the excited level.  For a temperature of 120$^{\circ}$C, the
+self-broadened linewidth is on the order of 2 kHz which is
+negligible compared to the radiative width.  The self-broadened linewidth
+becomes approximately equal to the Doppler width at $T \approx 500^{\circ}$C. 
+So for temperatures far below this, the line is predominantly inhomogeneously
+broadened, and far above it the line is homogeneously broadened.  Near $T
+\approx 500^{\circ}$C, the line is determined by the Voigt lineshape
+\cite{Corney_book}.
+\section{Laser System}
+
+\begin{figure}[tb]
+\postfull{thesisfigs/two_photon_expt/ns_dye.eps}
+\bigskip
+\ncap{Schematic layout of the dye oscillator and amplifier system.}{Schematic
+layout of the dye oscillator and amplifier system.  L1 is a 250 mm focal
+length lens and L2 is a 150 mm focal length lens.  HR1 and HR2 are high
+reflector mirrors.
+\label{ns_dye}}
+\end{figure}
+
+\hspace{\parindent}  We now examine the pulsed laser system
+used to drive our three-level cascade system \cite{Corless:97}.  Given our need
+to select particular optical frequencies, the dye laser is the
+natural choice for the experiment.  \Figure{ns_dye} shows a schematic layout of
+our dye oscillator and amplifier system. The properties of the frequency-doubled
+Nd:YAG pump are critical to dye laser performance and so we describe its
+design first.  The Nd:YAG used is a Quantel model YG581-10 actively
+Q-switched system providing approximately $ 60 $ mJ of $ 532 $ nm energy in a
+single-transverse, multi-longitudinal mode output.  A typical temporal
+profile produced by this system is shown in \Fig{yag_pulse}(a).  This data was
+taken with a Hi~Voltage Components,~Inc. Model PDH-114-P vacuum photodiode and
+a Tektronix 7912AD digitizing oscilloscope with a 500~MHz bandwidth.  The
+amplitude modulation is indicative of the multi-longitudinal mode oscillation,
+and the pulse profile varies significantly from shot to shot. As will be
+discussed in the section on the temporal profile, this gives rise to an
+unacceptable temporal profile of the dye laser.  To remedy this we modified the
+cavity in two ways.  Since Nd:YAG is predominantly homogeneously broadened,
+spatial hole burning is one of the main obstacles in obtaining single-mode
+oscillation \cite{Draegert:72}. This was eliminated in the linear cavity
+geometry by making use of a ``twisted-ribbon mode'' \cite{Evtuhov:65} in the
+cavity, achieved by surrounding the gain medium with $ \lambda/4 $
+waveplates with the output coupler on one side and a linear polarizer on the
+other.  This generates an axially uniform mode energy density inside the gain
+medium and hence eliminates spatial hole burning.  The second modification was
+to replace the Pockels cell Q-switch with a LiF crystal with F$_2^{-}$ color
+centers acting as a slow saturable absorber Q-switch \cite{Sumida:86}.  This,
+combined with an intra-cavity etalon, produced single-longitudinal-mode output
+with a smooth temporal profile shown in
+\Fig{yag_pulse}(b).  The resultant 532 nm energy was limited to $12$ mJ. The
+Nd:YAG beam was focussed with a $f=250$ mm lens to a spot before the dye cell
+with small translations of the lens along the optical axis enabling variation
+of the size of the gain region.  Focusing before the cell is preferable as it
+ensures that the energy is not focussed onto the dye laser mirrors.
+
+\begin{figure}[tb]
+\postfull{thesisfigs/two_photon_expt/yag_pulse.eps}
+\bigskip
+\ncap{Temporal profile of the Nd:YAG pump laser.}{Temporal profile of the
+Nd:YAG pump laser. In (a) the laser is actively Q-switched and is
+multi-longitudinal-mode, and in (b) the laser is passively Q-switched and is
+single-longitudinal-mode.
+\label{yag_pulse}}
+\end{figure}
+
+The dye oscillator is based on the original design of Shoshan \cite{Shoshan:77}
+and Littman 
+\cite{Littman:78a,Littman:84} which makes use of a single diffraction 
+grating used in grazing incidence to provide frequency selectivity.  
+This is a convenient design because it involves only a few optical 
+components and is easy to work with and build.  The grating used is a
+1800 lines/mm holographic grating manufactured by Optometrics 
+Corporation.  The choice of grating spacing depends on the operating wavelength 
+of the laser.  Higher diffraction orders are formed when either the lasing
+wavelength or the number of lines per mm is decreased.  This 
+has two negative consequences.  First, sending light into higher diffracted
+orders increases the loss of the cavity and hence reduces the 
+conversion efficiency.  Second, it is possible that in the grazing 
+incidence mode of operation there may be a Littrow diffracted order 
+within the dye bandwidth.  This can cause more than one frequency to lase
+simultaneously.  By choosing  the grating spacing appropriately, these effects
+can be avoided.
+
+The rear high reflector HR1 is a high damage threshold tunable laser mirror
+made by CVI Laser Corporation, model TLM1.  This mirror was epoxied to a
+piezoelectric transducer (PZT) stack, Thorlabs model AE0505D16, which provides
+a displacement of $\approx$ 1 $\mu$m at a drive voltage of 10 V.  This
+enabled the use of a standard laboratory power supply to make cavity length
+changes on the order of the wavelength, which proved to be very useful in
+single-mode operation.  The tuning mirror, HR2, is manufactured by Optometrics
+and is matched to the grating length of 5~cm.  Since dispersion in the
+cavity depends on the length of the illuminated part of the grating (for fixed
+grating spacing), the 5 cm length is preferred over more compact
+gratings.  The tuning mirror is epoxied to a mirror mount (Thorlabs KC1-PZ)
+which contains a PZT stack similar to the one mentioned above in conjunction
+with the standard $ 1/4-80 $ adjustment screw.  The PZT allowed for high
+resolution tuning through narrow spectral features.  The quartz  dye cell is
+manufactured by NSG Precision cells, Type 48 and has a path length of 1 mm.
+
+% LINEWIDTH
+
+There are many commercial dyes available, enabling dye lasers to tune through
+the visible and well into the infrared and ultraviolet regions of the
+spectrum with essentially no gaps.  However, when a broadband dye is used
+in a very low-Q cavity (typical of the grazing incidence design) the entire
+tuning range cannot be realized.  For a given pumping level, if the laser
+operates in a single-longitudinal-mode (SLM) on the wings of the tuning curve,
+it may be multi-longitudinal-mode at the gain peak.  Consequently, the effective
+bandwidth of these dye lasers can be reduced, causing gaps in the spectrum
+covered by existing dyes. This can be remedied, however, by modifying the
+chemical environment of the dye \cite{Schafer_book}. The gain maximum can be
+adjusted by changing the concentration, the solvent, or the pH of the solution. 
+A shift of the gain maximum can also be achieved by changing the length of the
+gain region \cite{Schafer_book}, although this method is not practical.  The
+concentration is typically adjusted to provide good pump absorption while still
+providing a near cylindrically symmetric gain region within the dye.  These two
+competing requirements are usually balanced to yield acceptable results for both
+with an absorption level $\sim 80$\% leaving no room for wavelength tuning via
+concentration adjustment.  The solvent, however, is modified easily within the
+constraints of solubility.  For example, a simple switch from methanol to
+ethanol resulted in a 4~nm blue shift.  Using a 50:50 mixture of H$_2$O and
+ethanol solution (with a small addition of the surfactant Ammonyx LO to
+prevent dye aggregate formation) gave an additional $\sim 5$~nm blue shift.
+And as a final technique that works well with the Rhodamine dyes, the pH of
+the solution can be varied.  This is achieved by adding a small quantity
+of base (saturated solution of KOH in ethanol) to blue shift by up to 10 nm,
+or acid (HCl in water) to red shift by up to 10~nm.  The use of both solvent
+and pH tuning are typically not needed for a single dye, but we regularly use
+both techniques to shift the dye tuning curve and/or to maximize energy
+output into a given wavelength.  For the orange laser, a $ 3 \times
+10^{-4}$~M solution of Rhodamine 610 in 2~$\ell$ of methanol with 1/2 $\ell$
+of 95:5 H$_2$O:Ammonyx LO gave a  single-mode tuning range of 582-599~nm
+with a peak near the $\ket{3S_{1/2}} \rightarrow \ket{3P_{1/2}}$ transition of
+$ \approx 589$~nm.  The same dye solution was used in the amplifier as in the
+oscillator.  For the green laser, the same dye and concentration were used,
+but ethanol was the solvent with a few drops of base (saturated solution of
+KOH in ethanol).  The amount of base added was determined experimentally by
+observing the output until the peak laser wavelength was near $568$~nm.
+
+Given the particular dye environment found for achieving a specified 
+wavelength, the main issue becomes attainment of SLM operation.
+Single-mode output has been previously reported with this cavity 
+\cite{Littman:84,Littman:78b}.  The most important parameters affecting it are
+cavity length and angle of grazing incidence.  By use of longitudinal pumping,
+short gain regions can lead to short cavities with lengths $\sim$ 4--5~cm.
+The angle of incidence is typically 89--89.5$^{\circ}$.  The size of the
+gain region also can affect single-mode performance.  Different
+longitudinal modes travel slightly different paths in the dye cavity
+\cite{Kangas:89}.  The gain region acts as a slit in the spectrometer
+formed by the grating and tuning mirror. The larger the slit, the lower the
+spectral resolution. We have verified that a cavity geometry that operates
+single-mode for one pump spot size can act multimode for a larger gain
+region.  This would seem to imply that very small gain regions should be
+used.  However, diffraction can give rise to unacceptably large losses. 
+Thus, the size of the gain region can be an important cavity parameter.  We
+report performance with a pump beam having a Gaussian waist size of 220~$\mu$m.
+
+Continuous wavelength tuning is the most convenient method to locate and
+maintain atomic resonances.  When the laser frequency mode-hops, locating
+narrow atomic resonances can be exceedingly difficult with pulsed lasers.
+If the axis of rotation of the tuning mirror in our cavity is not chosen 
+properly, the act of rotating the mirror will change the cavity length in an
+uncontrolled fashion which will lead to mode-hopping.  It has been shown
+\cite{Liu:81,Zhang:92}, however, that if the axis of rotation is  chosen
+properly, the rotation can cause a change in cavity length that exactly tracks
+the frequency change so that the longitudinal modes move in tandem with the
+grating passband, thereby preventing mode-hops.  In our initial system, we had a
+single-mode tuning range of $< 0.05$ cm$^{-1}$.  After a modest attempt
+to align the rotation axis with the special location extended the tuning range
+substantially to 1.7~cm$^{-1}$.  This was sufficient for our application. 
+Note that, as shown by Zhang \etal \cite{Zhang:92}, tuning ranges of
+190~cm$^{-1}$ can be achieved with more stringent alignment procedures.
+
+To investigate the single-shot linewidth, we utilized a modified
+plane-parallel Fabry-Perot interferometer (Burleigh RC 110) with a free
+spectral range of 250~MHz and finesse $\sim 10$ and observed circular fringes
+with a laser beam analyzer (Spiricon model LBA-100).  We digitized
+single-shot fringe patterns and used these to measure the linewidth. We
+concurrently digitized the temporal profile.  This enabled us to calculate
+the theoretical transform-limited linewidth without making any assumption about
+the pulse shape. This helps to eliminate any systematic error caused by lack of
+knowledge of temporal profile.  For our pulse with a FWHM
+$\approx 20$~ns we calculated a transform-limited linewidth of 36~MHz and
+measured 58~MHz.  This gives $1.6 \times$ transform-limited performance for a
+single-shot.  This compares favorably with performance from pulse amplified CW
+sources where 1.4 $\times$ transform-limited performance has been achieved
+\cite{Black:94}.  However, the simplicity of this design eliminates the need
+for a complicated stabilized CW source.  Of course, an advantage of
+a stabilized CW source is the long term frequency stability.  To analyze
+this parameter for our system, the same single-shot spectrum was averaged
+over 100 shots to produce a time averaged linewidth of 240~MHz.  The
+most likely source of this frequency jitter is non-Laminar flow in the dye
+cell \cite{Maruyama:91}.
+
+\begin{figure}[tb]
+\postfull{thesisfigs/two_photon_expt/tempC.eps}
+\bigskip
+\ncap{Optogalvanic signal as a function of temperature of the dye
+fluid.}{Optogalvanic signal as a function of temperature of the dye fluid (open
+circles).  The best fit Gaussian (Doppler) profile is shown as the solid line.
+\label{tempC}}
+\end{figure}
+
+The main source of frequency drift in our system was temperature drift in
+the dye.  We measured the required temperature stability by using a
+heat exchanger in the dye flow system coupled to a constant temperature bath
+recirculator. This system provided temperature stability of 0.01~$^{\circ}$C
+with temperature resolution of 0.1~$^{\circ}$C.  Using a Na/Ne optogalvanic
+cell, we monitored a Ne optogalvanic resonance signal as the temperature of
+the bath was varied.  The results are shown in \Fig{tempC}.  The Ne resonance
+at 588~nm has a (Doppler broadened) width of 3~GHz \cite{King:77}.  The best
+fit Doppler profile gives a temperature FWHM $= 0.3$~$^{\circ}$C. This
+implies a temperature-induced frequency drift of 10~GHz/$^{\circ}$C.  Using
+the temperature-dependent refractive index of ethanol and the length of the
+gain region, we can calculate a predicted frequency drift of 9~GHz/$^{\circ}$C,
+very close to the measured value.  This shows that the temperature of the dye
+must be kept stable to less than a tenth of a degree Celsius if sub-GHz
+resolution is required.  Without the use of the constant temperature bath, we
+found two modifications to the dye flow system that helped to minimize the
+temperature drift.  The first consideration was to use a large dye reservoir. We
+found that 2~$\ell$ was a reasonable compromise between stability and
+convenience.  The second modification was to arrange the dye pump so that it
+pulled fluid through the dye cell rather than forcing it through.  This had a
+considerable reduction in temperature drift because the motor is the largest
+source of heat in the system.
+
+Slow drifts can be eliminated by active cavity stabilization using the
+technique of Raymond \etal \cite{Raymond:89}.  This scheme makes use of
+the different intra-cavity paths taken by different longitudinal modes which
+creates angular deviations in the output (this can also give rise to transverse
+mode structure which will be discussed later).  By using a two-element
+detector, an error signal can be derived from this angular separation.  We
+have implemented this technique and achieved the short time-averaged linewidth
+for much extended periods.
+
+Finally, using a one meter Jarrell-Ash Czerny-Turner spectrometer with a
+Princeton Applied Research CCD camera and optical multichannel analyzer we
+measured the amplified spontaneous emission (ASE).  The measurement was limited
+by short-term baseline drift in the detection system.  We obtained an upper limit
+of ASE to be $< 10^{-4}$ in our amplified system.
+
+% SPATIAL PROFILE
+
+\begin{figure}[tb]
+\postfull{thesisfigs/two_photon_expt/spatial.eps}
+\bigskip
+\ncap{Spatial profile of nanosecond dye laser.}{(a) Spatial profile of the
+dye laser.  (b) Cross-section of the profile taken horizontally through
+the center of the beam showing its near Gaussian spatial quality.
+\label{spatial}}
+\end{figure}
+
+\begin{figure}[tb]
+\postfull{thesisfigs/two_photon_expt/gain_guide.eps}
+\bigskip
+\ncap{Spatial profiles of pump and dye lasers showing impact of
+gain-guiding.}{Spatial profiles of the pump and dye lasers showing the impact
+of gain guiding in the oscillator.  In (a) is the Nd:YAG mode incident on
+the dye cell.  In (b) is the resultant dye beam.
+\label{gain_guide}}
+\end{figure}
+
+The bare resonator cavity as described contains no beam shaping optical
+elements.  The grating and tuning mirror can be replaced by a single flat
+mirror for mode calculations.  The model cavity then contains two flat
+mirrors, a marginally stable design with large diffractive losses. 
+When the dye is pumped, however, gain guiding serves to shape the output beam
+and make the cavity less lossy \cite{Casperson:68}.  Thus the dominant beam
+shaping within this cavity is done by the gain region, which in turn depends on
+the transverse quality of the Nd:YAG pump beam.  To demonstrate the gain guiding
+of this resonator, we first aligned the dye resonator to achieve the best
+spatial mode, which is nearly Gaussian and is shown in \Fig{spatial}.  We
+then modified the  pump beam (nominally a Gaussian spatial mode) from the Nd:YAG
+by placing a thin wire horizontally in the beam after the focusing lens.  This
+served to create a beam with horizontal nulls in the focused beam profile at the
+cell, shown in \Fig{gain_guide}(a).  Then, without modifying the dye cavity,
+we measured the output beam from the dye (shown in
+\Fig{gain_guide}(b)).  The correlation in shape is clearly visible.  It is
+important to note that the shape of the output dye beam is not caused by
+the cavity being misaligned so that a higher-order mode (e.g. 
+TEM$_{20}$) is lasing in the bare cavity, or because of a
+spatially modulated loss. Rather, the shape of the gain region is determining
+the beam shape of the output.  We also verified this gain guiding by using
+slightly distorted pump beams and obtained similar (though less dramatic)
+results.
+
+We see that the spatial quality of the dye beam is critically linked to
+the spatial quality of the pump beam.  Since the dye beam appears nearly
+Gaussian, we sought to quantify the near diffraction limited performance by
+measuring the $M^2$ beam quality parameter \cite{Ruff:92}.  This entailed
+measuring the spot size at the focus of a high quality lens ($f=100$ mm doublet)
+and in the far field of that lens.  We measured $M^2=1.2$ which is comparable
+to the lowest $M^2$ obtained for a CW argon ion laser in a recent study
+\cite{Johnston:92}.  We therefore see that the high quality 
+(TEM$_{00}$) mode of the Nd:YAG pump gives rise to a near diffraction
+limited mode of the dye beam in this type of cavity.  This is one of the
+main benefits of using the longitudinally pumped gain region instead of
+the original transversely pumped design \cite{Shoshan:77,Littman:78b}.
+
+\begin{figure}[tb]
+\postfull{thesisfigs/two_photon_expt/doub_mode.eps}
+\bigskip
+\ncap{Spatial profile of the dye beam in a  quasi-single-longitudinal-mode dye
+laser.}{Spatial profile of the dye beam in a  quasi-single-longitudinal-mode
+dye laser.  The two lobes are present when the laser is running in two
+longitudinal modes.
+\label{doub_mode}}
+\end{figure}
+
+A final issue affecting transverse mode quality is whether the laser
+is running in a SLM.  We mentioned above that different longitudinal modes travel
+slightly different paths in the oscillator cavity.  This can give rise to
+slight angular deviations in the direction of the output beam.  It also can
+radically modify transverse mode profiles.  We show in \Fig{doub_mode} a
+spatial mode profile obtained when the dye laser was running in two
+longitudinal modes.  This cavity was quasi-SLM in the sense that changing the
+cavity length by $\lambda/2$ with the PZT could cause the laser to cycle
+through SLM operation to double mode operation and back again to SLM. When the
+laser was in double mode operation, the different longitudinal modes actually
+were separated transversely in space, as seen in the figure.  By tuning the
+cavity length so that SLM operation was achieved, the spatial mode returned to
+its near Gaussian profile.
+
+% TEMPORAL PROFILE
+
+\begin{figure}[tb]
+\postfull{thesisfigs/two_photon_expt/dye_bad.eps}
+\bigskip
+\ncap{Temporal profile of a single-longitudinal-mode dye laser (solid line)
+when pumped by a multi-longitudinal mode Nd:YAG laser.}{Temporal profile of
+a single-longitudinal-mode dye laser (solid line) when pumped by
+a multi-longitudinal mode Nd:YAG laser.  Shown as a dashed line is the pump
+temporal profile (from \Fig{yag_pulse}(a)) that produced the dye laser pulse. 
+\label{dye_bad}}
+\end{figure}
+
+When a multi-longitudinal mode laser pulse is used to pump a dye laser,
+the temporal profile of the dye laser pulse will be similar to the pump pulse,
+even if the dye laser is in a SLM.  This behavior is shown in \Fig{dye_bad}
+The temporal pulse shape data were taken with a Hi Voltage Components, Inc.
+ Model PDH-114-P vacuum photodiode and a Tektronix 7912AD digitizing oscilloscope
+with a 500~MHz bandwidth.  If the dye laser is pumped just slightly above
+threshold then the pulse may be smooth and significantly shorter than the pump
+pulse \cite{Lin:75}.  The amplitude fluctuations typically will be larger in
+this configuration, and the energy output will be reduced.  Therefore it is
+often desirable to run the laser significantly above threshold with the dye
+laser pulse essentially following the pump pulse profile (for typical nanosecond
+Nd:YAG, N$_2$ and Excimer pump pulses) as in \Fig{dye_bad}.
+
+\begin{figure}[tb]
+\postfull{thesisfigs/two_photon_expt/rough.eps}
+\bigskip
+\ncap{Temporal profile of a single-longitudinal-mode dye laser when pumped
+by a single-mode (smooth) pump laser.}{Temporal profile of a
+single-longitudinal-mode dye laser when pumped by a single-mode (smooth) pump
+laser.  The rapid rising edge is indicative of the output from the low-Q dye
+cavity.
+\label{rough}}
+\end{figure}
+
+If smooth dye laser pulses are required, then the pump pulse must also be
+smooth, as in \Fig{yag_pulse}(b).  This is not enough to determine smooth
+output, however.  The dye laser must not exhibit mode-beating itself, and so SLM
+operation must be attained.  The SLM output from the dye laser, pumped by the
+smooth Nd:YAG pulse, is shown in \Fig{rough}.  Here we see dramatic
+improvement in the smoothness of the temporal profile.  There is still a
+rather sharp rising edge to the pulse. These sharp features were observed
+experimentally and modeled theoretically by Sorokin \etal
+\cite{Sorokin:67}. In this work it was found that the sharp rising edge was
+indicative of a rapid relaxation oscillation spike characteristic of these
+low-Q cavities.  The severity of this rising edge can be modified
+somewhat depending on the particular day-to-day cavity alignment
+(the feature was not minimized for \Fig{rough}).  Nonetheless, the temporal
+profile is generally very smooth and much improved as compared with
+\Fig{dye_bad}.
+
+\section{Experimental Layout}
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon_expt/apt_expt.eps}
+\bigskip
+\wcap{Experimental layout for counterintuitive pulse experiment.}{Experimental
+layout for counterintuitive pulse experiment.  The $\omega_1$ dye laser beam is
+combined with the $\omega_2$ dye laser beam in a polarizing beam splitter
+(PBS).  The $\omega_2$ beam is first collimated in a corrected lens system (L),
+then passes through a quarter-wave plate ($\lambda/4$) in a variable delay arm
+($\Delta\tau$).  The two beams interact with a sodium vapor cell (Na) where the
+fluorescence is imaged through a green spectral filter (SF), onto a pinhole
+(PH), and finally into a photomultiplier tube (PMT). Nonabsorbed beams propagate
+on to laser diagnostics.
+\label{apt_expt}}
+\end{figure}
+
+\hspace{\parindent} \Figure{apt_expt} shows the general layout of 
+our experiment.  We use two pulsed dye lasers.  The orange laser is labeled
+$\omega_1$ and the green laser $\omega_2$.  The green light emitted from the
+laser has its plane of polarization in the plane of the paper.  It travels
+through a collimator and into a polarizing beam splitter (PBS), where it enters
+the variable delay arm.  This consists of a corner cube high reflector, a
+quarter-wave plate and a retroreflecting high reflector.  After two passes
+through this system, the beam's polarization is rotated through
+90$^{\circ}$.  Then, when it enters the PBS, it is ejected out the side and
+exits the delay arm.  The orange beam has a static time delay built-in so the
+two beams can be made to overlap in time for some predetermined position of
+the variable delay arm.  The orange beam has its plane of polarization in the
+plane of the paper, so that when the two beams are combined in another PBS, they
+have orthogonal polarizations.  The two beams then travel on to the sodium
+absorption cell.
+
+The collimation of the green beam is very important in this experiment.  If the
+beam is not well-collimated, or if it changes shape upon propagation due to
+aberrations, then the size of the beam entering the sodium absorption cell will
+vary with the time delay.  The peak Rabi frequency associated with
+this laser would then change as a function of delay.  This would be a
+systematic error in the experimental system.  To prevent this, we used a
+corrected two-element (Galilean) beam expander.  The third-order spherical
+aberration can be cancelled in this system by choosing appropriately shaped
+lenses.  The third-order longitudinal spherical aberration (LSA) scales as
+\begin{equation}
+{\rm LSA} \sim \frac{f}{(f/\#)^2}
+\end{equation}
+with a constant of proportionality determined by the shape of the lens. For
+a beam expander of this sort, the $f/\#$ is the same for both lenses. 
+Then, since negative and positive focal lengths contribute opposite signs to
+the LSA, we can eliminate LSA by choosing the focal lengths so that for
+convenient shapes, the two contributions are equal and opposite
+\cite{Melles_Griot}.  This can be achieved with $2.7 \times$ beam expansion with
+a 25~mm plano-concave lens and a 67~mm bi-convex lens.
+
+The two beams entering the cell have a spot-size of 3~mm.  The cell temperature
+was approximately 120$^{\circ}$C giving a Beer's absorption length
+$\approx 30$~cm.  This is significantly longer than the cell length of 7.5~cm
+so that the absorption is small.  This avoids propagation effects including
+self-induced transparency \cite{Allen:87} as well as electromagnetically induced
+transparency phenomena \cite{Harris:94,Eberly:94}. The fluorescence is collected
+at right angles to the beam's propagation direction.  Both orange and green
+fluorescence are present and so a green spectral filter is used to eliminate the
+orange fluorescence.  This way, we measure the green fluorescence as a measure
+of population transfer to the upper state, as discussed earlier in
+\rChapter{citheory}.
+
+The fluorescence is detected with a Hamamatsu R928 photomultiplier tube (PMT)
+whose quantum efficiency is $\sim 10$\% at 570~nm.  This signal was filtered
+with a Mini-Circuits BLP-21.4 low pass filter with a 3dB frequency of 24.5~MHz,
+and then integrated with a gated integrator, Stanford Research Systems Model
+SR250.  Since we wish to draw conclusions from the data regarding the amplitude
+fluctuations of the fluorescence signal, we must be sure to minimize detection
+noise so that the laser amplitude fluctuations represent the largest source of
+shot-to-shot signal variation.  The main way we minimized the detection noise
+was to operate the PMT in the analog mode \cite{Hamamatsu_book}.  This mode of
+operation is realized when there is enough optical power incident on the
+photocathode so that the output voltage is proportional to the input intensity. 
+The photon counting mode is the other frequently used mode of operation and is
+preferable when signals are weak.  
+
+The main sources of noise in a PMT are shot noise in the dark
+current and amplification noise \cite{Boyd_book1}.  The R928 has a typical
+anode dark current of $ \overline{i_D} = 3$~nA.  The variance of this signal
+is given by Schottky's formula to be $\overline{(\Delta i_D)^2} = 2 e
+\overline{i_D} \Delta f = (0.14$~nA)$^2$, where $e$ is the electronic charge,
+and $\Delta f \approx 20$~MHz is the electrical bandwidth (determined in this
+case by the low-pass filter).  The amplification noise in PMT's is due to the
+variance in the dynode's secondary electron emission, and is very low when
+operated at high gain. The (multiplicative) decrease in signal-to-noise (S/N)
+is given by \cite{Boyd_book1}
+\begin{equation}
+\gamma = \sqrt{\frac{\delta}{\delta -1}}
+\end{equation}
+where $\delta$ is the secondary electron emission.  For the R928 operated at
+500 V, the gain is $10^{5}$. The relationship between gain, $G$, and the
+secondary electron emission, $\delta$, is
+\begin{equation}
+G = \delta^N
+\end{equation}
+where $N$ is the number of dynode stages.  For this nine stage device,
+this gives $\delta \approx 3.6$.  The excess noise factor due to amplification
+noise is then $\gamma \approx 1.18$.  Thus, the S/N at the photocathode gets
+reduced by 18\% at the anode while the signal experiences a gain of $10^5$.
+
+We now estimate the shot noise in the signal current.  The typical
+fluorescence signal had a peak voltage of $\approx 100$~mV in a 100~ns time
+interval.  Terminated into a 50~$\Omega$ load this gives an anode signal current
+of $\overline{i_S} = 2$~mA. Using Schottky's formula, the signal current
+variance is $\overline{(\Delta i_S)^2} \approx (0.11~\mu$A)$^2$.  Note that
+$\overline{(\Delta i_D)^2} \ll \overline{(\Delta i_S)^2}$ and so the fluctuation
+in the anode dark current can be ignored. This gives S/N $\approx 18,000$.  The
+amplification noise will degrade this S/N by $\approx~18$\% to S/N $\approx
+15,000$.  Clearly, this will not be the limiting noise in the system.
+
+The gated integration signal is digitized by a Data Translation
+DT2801-A A/D board.  This unit provides 12-bit A/D conversion with maximal
+bipolar input voltage ranges of $\pm 10$~V.  This gives a minimum resolvable
+voltage change of 4.9~mV.  The gain on the gated integrator was adjusted to
+provide $\sim 1$~V of output signal.  Thus we expect a dynamic range of
+$1/0.0049 \approx 200$.  Furthermore, the amount of fluctuation observed in the
+gated integrator was one part in a hundred.  These are more stringent
+limitations on the S/N than those attributed to the PMT itself and thus will
+determine the dynamic range of our measurement.
+
+The laser diagnostics used included a Na/Ne optogalvanic lamp.  This device
+creates a transient voltage signal when the laser field is resonant with one of
+the elements in the lamp (Na or Ne in this case).  This was a convenient means to
+locate single photon resonance for the orange laser. Although this can also be
+done by observing the fluorescence from a hot sodium lamp, this technique does
+not work for the green resonance.  The optogalvanic signal for double resonance
+is easily detected with a magnitude $\sim 100$~mV with duration $ \sim 1~\mu$s.
+The laser linewidths were also monitored with our single-shot Fabry-Perot
+spectrometer.  This also enables us to monitor frequency drifts to insure that
+the laser central frequency stays fixed, since this system, unlike the
+optogalvanic signal, gives a sign to the error signal and hence can be used in a
+(human) feedback loop.  Finally, a fast vacuum photodiode measures laser
+temporal profile as well as providing for calibration of the time delay.
+
+\section{Population Transfer Results}
+\hspace{\parindent}
+
+We now present the results of the experiment.  We begin by examining the
+fluorescence signal obtained when the laser is weak and when we expect that the
+atomic evolution is not adiabatic.  The energy in the orange laser pulse was
+16~$\mu$J and in the green pulse was 14~$\mu$J.  The durations of the pulses were
+approximately equal and had a FWHM = 15~ns.  The spot-size of the beams was
+3~mm.  For the orange laser this gives a maximum Rabi frequency (on-axis of laser
+beam) of $\Omega_1/2\pi \approx 3$~GHz.  The corresponding area of this pulse is
+$\approx 200\pi$.  For the green pulse, the peak Rabi frequency is
+$\Omega_2/2\pi \approx 1.6$~GHz and the area is $\approx 105\pi$.  To test the
+weak field response, we placed neutral density filters in front of these beams
+with attenuation N.D. = 4.  This reduces the area of each pulse by a factor
+of 100 and we would expect the atomic response not to be adiabatic and
+hence the counterintuitive pulse delays should be less efficient.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon_expt/weak_ave.eps}
+\bigskip
+\wcap{Integrated fluorescence signal obtained under weak field excitation
+conditions.}{Integrated fluorescence signal obtained under weak field excitation
+conditions.  In (a) is the experimental curve, and in (b) the theoretical
+curve.  Positive time delays correspond to the counterintuitive pulse ordering.
+\label{weak_ave}}
+\end{figure}
+
+\Figure{weak_ave} shows the integrated fluorescence signal measured due to
+these attenuated laser beams.  \Figure{weak_ave}(a) is the measured signal, and
+\Fig{weak_ave}(b) is the theoretical prediction, based on the theory
+presented in \rChapter{citheory}.  The model used to do the theoretical
+calculation includes all the effects studied, including Doppler broadening,
+Gaussian spatial beam averaging, and amplitude fluctuations.  The first remark
+to make about the data obtained is that the range of time delay that could be
+investigated was limited.  Since the pulses have FWHM durations of 15~ns,
+actually delaying the two pulses significantly on both the intuitive and
+counterintuitive side was not possible in a single data run.  The available
+space on our optical table was about 7~ft.  When this is quadruple-passed
+in the delay arm, we obtain a maximum time delay of $\approx 28$~ns, which is two
+pulsewidths.  If the static delay of the orange beam in \Fig{apt_expt} is set up
+so that the delay scans the counterintuitive side, then this static delay would
+have to be changed if the intuitive side were to be investigated.  This would
+involve complete realignment, and hence, the two data sets would not be
+comparable.  As we feel that the physics associated with the intuitive pulse
+sequencing is well-known and understood, we focused our attention on the
+counterintuitive side (positive time delays in the figures), with some data
+taken on the intuitive side to set a reference.
+
+The theoretical curve qualitatively agrees with the measured signal.  In
+general, both curves show decreasing fluorescence signal for increasing time
+delays, with maxima near zero delay.  The measured signal extends further into
+the counterintuitive side than the theory.  This may be due to several factors. 
+The first is that when the field is weak, the atom behaves less like a
+three-level atom.  The hyperfine splitting of the ground state in our weak field
+is partially resolved. Second, with such small laser beam energies, it was not
+possible to measure the energy of each attenuated beam to verify the neutrality
+of the filters or their rated attenuations.  Higher energies would cause the
+theoretical curve to extend further into the counterintuitive side.  But in
+general, both curves show similar shapes as a function of time delay.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon_expt/weak_fluc.eps}
+\bigskip
+\ncap{Normalized amplitude fluctuations under weak field excitation
+conditions.}{Normalized amplitude fluctuations under weak field excitation
+conditions.  The experimental curve is the dashed line connecting circles and
+the theoretical curve is the solid line.
+\label{weak_fluc}}
+\end{figure}
+
+The data shown in \Fig{weak_ave}(a) represents the average of 200 laser shots
+measured at each time delay.  \Figure{weak_fluc} shows the standard deviation
+of the measured signal relative to the (time delay dependent) mean
+value (\Fig{weak_ave}(a)).  That is, for fluctuating variable $x$, we plot 
+$(\sigma_x/\overline{x})\times 100$\%.  The corresponding theoretical plot
+associated with the mean displayed in \Fig{weak_ave}(b) is shown as the solid
+line in \Fig{weak_fluc}.  The measured laser intensity fluctuations for each
+laser was found to be $\approx 20\% \times \overline{I}$, with $\overline{I}$
+the mean of the intensity.  We used these numbers for the theoretical curve.  The
+agreement, with no free parameters, is very good for a large range of delays. 
+As the delay becomes large, the agreement becomes worse.  This is most likely
+due to the fact that as the measured signal becomes small, the dominant source
+of noise is no longer from the atomic interaction and instead comes from
+detection noise.  Since this is not included in the theoretical curve, we expect
+the two curves to separate for large delays (when average signals are small). 
+This figure shows that, for weak fields, not only is the population transfer
+smaller for counterintuitive delays, it is also more noisy.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon_expt/strong_ave.eps}
+\bigskip
+\wcap{Integrated fluorescence signal obtained under strong field excitation
+conditions.}{Integrated fluorescence signal obtained under strong field
+excitation conditions.  In (a) is the experimental curve, and in (b) the
+theoretical curve.
+\label{strong_ave}}
+\end{figure}
+
+When the neutral density filters are taken out, we expect that the
+atomic dynamics should be adiabatic.  \Figure{strong_ave} displays
+the measured time-integrated fluorescence signal and the corresponding
+theoretical calculation for the strong field case.  Again qualitative agreement
+is obtained.  The theoretical prediction of \Fig{strong_ave}(b) assumes
+Gaussian laser temporal profiles.  We will improve the agreement between theory
+and experiment shortly by using a more realistic model of the laser pulse.  The
+most noticeable difference between the two curves in \Fig{strong_ave} is the
+presence of a dramatic dip in the theoretical curve near zero delay, whereas
+only slight evidence of this structure is seen in the experimental curve.  The
+measured curve shows an increase in signal from about 0.7 on the intuitive side
+to 1.0 on the counterintuitive, or an enhancement of 43\%.  The theoretical
+curve shows enhancement from 0.55 to 1, or 80\% increase.  The shapes of the
+two curves, not withstanding the dip near zero, are similar.  The experiment
+shows that even in the presence of Doppler broadening and Gaussian spatial
+averaging, the counterintuitive delay is more efficient at populating the upper
+state.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon_expt/strong_fluc.eps}
+\bigskip
+\ncap{Normalized amplitude fluctuations under strong field excitation
+conditions.}{Normalized amplitude fluctuations under strong field excitation
+conditions.  The experimental curve is the dashed line connecting circles and
+the theoretical curve is the solid line.
+\label{strong_fluc}}
+\end{figure}
+
+The relative amplitude fluctuations for the strong field case are shown in
+\Fig{strong_fluc}.  Here again, with no free parameters, we see very good
+agreement between experiment and theory.  The most important feature of this
+curve is the reduction in the fluctuation on the counterintuitive side.  The
+relative fluctuation decreases from 15\% on the intuitive side to a minimum of
+about 9\% on the counterintuitive.  Since this is the relative fluctuation,
+one might argue that this is due solely to the fact that the signal increased
+by 43\%.  However, in general the noise-to-signal ratio (N/S) ratio decreases
+as one over the square root of the signal, and hence, a 43\%
+increase in signal would be accompanied by a new N/S that is
+84\% of the original value.  The reduction from 15\% to 9\%, however, is a
+60\% reduction in N/S.  We therefore see that the population transfer process
+is more robust to amplitude fluctuations when the pulses are applied in the
+counterintuitive order.  The general shape of the two curves are very similar,
+and even some of the oscillations in the theory are seen in the experiment.
+
+The agreement between theory and experiment shown in \Fig{strong_ave} can be
+improved if we recognize that the experiment utilized a pulse that is not
+Gaussian (as was assumed in the previous theory), but actually has the sharp
+rising edge shown in \Fig{rough}.  This pulse shape was predicted
+theoretically and observed experimentally by Sorokin \etal \cite{Sorokin:67}. 
+Using the theory presented in this study, we numerically integrated the
+rate equations describing our laser system.  The parameters in these equations
+are the cavity lifetime, the dye fluorescence lifetime, and the times above
+threshold pumping.  We do not have values for these parameters, nor did we
+make a more accurate (not bandwidth limited) measurement of the laser pulse's
+risetime.  Consequently, the subsequent analysis of the fluorescence must be
+regarded as a free parameter fit.  Given that the grazing incidence
+configuration is lossy, we assume that 50\% of the light is coupled out of the
+cavity for each pass of the grating.  The resultant cavity lifetime is 330~ps.
+The fluorescence lifetimes of the Rhodamine dyes are on the order of 5~ns, and
+we take the times threshold pumping to be 1000.  This last parameter is the main
+adjustable parameter and we varied it until the predicted pulses, when convolved
+with our 500~MHz instrument response, closely resembled the measured pulse.  The
+calculated dye laser pulse is shown in \Fig{pulse}.  The rising edge is very
+rapid, with a risetime on the order of the cavity lifetime.  The rising edge
+rings back to a smaller value and then the pulse essentially follows the smooth
+(Gaussian) pump pulse.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon_expt/pulse.eps}
+\bigskip
+\ncap{Dye laser pulse with sharp rising edge.}{Dye laser pulse with sharp
+rising edge numerically calculated using rate equation model of dye laser.
+\label{pulse}}
+\end{figure}
+
+The results for the population transfer with this dye laser pulse is given in
+\Fig{strong_ave_best}.  In this case the theoretical curve is shown with the
+experimental curve, and the agreement is excellent.  The dip in the theoretical
+curve near zero delay is no longer present.  Furthermore, the
+theoretical population transfer enhancement has been decreased so that it is
+very close to the experimental value.  And in general, both curves stay very
+close to each other for all delays investigated.  The success of the modified
+model is due to the sensitivity of the physical process on the adiabaticity of
+the interaction.  The sharp rising edge represents a fast diabatic coupling
+that could serve to destroy the adiabaticity, and consequently eliminate the
+population transfer enhancement on the counterintuitive side.  However, the
+adiabaticity criterion depends both on the time rate of change of the pulses
+and on their energies.  Consequently, we are still able to observe adiabatic
+evolution, evidenced by the improved transfer efficiency on the counterintuitive
+side.
+
+\begin{figure}[tbp]
+\postfull{thesisfigs/two_photon_expt/strong_ave_best.eps}
+\bigskip
+\ncap{Integrated fluorescence signal obtained under strong field excitation
+conditions with dye laser pulse with sharp rising edge.}{Integrated fluorescence
+signal obtained under strong field excitation conditions.  In (a) is the
+experimental curve, and in (b) the theoretical curve, where the dye laser pulses
+are modeled as in \Fig{pulse}.
+\label{strong_ave_best}}
+\end{figure}
+
+\section{Caveat}
+\hspace{\parindent}  Having discussed the success of the counterintuitive
+technique, we would be remiss not to mention the difficulties in using this
+technique on a day-to-day basis with pulsed lasers \cite{Bergmann_caveat}.  The
+counterintuitive transfer process requires the highest quality laser pulses.  In
+this chapter, we have presented a dye laser with near ideal performance.  The
+single-mode linewidth was close to the transform limit.  However, it must be
+realized that if there is a second longitudinal mode, say with energy 1/100 of
+the main mode, then this can produce modulation in the electric field with an
+amplitude of 10\%.  The period of such modulation would be the same as the
+cavity round trip time, $\approx 130$~ps.  This rapid modulation could cause the
+evolution to be diabatic. Also, the spatial quality of the beams must be high
+so that overlapping two beams in the interaction region is effective
+\cite{Bergmann_caveat}.  Following this work, we developed a technique to smooth
+the rising edge of the dye laser pulse \cite{Corless:97}, so this should improve
+the technique.
+
+We found that for all the experimental runs we performed, the intuitive
+technique performed as well as the counterintuitive, on average.  And this is
+given the high quality of the dye laser we used.  Typical nanosecond dye lasers
+do not have the same high quality and performance as the system we used
+(certainly not commercial systems).  So while we have demonstrated the improved
+efficiency of the counterintuitive population transfer, from a practical
+standpoint we would suggest the use of the intuitive technique, unless the
+laser system used can meet these stringent requirements.  Furthermore, the
+atomic transitions used must have a three-level structure.  Coupling
+to other atomic levels can likewise eliminate the counterintuitive enhancement
+\cite{Martin:95}.  While the intuitive technique cannot produce the highest
+transfer efficiency, it requires lasers of modest quality and is less sensitive
+to perturbing atomic levels.
+
